@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/themes/{{ site.data.theme.portfolio_theme }}/theme.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700,800&display=swap" rel="stylesheet">
+  <style>
+    /* Smooth theme transitions - only colors, not spacing or fonts */
+    body, header, nav a, .project-card, .hero, .section, .site-title, 
+    .project-title, .project-desc, .hero h1, .hero p, .hero .cta a,
+    #stimulus-dot-1, #stimulus-dot-2, #stimulus-dot-3, label, span,
+    .about-section, .landing-tile, .landing-preview, .skill {
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+    }
+    
+    /* Light theme specific overrides */
+    body[data-theme="light"] {
+      background: #e8f4f8 !important;
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] header {
+      background: #d4e9f7 !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+    }
+    
+    body[data-theme="light"] nav a {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] nav a:hover {
+      color: var(--accent2) !important;
+    }
+    
+    body[data-theme="light"] .hero {
+      background: linear-gradient(120deg, #e8f4f8 60%, var(--accent3) 100%) !important;
+    }
+    
+    body[data-theme="light"] .hero h1 {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] .hero p {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] .project-card {
+      background: #f0f8ff !important;
+      border-color: #b8d4e6 !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
+    }
+    
+    body[data-theme="light"] .project-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15) !important;
+    }
+    
+    body[data-theme="light"] .project-title {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] .project-desc {
+      color: #2c3e50 !important;
+    }
+    
+    body[data-theme="light"] .section-title {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] .landing-tile {
+      background: #f0f8ff !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
+    }
+    
+    body[data-theme="light"] .landing-tile:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15) !important;
+    }
+    
+    body[data-theme="light"] .landing-preview {
+      background: #e8f4f8 !important;
+    }
+    
+    body[data-theme="light"] .landing-preview div {
+      color: #2c3e50 !important;
+    }
+    
+    body[data-theme="light"] footer {
+      color: #495057 !important;
+    }
+    
+    /* Contact info styling for light mode */
+    body[data-theme="light"] .contact-info div {
+      color: var(--accent2) !important;
+    }
+    
+    body[data-theme="light"] .contact-info span {
+      color: #2c3e50 !important;
+    }
+    
+    /* Timeline and awards styling for light mode */
+    body[data-theme="light"] ul {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] ul li {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] ul li b {
+      color: #0d1419 !important;
+    }
+    
+    /* Publications section styling for light mode */
+    body[data-theme="light"] div[style*="background:#23272a"] {
+      background: #e8f4f8 !important;
+      border: 1px solid #b8d4e6 !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
+    }
+    
+    body[data-theme="light"] div[style*="background:#23272a"] h3 {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] div[style*="background:#23272a"] ul {
+      color: #2c3e50 !important;
+    }
+    
+    body[data-theme="light"] div[style*="background:#23272a"] ul li {
+      color: #2c3e50 !important;
+    }
+    
+    /* Fix any remaining teal text in light mode */
+    body[data-theme="light"] h1, 
+    body[data-theme="light"] h2, 
+    body[data-theme="light"] h3, 
+    body[data-theme="light"] h4, 
+    body[data-theme="light"] h5, 
+    body[data-theme="light"] h6 {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] .landing-tile-title {
+      color: #1a252f !important;
+    }
+    
+    /* Contact form styling for light mode */
+    body[data-theme="light"] form[style*="background:#202225"] {
+      background: #f0f8ff !important;
+      border: 1px solid #b8d4e6 !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
+    }
+    
+    body[data-theme="light"] form[style*="background:#202225"] h1 {
+      color: #1a252f !important;
+    }
+    
+    body[data-theme="light"] form[style*="background:#202225"] label {
+      color: var(--accent2) !important;
+    }
+    
+    body[data-theme="light"] form[style*="background:#202225"] input,
+    body[data-theme="light"] form[style*="background:#202225"] textarea {
+      background: #e8f4f8 !important;
+      color: #1a252f !important;
+      border-color: #b8d4e6 !important;
+    }
+    
+    body[data-theme="light"] form[style*="background:#202225"] input:focus,
+    body[data-theme="light"] form[style*="background:#202225"] textarea:focus {
+      border-color: var(--accent2) !important;
+      box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2) !important;
+    }
+    
+    /* Profile image location styling for light mode */
+    body[data-theme="light"] div[style*="color:#aaa"] {
+      color: #495057 !important;
+    }
+    
+    /* Skills styling - restore bubbles and fix light mode */
+    .skills-list {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 1em !important;
+      margin-top: 1.5em !important;
+    }
+    
+    .skill {
+      background: var(--accent2) !important;
+      color: #fff !important;
+      border-radius: 1em !important;
+      padding: 0.4em 1.2em !important;
+      font-size: 1em !important;
+      font-weight: 600 !important;
+      box-shadow: 0 2px 8px var(--accent2) !important;
+      transition: all 0.3s ease-in-out !important;
+    }
+    
+    .skill:hover {
+      transform: translateY(-2px) scale(1.05) !important;
+      box-shadow: 0 4px 16px var(--accent2) !important;
+    }
+    
+    /* Light mode skills */
+    body[data-theme="light"] .skill {
+      background: #ffd700 !important;
+      color: #1a252f !important;
+      border: 1px solid #e6c200 !important;
+      box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3) !important;
+    }
+    
+    body[data-theme="light"] .skill:hover {
+      background: #ffed4e !important;
+      color: #1a252f !important;
+      box-shadow: 0 4px 16px rgba(255, 215, 0, 0.4) !important;
+    }
+    /* About section/card styling for light mode */
+    body[data-theme="light"] .about-section {
+      background: #f0f8ff !important;
+      box-shadow: none !important;
+    }
+    body[data-theme="light"] .contact-info > div,
+    body[data-theme="light"] .contact-info > div span {
+      color: #222 !important;
+    }
+    body[data-theme="light"] .cta a {
+      background: #222 !important;
+      color: #fff !important;
+      box-shadow: 0 2px 8px rgba(34,34,34,0.10) !important;
+    }
+    body[data-theme="light"] .cta a:hover {
+      background: #444 !important;
+      color: #fff !important;
+    }
+  </style>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  {% if site.feed %}<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.feed.path | default: '/feed.xml' }}">{% endif %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <header>
+    <div style="display:flex;align-items:center;justify-content:space-between;max-width:1400px;margin:0 auto 1em auto;padding:0 2em;">
+      <nav>
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/projects.html">Projects</a>
+        <a href="{{ site.baseurl }}/about">About Me</a>
+        <a href="{{ site.baseurl }}/contact">Contact</a>
+      </nav>
+      <div id="stimulus-dots-container" style="display:flex;flex-direction:column;align-items:center;gap:0.3em;font-size:1em;">
+        <div style="display:flex;align-items:center;gap:1.2em;position:relative;">
+          <div id="stimulus-dot-1" style="width:18px;height:18px;border-radius:50%;background:var(--card-border);box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:background 0.2s;"></div>
+          <div id="stimulus-dot-2" style="width:18px;height:18px;border-radius:50%;background:var(--card-border);box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:background 0.2s;"></div>
+          <div id="stimulus-dot-3" style="width:18px;height:18px;border-radius:50%;background:var(--card-border);box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:background 0.2s;"></div>
+          <input type="range" id="stimulus-level" min="1" max="3" step="1" value="1" style="opacity:0;width:100%;height:24px;position:absolute;left:0;top:0;cursor:pointer;z-index:2;">
+        </div>
+        <label for="stimulus-level" style="color:var(--accent3);font-weight:700;margin-top:0.5em;text-align:center;">Stimulus Level</label>
+        <span id="stimulus-label" style="color:var(--accent2);font-weight:700;display:inline-block;width:70px;text-align:center;margin-top:0.2em;">Low</span>
+      </div>
+      <div id="theme-toggle-slider" style="display:flex;align-items:center;gap:0.7em;font-size:1em;">
+        <label for="theme-toggle" style="color:var(--accent3);font-weight:700;">Theme</label>
+        <div style="position:relative;display:inline-block;width:54px;height:28px;">
+          <input type="checkbox" id="theme-toggle" style="opacity:0;width:54px;height:28px;position:absolute;left:0;top:0;cursor:pointer;z-index:2;">
+          <span id="theme-toggle-slider-track" style="background:#222;border-radius:16px;position:absolute;top:0;left:0;width:54px;height:28px;transition:background 0.3s;"></span>
+          <span id="theme-toggle-slider-handle" style="position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;font-size:1.1em;transition:left 0.3s,background 0.3s;"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    &copy; {{ site.time | date: '%Y' }} Matthew Fernandez &mdash; Last updated: {{ site.time | date: '%B %d, %Y' }}
+  </footer>
+  <script>
+    // Drag-and-drop background image for hero section
+    document.addEventListener('DOMContentLoaded', function() {
+      const hero = document.querySelector('.hero');
+      if(hero) {
+        hero.addEventListener('dragover', e => { e.preventDefault(); hero.style.opacity = 0.8; });
+        hero.addEventListener('dragleave', e => { hero.style.opacity = 1; });
+        hero.addEventListener('drop', e => {
+          e.preventDefault();
+          hero.style.opacity = 1;
+          const file = e.dataTransfer.files[0];
+          if(file && file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function(ev) {
+              hero.style.backgroundImage = `url('${ev.target.result}')`;
+              hero.style.backgroundSize = 'cover';
+              hero.style.backgroundPosition = 'center';
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+      }
+    });
+  </script>
+<script>
+(function() {
+  // Stimulus dots logic
+  const range = document.getElementById('stimulus-level');
+  const label = document.getElementById('stimulus-label');
+  const dot1 = document.getElementById('stimulus-dot-1');
+  const dot2 = document.getElementById('stimulus-dot-2');
+  const dot3 = document.getElementById('stimulus-dot-3');
+  const body = document.body;
+  const labels = ['Low', 'Medium', 'Party'];
+  
+  // Get level from localStorage, default to 1 if not set or invalid
+  let level = parseInt(localStorage.getItem('movingPartsLevel')) || 1;
+  level = Math.max(1, Math.min(3, level)); // Ensure level is between 1-3
+  
+  function updateDots(lvl) {
+    dot1.style.background = lvl >= 1 ? 'var(--accent3)' : 'var(--card-border)';
+    dot2.style.background = lvl >= 2 ? 'var(--accent3)' : 'var(--card-border)';
+    dot3.style.background = lvl >= 3 ? 'var(--accent3)' : 'var(--card-border)';
+  }
+  
+  // Initialize
+  range.value = level;
+  label.textContent = labels[level-1];
+  updateDots(level);
+  body.setAttribute('data-moving-parts', level);
+  
+  // Add event listeners
+  range.addEventListener('input', function() {
+    level = parseInt(range.value);
+    updateDots(level);
+    label.textContent = labels[level-1];
+    body.setAttribute('data-moving-parts', level);
+    localStorage.setItem('movingPartsLevel', level);
+  });
+  
+  // Add hover effects for better UX
+  const dotsContainer = document.getElementById('stimulus-dots-container');
+  dotsContainer.addEventListener('mouseenter', function() {
+    this.style.transform = 'scale(1.05)';
+    this.style.transition = 'transform 0.2s ease';
+  });
+  dotsContainer.addEventListener('mouseleave', function() {
+    this.style.transform = 'scale(1)';
+  });
+
+  // Theme toggle logic
+  const themeToggle = document.getElementById('theme-toggle');
+  const handle = document.getElementById('theme-toggle-slider-handle');
+  const track = document.getElementById('theme-toggle-slider-track');
+  let theme = localStorage.getItem('themeMode') || 'dark';
+  
+  function setTheme(mode) {
+    body.setAttribute('data-theme', mode);
+    
+    // Update toggle appearance
+    if (mode === 'light') {
+      themeToggle.checked = true;
+      handle.innerHTML = '☀️';
+      handle.style.left = '29px';
+      handle.style.background = '#ffd700';
+      track.style.background = '#ffd700';
+    } else {
+      themeToggle.checked = false;
+      handle.innerHTML = '🌙';
+      handle.style.left = '3px';
+      handle.style.background = '#888';
+      track.style.background = '#333';
+    }
+    
+    // Apply theme-specific styles
+    applyThemeStyles(mode);
+    localStorage.setItem('themeMode', mode);
+  }
+  
+  function applyThemeStyles(mode) {
+    const root = document.documentElement;
+    
+    if (mode === 'light') {
+      // Light theme colors
+      root.style.setProperty('--bg-primary', '#f8f9fa');
+      root.style.setProperty('--bg-secondary', '#e9ecef');
+      root.style.setProperty('--bg-card', '#ffffff');
+      root.style.setProperty('--text-primary', '#2c3e50');
+      root.style.setProperty('--text-secondary', '#495057');
+      root.style.setProperty('--text-muted', '#6c757d');
+      root.style.setProperty('--border-color', '#dee2e6');
+      root.style.setProperty('--shadow-light', '0 2px 8px rgba(0,0,0,0.1)');
+      root.style.setProperty('--shadow-medium', '0 4px 16px rgba(0,0,0,0.15)');
+      root.style.setProperty('--shadow-heavy', '0 8px 32px rgba(0,0,0,0.2)');
+      
+      // Update body background
+      document.body.style.background = '#f8f9fa';
+      document.body.style.color = '#2c3e50';
+      
+      // Update header
+      const header = document.querySelector('header');
+      if (header) {
+        header.style.background = '#ffffff';
+        header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+      }
+      
+      // Update navigation links
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.style.color = '#2c3e50';
+      });
+      
+      // Update stimulus dots
+      const dots = document.querySelectorAll('#stimulus-dot-1, #stimulus-dot-2, #stimulus-dot-3');
+      dots.forEach(dot => {
+        if (dot.style.background === 'var(--accent3)' || dot.style.background.includes('accent3')) {
+          dot.style.background = 'var(--accent3)';
+        } else {
+          dot.style.background = '#dee2e6';
+        }
+      });
+      
+      // Update labels
+      const stimulusLabel = document.getElementById('stimulus-label');
+      if (stimulusLabel) stimulusLabel.style.color = 'var(--accent2)';
+      
+      const themeLabel = document.querySelector('label[for="theme-toggle"]');
+      if (themeLabel) themeLabel.style.color = 'var(--accent3)';
+      
+      const stimulusTitleLabel = document.querySelector('label[for="stimulus-level"]');
+      if (stimulusTitleLabel) stimulusTitleLabel.style.color = 'var(--accent3)';
+      
+    } else {
+      // Dark theme colors (restore original dark gray theme)
+      root.style.setProperty('--bg-primary', '#181a1b');
+      root.style.setProperty('--bg-secondary', '#23272a');
+      root.style.setProperty('--bg-card', '#23272a');
+      root.style.setProperty('--text-primary', '#e0e0e0');
+      root.style.setProperty('--text-secondary', '#ccc');
+      root.style.setProperty('--text-muted', '#888');
+      root.style.setProperty('--border-color', '#2c2f33');
+      root.style.setProperty('--shadow-light', '0 2px 8px rgba(0,0,0,0.4)');
+      root.style.setProperty('--shadow-medium', '0 4px 16px rgba(0,0,0,0.4)');
+      root.style.setProperty('--shadow-heavy', '0 8px 32px rgba(0,0,0,0.4)');
+      
+      // Update body background
+      document.body.style.background = '#181a1b';
+      document.body.style.color = '#e0e0e0';
+      
+      // Update header
+      const header = document.querySelector('header');
+      if (header) {
+        header.style.background = '#1a1d1f';
+        header.style.boxShadow = '0 4px 32px rgba(0,0,0,0.4)';
+      }
+      
+      // Update navigation links
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.style.color = 'var(--accent)';
+      });
+      
+      // Update stimulus dots
+      const dots = document.querySelectorAll('#stimulus-dot-1, #stimulus-dot-2, #stimulus-dot-3');
+      dots.forEach(dot => {
+        if (dot.style.background === 'var(--accent3)' || dot.style.background.includes('accent3')) {
+          dot.style.background = 'var(--accent3)';
+        } else {
+          dot.style.background = 'var(--card-border)';
+        }
+      });
+      
+      // Update labels
+      const stimulusLabel = document.getElementById('stimulus-label');
+      if (stimulusLabel) stimulusLabel.style.color = 'var(--accent2)';
+      
+      const themeLabel = document.querySelector('label[for="theme-toggle"]');
+      if (themeLabel) themeLabel.style.color = 'var(--accent3)';
+      
+      const stimulusTitleLabel = document.querySelector('label[for="stimulus-level"]');
+      if (stimulusTitleLabel) stimulusTitleLabel.style.color = 'var(--accent3)';
+    }
+  }
+  
+  setTheme(theme);
+  themeToggle.addEventListener('change', function() {
+    setTheme(themeToggle.checked ? 'light' : 'dark');
+  });
+})();
+</script>
+<div id="bouncing-robots-container" style="position:fixed;z-index:10;pointer-events:none;top:0;left:0;width:100vw;height:100vh;display:none;"></div>
+<script>
+(function() {
+  function createBouncingRobot(src) {
+    const div = document.createElement('div');
+    div.className = 'bouncing-robot';
+    div.style.position = 'fixed';
+    div.style.width = '64px';
+    div.style.height = '64px';
+    div.style.pointerEvents = 'none';
+    div.style.zIndex = 10;
+    div.style.left = Math.random() * (window.innerWidth - 64) + 'px';
+    div.style.top = Math.random() * (window.innerHeight - 64) + 'px';
+    const img = document.createElement('img');
+    img.src = src;
+    img.style.width = '100%';
+    img.style.height = '100%';
+    img.style.objectFit = 'contain';
+    div.appendChild(img);
+    document.getElementById('bouncing-robots-container').appendChild(div);
+    // Bouncing logic
+    let x = parseFloat(div.style.left), y = parseFloat(div.style.top);
+    let dx = 2 + Math.random() * 2, dy = 2 + Math.random() * 2;
+    function move() {
+      x += dx;
+      y += dy;
+      if (x <= 0 || x + 64 >= window.innerWidth) dx *= -1;
+      if (y <= 0 || y + 64 >= window.innerHeight) dy *= -1;
+      x = Math.max(0, Math.min(x, window.innerWidth - 64));
+      y = Math.max(0, Math.min(y, window.innerHeight - 64));
+      div.style.left = x + 'px';
+      div.style.top = y + 'px';
+      requestAnimationFrame(move);
+    }
+    move();
+  }
+  const robotImgsRaw = [
+    '{{ site.baseurl }}/assets/AquaMILR+/aquaMILR+noBackground.jpg',
+    '{{ site.baseurl }}/assets/aquaMILR_PRO.png',
+    '{{ site.baseurl }}/assets/auvBody.png',
+    '{{ site.baseurl }}/assets/auvCasing.png',
+    '{{ site.baseurl }}/assets/fishNoBackground.png',
+    '{{ site.baseurl }}/assets/tubot.png'
+  ];
+  // Remove duplicates
+  const robotImgs = Array.from(new Set(robotImgsRaw));
+  function showBouncingRobots(show) {
+    const container = document.getElementById('bouncing-robots-container');
+    container.innerHTML = '';
+    if (show) {
+      container.style.display = 'block';
+      robotImgs.forEach(src => createBouncingRobot(src));
+    } else {
+      container.style.display = 'none';
+    }
+  }
+  // Listen for party mode changes
+  const observer = new MutationObserver(() => {
+    showBouncingRobots(document.body.getAttribute('data-moving-parts') === '3');
+  });
+  observer.observe(document.body, { attributes: true, attributeFilter: ['data-moving-parts'] });
+  // Initial state
+  showBouncingRobots(document.body.getAttribute('data-moving-parts') === '3');
+})();
+</script>
+</body>
+</html> 

@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<section class="section">
+  <article class="about-section">
+    <a href="{{ site.baseurl }}/projects.html" style="color:var(--accent3);font-weight:700;font-size:1.1em;">&larr; Back to Projects</a>
+    <h1>{{ page.title }}</h1>
+    <p style="color:#aaa; font-size:1.1em; margin-bottom:2em;">{{ page.description }}</p>
+    {% if page.glb_url %}
+    <div style="margin:2em auto;width:100%;max-width:100vw;display:flex;justify-content:center;">
+      <model-viewer src="{{ site.baseurl }}{{ page.glb_url }}" alt="3D model for {{ page.title }}" auto-rotate camera-controls style="width:100%;height:400px;max-width:100vw;background:transparent;border-radius:1em;display:block;margin:0 auto;"
+        {% if page.camera_orbit %}camera-orbit="{{ page.camera_orbit }}"{% endif %}
+        {% if page.field_of_view %}field-of-view="{{ page.field_of_view }}"{% endif %}
+      ></model-viewer>
+    </div>
+    {% endif %}
+    <div class="project-tags" style="margin:1.5em 0;">
+      {% for tag in page.tags %}
+      <span class="project-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </article>
+</section>
+<script>
+// Drag-and-drop for <model-viewer> on project page
+function setupModelViewerDnD(card) {
+  const mv = card.querySelector('model-viewer');
+  card.addEventListener('dragover', e => { e.preventDefault(); card.style.opacity = 0.8; });
+  card.addEventListener('dragleave', e => { card.style.opacity = 1; });
+  card.addEventListener('drop', e => {
+    e.preventDefault();
+    card.style.opacity = 1;
+    const file = e.dataTransfer.files[0];
+    if(file && (file.name.endsWith('.glb') || file.name.endsWith('.gltf'))){
+      const reader = new FileReader();
+      reader.onload = function(ev) {
+        mv.src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.about-section').forEach(setupModelViewerDnD);
+});
+</script> 

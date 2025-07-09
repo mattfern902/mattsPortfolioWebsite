@@ -1,0 +1,106 @@
+---
+layout: default
+---
+{% if page.title == 'Contact Me' %}
+<section class="section">
+  {{ content }}
+</section>
+{% else %}
+<section class="section">
+  <div class="about-section">
+    <div style="display:flex;flex-direction:row;gap:1.2em;align-items:center;justify-content:center;margin:2em 0 1.5em 0;font-size:1.08em;">
+      <div style="color:var(--accent2);font-weight:700;">Personal: <span style="color:var(--text-primary);font-weight:400;">matt.fern902@gmail.com</span></div>
+      <div style="color:var(--accent2);font-weight:700;">Academic: <span style="color:var(--text-primary);font-weight:400;">mfernandez64@gatech.edu</span></div>
+      <div style="color:var(--accent2);font-weight:700;">Phone: <span style="color:var(--text-primary);font-weight:400;">+1 (813) 848-4069</span></div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:2em;">
+      <div style="flex:2;min-width:260px;">
+        <h1 style="margin-top:0;">About Me</h1>
+        <p style="font-size:1.2em;line-height:1.6;">
+          Hi, I'm Matthew Fernandez, a passionate engineer and researcher specializing in robotics, mechanical design, and creative problem solving. I thrive at the intersection of mechanical intelligence, robotics, and real-world impact. My work spans aquatic and terrestrial robots, soft robotics, and advanced actuation systems.<br><br>
+          I love building things that move, think, and interact with the world in new ways.
+        </p>
+        <div style="margin:1.5em 0;display:flex;gap:1em;">
+          <a href="/assets/CV.pdf" target="_blank" style="background:var(--accent2);color:#fff;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);transition:background 0.2s;">Download CV (PDF)</a>
+          <a href="/assets/resume.pdf" target="_blank" style="background:var(--accent2);color:#fff;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);transition:background 0.2s;">Download Resume (PDF)</a>
+          <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="background:var(--accent2);color:#fff;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);display:flex;align-items:center;gap:0.5em;transition:background 0.2s;">
+            <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.599v5.597z'/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <div class="section-title" style="margin-top:2em;">Skills</div>
+        <div class="skills-list">
+          <span class="skill">Python</span>
+          <span class="skill">C++</span>
+          <span class="skill">MATLAB</span>
+          <span class="skill">ROS</span>
+          <span class="skill">SolidWorks</span>
+          <span class="skill">3D Printing</span>
+          <span class="skill">Arduino</span>
+          <span class="skill">D3.js</span>
+          <span class="skill">AutoCAD</span>
+          <span class="skill">Fusion 360</span>
+        </div>
+      </div>
+      <div style="flex:1;min-width:220px;text-align:center;">
+        <img src="{{ site.baseurl }}/assets/profile-photo.jpg" alt="Profile" style="width:160px;height:160px;border-radius:50%;box-shadow:0 2px 16px var(--accent3);margin-bottom:1em;object-fit:cover;">
+        <div style="color:#aaa;font-size:1.1em;">Atlanta, GA<br>Georgia Tech</div>
+      </div>
+    </div>
+    <div class="section-title" style="margin-top:2.5em;">Experience Timeline</div>
+    <ul style="font-size:1.1em;line-height:1.7;color:#e0e0e0;">
+      <li><b>2025 (expected):</b> B.S. Mechanical Engineering, Robotics Minor, Georgia Tech</li>
+      <li><b>2024–Present:</b> Researcher, Complex Rheology and Biomechanics Lab (Robotics, Georgia Tech)</li>
+      <li><b>2024:</b> Fabrication Integrated Design Lab, MIT (Propellant-powered robots)</li>
+      <li><b>2023:</b> NASA JPL, Robotic Manipulation Intern</li>
+      <li><b>2022–Present:</b> Soft Robotics Lab, ETH Zurich</li>
+      <li><b>2022:</b> Procter & Gamble, Manufacturing Process Engineering Intern</li>
+      <li><b>2021–2024:</b> URC Mars Rover Team, Mechanical Lead</li>
+    </ul>
+    <div class="section-title" style="margin-top:2.5em;">Awards & Honors</div>
+    <ul style="font-size:1.1em;line-height:1.7;color:#e0e0e0;">
+      <li>ThinkSwiss Scholar</li>
+      <li>Astronaut Scholar</li>
+      <li>Presidents Undergraduate Research Award</li>
+      <li>Goldbold Scholar</li>
+      <li>Valedictorian</li>
+    </ul>
+    <div class="section-title" style="margin-top:2.5em;">Publications & Presentations</div>
+    <div style="background:var(--bg-secondary);padding:2em 1.5em;border-radius:1em;box-shadow:0 2px 16px var(--accent3);margin-bottom:2em;">
+      <h3 style="color:var(--accent3);margin-top:0;">Patents</h3>
+      <ul style="color:var(--text-primary);">
+        <li><b>M. Fernandez</b>, T. Wang, D. I. Goldman. Compact buoyancy control assembly for underwater robotic systems or equipment (<i>filed patent application 2024</i>)</li>
+      </ul>
+      <h3 style="color:var(--accent3);">Peer-Reviewed Publications</h3>
+      <ul style="color:var(--text-primary);">
+        <li><b>M. Fernandez</b>, T. Wang, G. Tunnicliffe, D. Dortilus, P. Gunnarson, J.O. Dabiri, D. I. Goldman. AquaMILR+: Design of an untethered limbless robot for complex aquatic terrain navigation. (<i>accepted ICRA 2025</i>)</li>
+        <li>S. D. Gollob, A. Comoretto, Q. Yu, <b>M. Fernandez</b>, K. O. Adebajo, J. T. B. Overvelde, K. Becker, E. Roche. An Actuator-Scale, Pressure-Amplifying, Monopropellant Engine for Untethered Pneumatic Systems (<i>accepted RoboSoft 2025</i>)</li>
+        <li>T. Wang, N. Mankame, <b>M. Fernandez</b>, V. H. Kojuoharov, D. I. Goldman. AquaMILR: Mechanical intelligence simplifies control of undulatory robots in cluttered fluid environments (<i>accepted ICRA 2025</i>)</li>
+        <li>V. H. Kojuoharov, T. Wang, <b>M. Fernandez</b>, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. <i>IEEE International Conference on Robotics and Automation (ICRA), 2024</i>.</li>
+      </ul>
+      <h3 style="color:var(--accent3);">Conference Abstracts</h3>
+      <ul style="color:var(--text-primary);">
+        <li><b>M. Fernandez</b>, T. Wang, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Design of an untethered limbless robot for aquatic locomotion in complex environments. <i>American Physical Society Meeting, March 2025</i>.</li>
+        <li>T. Wang, <b>M. Fernandez</b>, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Mechanical and computational intelligence enable agile and robust limbless robotic locomotion in complex aquatic environments. <i>American Physical Society Meeting, March 2025</i>.</li>
+        <li><b>M. Fernandez</b>, T. Wang, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Design of an untethered underwater limbless robot for complex aquatic terrain navigation. <i>SICB Annual Meeting, January 2025</i>.</li>
+        <li>T. Wang, <b>M. Fernandez</b>, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Mechanically intelligent undulatory robotic locomotion in complex aquatic environments. <i>SICB Annual Meeting, January 2025</i>.</li>
+        <li>N. Mankame, T. Wang, <b>M. Fernandez</b>, C. Pierce, D. I. Goldman. Mechanical intelligence aids limbless locomotion in cluttered aquatic environments. <i>American Physical Society Meeting, March 2024</i>.</li>
+        <li>V. H. Kojuoharov, T. Wang, <b>M. Fernandez</b>, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. <i>American Physical Society Meeting, March 2024</i>.</li>
+      </ul>
+      <h3 style="color:var(--accent3);">Presentations</h3>
+      <ul style="color:var(--text-primary);">
+        <li>Design of an untethered limbless robot for complex aquatic terrain navigation. <i>IEEE International Conference on Robotics and Automation (ICRA), 2025</i>.</li>
+        <li>Design of an untethered limbless robot for aquatic locomotion in complex environments. <i>American Physical Society Meeting, March 2025</i>.</li>
+        <li>Mechanically intelligent undulatory robotic locomotion in complex aquatic environments. <i>College of Science Undergraduate Research Showcase, February 2025</i>.</li>
+        <li>Design of an untethered underwater limbless robot for complex aquatic terrain navigation. <i>SICB Annual Meeting, January 2025</i>.</li>
+        <li>Monopropellant Powered Self-Oscillating Limbs for Untethered Locomotion. <i>MIT Digital Poster Showcase, November 2024</i>.</li>
+        <li>A Controllable Propellant-Based Power Source for Untethered Soft Robots. <i>MIT Summer Research Program Poster Showcase, July 2024</i>.</li>
+        <li>Anisotropic body compliance facilitates robotic sidewinding in complex environments. <i>IEEE International Conference on Robotics and Automation (ICRA), 2024</i>.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="about-section">
+    {{ content }}
+  </div>
+</section>
+{% endif %} 

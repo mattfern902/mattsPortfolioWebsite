@@ -1,0 +1,26 @@
+---
+layout: default
+title: Projects
+---
+<section class="section">
+  <div class="section-title">All Projects</div>
+  <div class="projects-grid">
+    {% assign sorted_projects = site.projects | sort: "order" %}
+    {% for project in sorted_projects %}
+    <a href="{{ project.url }}" class="project-card" style="text-decoration:none;">
+      {% if project.cover_image %}
+        <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" class="project-card-img-full">
+      {% endif %}
+      <div class="project-title">{{ project.title }}</div>
+      <div class="project-desc">{{ project.description }}</div>
+      {% if project.start or project.end %}
+      <div style="margin-top:0.7em;font-size:0.95em;color:#aaa;">
+        <b>Dates:</b>
+        {% if project.start %}{{ project.start }}{% endif %}
+        {% if project.end %}–{{ project.end }}{% endif %}
+      </div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section> 
