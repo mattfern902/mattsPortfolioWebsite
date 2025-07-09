@@ -24,7 +24,7 @@ Focused on the design, integration, and experimental testing of sidewinding snak
 <div style="max-width:600px;margin:0 auto 2em auto;">
   <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/strawVideoSidewinder.mp4" controls style="width:100%;border-radius:1em;margin-bottom:1em;"></video>
   <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/rockVideoSidewinder.mp4" controls style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;margin-bottom:0.5em;"></video>
-  <video src="/assets/complex-rheology-terrestrial/3718_VI.mp4" controls style="width:100%;border-radius:1em;"></video>
+  <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/3718_VI.mp4" controls style="width:100%;border-radius:1em;"></video>
 </div>
 
 <div style="margin-bottom:2em;text-align:center;">

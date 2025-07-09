@@ -12,7 +12,7 @@ start: September 2021
 end: July 2024
 ---
 
-<img src="/assets/urc-mars-rover/roverPic.jpg" alt="URC Mars Rover" style="width:100%;max-width:700px;display:block;margin:2em auto 1em auto;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);">
+<img src="{{ site.baseurl }}/assets/urc-mars-rover/roverPic.jpg" alt="URC Mars Rover" style="width:100%;max-width:700px;display:block;margin:2em auto 1em auto;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);">
 <div style="text-align:center;color:#aaa;font-size:1em;margin-bottom:2em;">URC Mars Rover - Competition Vehicle</div>
 
 <img src="{{ site.baseurl }}/assets/urc-mars-rover/fullRoverAssembly.jpg" alt="URC Mars Rover Assembly" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
