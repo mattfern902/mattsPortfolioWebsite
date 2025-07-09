@@ -11,7 +11,7 @@ tags:
   - Robotics
   - Marine
   - AUV
-order: 1
+order: 8
 start: 2023
 end: 2024
 ---
