@@ -1,0 +1,9 @@
+name: Cyberpunk Teal
+slug: cyberpunk-teal
+description: |
+  Cyberpunk grid/aurora background with teal, red, and blue accents. Animated aurora overlay, glowing/pulsing cards, and pill-shaped buttons. Inspired by the color palette of Teal Dark and the visual style of Cyberpunk Grid.
+accent: "#00ffd0"
+accent2: "#ff4c60"
+accent3: "#1e90ff"
+background: "Animated aurora with teal and blue lines on dark."
+bouncing_robot: true 
