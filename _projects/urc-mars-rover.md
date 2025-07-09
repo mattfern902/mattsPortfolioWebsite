@@ -1,7 +1,7 @@
 ---
 layout: project
 title: URC Mars Rover Team (RoboJackets)
-cover_image: /assets/urc-mars-rover/roverPic.jpg
+cover_image: {{ site.baseurl }}/assets/urc-mars-rover/roverPic.jpg
 description: Mechanical Lead for semi-autonomous rover for the University Rover Challenge.
 tags:
   - Team

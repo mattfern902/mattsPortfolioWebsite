@@ -1,9 +1,9 @@
 ---
 layout: project
 title: Soft Robotics Lab (ETH Zurich)
-cover_image: /assets/soft-robotics-eth/sofiPic.jpg
+cover_image: {{ site.baseurl }}/assets/soft-robotics-eth/sofiPic.jpg
 description: Autonomous untethered underwater fish platform for biological surveillance and swarm-based monitoring.
-glb_url: /assets/soft-robotics-eth/sofiC.glb
+glb_url: {{ site.baseurl }}/assets/soft-robotics-eth/sofiC.glb
 camera_orbit: 0deg 90deg 1.8m
 field_of_view: 10deg
 tags:

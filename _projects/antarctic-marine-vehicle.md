@@ -1,9 +1,9 @@
 ---
 layout: project
 title: Antarctic Marine Vehicle
-cover_image: /assets/antarctic-marine-vehicle/nektonFlick.jpg
+cover_image: {{ site.baseurl }}/assets/antarctic-marine-vehicle/nektonFlick.jpg
 description: Mechanical Engineer for next-generation AUV for polar research.
-glb_url: /assets/antarctic-marine-vehicle/NEKTON.glb
+glb_url: {{ site.baseurl }}/assets/antarctic-marine-vehicle/NEKTON.glb
 camera_orbit: 90deg 80deg 2m
 field_of_view: 20deg
 tags:

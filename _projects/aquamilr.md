@@ -1,7 +1,7 @@
 ---
 layout: project
 title: AquaMILR Limbless Robot
-cover_image: /assets/aquamilr/aquaMILR_og.jpg
+cover_image: {{ site.baseurl }}/assets/aquamilr/aquaMILR_og.jpg
 description: Untethered limbless robot for agile navigation in complex aquatic environments.
 tags:
   - Robotics

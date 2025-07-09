@@ -1,7 +1,7 @@
 ---
 layout: project
 title: NASA JPL Sample Recovery Helicopter
-cover_image: /assets/nasa-jpl/SRHpic1.jpg
+cover_image: {{ site.baseurl }}/assets/nasa-jpl/SRHpic1.jpg
 description: Robotic Manipulation Intern for the Mars Sample Return mission.
 tags:
   - Internship
