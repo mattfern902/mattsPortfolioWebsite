@@ -1,15 +1,15 @@
 ---
 layout: project
 title: Terrestrial Robotic Limbed and Limbless Locomotion
-cover_image: {{ site.baseurl }}/assets/complex-rheology-terrestrial/sidewinderCAD.jpg
+cover_image: /assets/complex-rheology-terrestrial/sidewinderCAD.jpg
 description: Sidewinding snake-inspired robotic locomotion and proprioceptive sensing joints.
 tags:
   - Research
   - Robotics
   - Terrestrial
 order: 3
-start: 2022
-end: Present
+start: 2021
+end: 2022
 ---
 
 ## Terrestrial Robotic Limbed and Limbless Locomotion

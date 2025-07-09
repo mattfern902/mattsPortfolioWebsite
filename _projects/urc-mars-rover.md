@@ -1,15 +1,15 @@
 ---
 layout: project
 title: URC Mars Rover Team (RoboJackets)
-cover_image: {{ site.baseurl }}/assets/urc-mars-rover/roverPic.jpg
+cover_image: /assets/urc-mars-rover/roverPic.jpg
 description: Mechanical Lead for semi-autonomous rover for the University Rover Challenge.
 tags:
   - Team
   - Robotics
   - Mars Rover
-order: 7
-start: September 2021
-end: July 2024
+order: 6
+start: 2021
+end: 2024
 ---
 
 <img src="{{ site.baseurl }}/assets/urc-mars-rover/roverPic.jpg" alt="URC Mars Rover" style="width:100%;max-width:700px;display:block;margin:2em auto 1em auto;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);">
