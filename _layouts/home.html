@@ -25,6 +25,24 @@ layout: default
 </div>
 
 <style>
+body[data-theme='light'] .landing-tile {
+  background: transparent !important;
+}
+.tile-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 2em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.landing-tile {
+  position: relative;
+  overflow: hidden;
+}
 .landing-split {
   display: flex;
   height: 60vh;
@@ -61,6 +79,10 @@ layout: default
   margin-bottom: 1em;
   letter-spacing: 1px;
 }
+body[data-theme='light'] .landing-tile-title {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
 .landing-preview {
   width: 90%;
   max-width: 520px;
@@ -91,15 +113,17 @@ layout: default
 }
 </style>
 <div class="landing-split">
-  <a href="{{ site.baseurl }}/projects.html" class="landing-tile" id="projects-tile" style="text-decoration:none;position:relative;background:url('{{ site.baseurl }}/assets/projectsPreview.jpg') center/cover no-repeat;">
-    <div class="landing-tile-title" style="position:relative;z-index:2;text-align:center;font-size:2.2rem;font-weight:800;color:var(--accent);margin-top:2em;">Projects</div>
-    <div style="position:relative;z-index:2;color:#e0e0e0;font-size:1.1em;text-align:center;margin:2em 1em 2em 1em;backdrop-filter:blur(2px);background:rgba(0,0,0,0.25);border-radius:1em;padding:1em;">Explore robotics, engineering, and research projects in aquatic, terrestrial, and soft robotics, with interactive 3D models and media.</div>
-    <div style="position:absolute;inset:0;border-radius:2em;background:rgba(0,0,0,0.12);"></div>
+  <a href="{{ site.baseurl }}/projects.html" class="landing-tile" id="projects-tile" style="text-decoration:none;">
+    <div class="tile-bg" style="background-image:url('{{ site.baseurl }}/assets/projectsPreview.jpg');"></div>
+    <div class="landing-tile-title" style="position:relative;z-index:2;text-align:center;font-size:2.2rem;font-weight:800;margin-top:2em;background:rgba(18,22,28,0.85);backdrop-filter:blur(6px);border-radius:0.8em;padding:0.5em 1em 0.5em 1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);display:inline-block;max-width:90%;margin-left:auto;margin-right:auto;">Projects</div>
+    <div style="position:relative;z-index:2;color:#e0e0e0;font-size:1.1em;text-align:center;margin:2em 1em 2em 1em;background:rgba(18,22,28,0.75);backdrop-filter:blur(6px);border-radius:0.8em;padding:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);display:inline-block;max-width:90%;margin-left:auto;margin-right:auto;">Explore robotics, engineering, and research projects in aquatic, terrestrial, and soft robotics, with interactive 3D models and media.</div>
+    <div style="position:absolute;inset:0;border-radius:2em;background:rgba(0,0,0,0.12);z-index:1;"></div>
   </a>
-  <a href="{{ site.baseurl }}/about" class="landing-tile" id="about-tile" style="text-decoration:none;position:relative;background:url('{{ site.baseurl }}/assets/aboutMePreview.jpg') center/cover no-repeat;">
-    <div class="landing-tile-title" style="position:relative;z-index:2;text-align:center;font-size:2.2rem;font-weight:800;color:var(--accent);margin-top:2em;">About Me</div>
-    <div style="position:relative;z-index:2;color:#e0e0e0;font-size:1.1em;text-align:center;margin:2em 1em 2em 1em;backdrop-filter:blur(2px);background:rgba(0,0,0,0.25);border-radius:1em;padding:1em;">Learn about my background, skills, awards, and experience in robotics, mechanical design, and creative engineering.</div>
-    <div style="position:absolute;inset:0;border-radius:2em;background:rgba(0,0,0,0.12);"></div>
+  <a href="{{ site.baseurl }}/about" class="landing-tile" id="about-tile" style="text-decoration:none;">
+    <div class="tile-bg" style="background-image:url('{{ site.baseurl }}/assets/aboutMePreview.jpg');"></div>
+    <div class="landing-tile-title" style="position:relative;z-index:2;text-align:center;font-size:2.2rem;font-weight:800;margin-top:2em;background:rgba(18,22,28,0.85);backdrop-filter:blur(6px);border-radius:0.8em;padding:0.5em 1em 0.5em 1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);display:inline-block;max-width:90%;margin-left:auto;margin-right:auto;">About Me</div>
+    <div style="position:relative;z-index:2;color:#e0e0e0;font-size:1.1em;text-align:center;margin:2em 1em 2em 1em;background:rgba(18,22,28,0.75);backdrop-filter:blur(6px);border-radius:0.8em;padding:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);display:inline-block;max-width:90%;margin-left:auto;margin-right:auto;">Learn about my background, skills, awards, and experience in robotics, mechanical design, and creative engineering.</div>
+    <div style="position:absolute;inset:0;border-radius:2em;background:rgba(0,0,0,0.12);z-index:1;"></div>
   </a>
 </div>
 <div id="bouncing-robot" style="position:fixed;width:64px;height:64px;z-index:10;left:20vw;top:30vh;pointer-events:none;">
