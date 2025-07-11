@@ -19,17 +19,17 @@ order: 1
 
 A novel untethered limbless robot designed for complex aquatic terrain navigation. This project was accepted to ICRA 2025 and features advanced mechanical intelligence for robust movement in challenging environments.
 
-<div style="display:flex;gap:2em;justify-content:center;margin:2em 0;flex-wrap:wrap;align-items:flex-start;">
-  <div style="flex:1;min-width:220px;max-width:400px;text-align:center;">
-    <img src="{{ site.baseurl }}/assets/aquamilr/ogblackSnakeOpenWater.jpg" alt="AquaMILR+ in open water" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
-    <div style="color:#aaa;font-size:1em;">Open Water Testing</div>
+<div style="display:flex;gap:3em;justify-content:space-between;margin:2em 0;flex-wrap:nowrap;align-items:flex-end;">
+  <div style="text-align:center;">
+    <img src="{{ site.baseurl }}/assets/aquamilr/ogblackSnakeOpenWater.jpg" alt="AquaMILR+ in open water" style="height:260px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
+    <div style="color:#aaa;font-size:1em;">Rendering of AquaMILR+ in the open ocean</div>
   </div>
-  <div style="flex:1;min-width:220px;max-width:400px;text-align:center;">
-    <img src="{{ site.baseurl }}/assets/aquamilr/aquaMILR_CAD_pic.jpg" alt="AquaMILR+ CAD design" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
+  <div style="text-align:center;">
+    <img src="{{ site.baseurl }}/assets/aquamilr/aquaMILR_CAD_pic.jpg" alt="AquaMILR+ CAD design" style="height:260px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
     <div style="color:#aaa;font-size:1em;">CAD Design</div>
   </div>
-  <div style="flex:1;min-width:220px;max-width:400px;text-align:center;">
-    <img src="{{ site.baseurl }}/assets/AquaMILR+/AquaMILR+Pic.jpg" alt="AquaMILR+ assembly" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
+  <div style="text-align:center;">
+    <img src="{{ site.baseurl }}/assets/AquaMILR+/AquaMILR+Pic.jpg" alt="AquaMILR+ assembly" style="height:260px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
     <div style="color:#aaa;font-size:1em;">Full Assembly</div>
   </div>
 </div>

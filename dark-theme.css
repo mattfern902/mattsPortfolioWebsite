@@ -157,11 +157,11 @@ nav a {
   border: 2px solid var(--card-border);
   border-radius: 1.2em;
   box-shadow: var(--shadow);
-  padding: 2em 1.5em 1.5em 1.5em;
+  padding: 2em 0 1.5em 0;
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   position: relative;
   overflow: hidden;
-  min-height: 450px;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,14 +170,12 @@ nav a {
 }
 
 .project-card-img-full {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
   width: 100%;
-  height: 100%;
+  height: 220px;
   object-fit: cover;
-  z-index: 1;
-  border-radius: 1.2em;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: 0;
 }
 
 .project-card .project-title,
@@ -215,17 +213,48 @@ nav a {
 
 /* Project tile image styling */
 .project-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-  background: var(--card-bg);
-  border-radius: 1em;
-  margin-bottom: 1em;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
   display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: none;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
   object-position: center;
 }
 
+.project-card img.project-card-img-full {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.project-card-img-wrap {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1em 1em 0 0;
+}
+.project-card-img-wrap .project-card-img-full {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: 0;
+}
 
 
 .project-card model-viewer {
@@ -275,4 +304,17 @@ footer {
   .section { padding: 2em 0 1em 0; }
   .section-title { font-size: 1.3rem; }
   .project-card { min-height: 220px; }
+} 
+
+.contact-label {
+  color: var(--accent2);
+  font-weight: 700;
+}
+.contact-value {
+  color: var(--text-primary);
+  font-weight: 400;
+}
+body[data-theme='light'] .contact-label,
+body[data-theme='light'] .contact-value {
+  color: #000 !important;
 } 

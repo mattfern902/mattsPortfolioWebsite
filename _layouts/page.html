@@ -9,9 +9,9 @@ layout: default
 <section class="section">
   <div class="about-section">
     <div style="display:flex;flex-direction:row;gap:1.2em;align-items:center;justify-content:center;margin:2em 0 1.5em 0;font-size:1.08em;">
-      <div style="color:var(--accent2);font-weight:700;">Personal: <span style="color:var(--text-primary);font-weight:400;">matt.fern902@gmail.com</span></div>
-      <div style="color:var(--accent2);font-weight:700;">Academic: <span style="color:var(--text-primary);font-weight:400;">mfernandez64@gatech.edu</span></div>
-      <div style="color:var(--accent2);font-weight:700;">Phone: <span style="color:var(--text-primary);font-weight:400;">+1 (813) 848-4069</span></div>
+      <div><span class="contact-label">Personal:</span> <span class="contact-value">matt.fern902@gmail.com</span></div>
+      <div><span class="contact-label">Academic:</span> <span class="contact-value">mfernandez64@gatech.edu</span></div>
+      <div><span class="contact-label">Phone:</span> <span class="contact-value">+1 (813) 848-4069</span></div>
     </div>
     <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:2em;">
       <div style="flex:2;min-width:260px;">
@@ -21,9 +21,9 @@ layout: default
           I love building things that move, think, and interact with the world in new ways.
         </p>
         <div style="margin:1.5em 0;display:flex;gap:1em;">
-          <a href="{{ site.baseurl }}/assets/CV.pdf" target="_blank" style="background:var(--accent2);color:#fff;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);transition:background 0.2s;">Download CV (PDF)</a>
-          <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" style="background:var(--accent2);color:#fff;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);transition:background 0.2s;">Download Resume (PDF)</a>
-          <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="background:var(--accent2);color:#fff;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);display:flex;align-items:center;gap:0.5em;transition:background 0.2s;">
+          <a href="{{ site.baseurl }}/assets/CV.pdf" target="_blank" style="background:#000 !important;color:#fff !important;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;">Download CV (PDF)</a>
+          <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" style="background:#000 !important;color:#fff !important;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;">Download Resume (PDF)</a>
+          <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="background:#000 !important;color:#fff !important;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:0.5em;transition:background 0.2s;">
             <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.599v5.597z'/></svg>
             LinkedIn
           </a>
@@ -45,6 +45,12 @@ layout: default
       <div style="flex:1;min-width:220px;text-align:center;">
         <img src="{{ site.baseurl }}/assets/profile-photo.jpg" alt="Profile" style="width:160px;height:160px;border-radius:50%;box-shadow:0 2px 16px var(--accent3);margin-bottom:1em;object-fit:cover;">
         <div style="color:#aaa;font-size:1.1em;">Atlanta, GA<br>Georgia Tech</div>
+        <div class="about-photo-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0.7em;margin-top:1.5em;justify-items:center;">
+          <img src="{{ site.baseurl }}/assets/aboutMePhotos/zion.jpg" alt="Zion National Park" style="width:90px;height:90px;object-fit:cover;border-radius:0.7em;box-shadow:0 2px 8px var(--accent2);">
+          <img src="{{ site.baseurl }}/assets/aboutMePhotos/yosemite.jpg" alt="Yosemite" style="width:90px;height:90px;object-fit:cover;border-radius:0.7em;box-shadow:0 2px 8px var(--accent2);">
+          <img src="{{ site.baseurl }}/assets/aboutMePhotos/joshuaTree.jpg" alt="Joshua Tree" style="width:90px;height:90px;object-fit:cover;border-radius:0.7em;box-shadow:0 2px 8px var(--accent2);">
+          <img src="{{ site.baseurl }}/assets/aboutMePhotos/arizona1.jpg" alt="Arizona" style="width:90px;height:90px;object-fit:cover;border-radius:0.7em;box-shadow:0 2px 8px var(--accent2);">
+        </div>
       </div>
     </div>
     <div class="section-title" style="margin-top:2.5em;">Experience Timeline</div>
@@ -104,3 +110,30 @@ layout: default
   </div>
 </section>
 {% endif %} 
+<style>
+@media (max-width: 700px) {
+  .about-photo-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5em !important;
+  }
+  .about-photo-grid img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+@media (max-width: 500px) {
+  .about-photo-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.5em !important;
+  }
+  .about-photo-grid img {
+    width: 100% !important;
+    height: 60vw !important;
+    max-width: 220px !important;
+    object-fit: cover !important;
+  }
+}
+body[data-theme='light'] .about-photo-grid img {
+  box-shadow: 0 2px 8px #ffd700 !important;
+}
+</style> 

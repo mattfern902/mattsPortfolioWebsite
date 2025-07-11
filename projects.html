@@ -9,7 +9,9 @@ title: Projects
     {% for project in sorted_projects %}
     <a href="{{ project.url }}" class="project-card" style="text-decoration:none;">
       {% if project.cover_image %}
-        <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" class="project-card-img-full">
+        <div class="project-card-img-wrap">
+          <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" class="project-card-img-full">
+        </div>
       {% endif %}
       <div class="project-title">{{ project.title }}</div>
       <div class="project-desc">{{ project.description }}</div>
