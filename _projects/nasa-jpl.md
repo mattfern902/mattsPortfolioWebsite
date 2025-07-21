@@ -7,9 +7,8 @@ tags:
   - Internship
   - Robotics
   - NASA
-order: 4
-start: 2023-01
-end: 2023-08
+order: 6
+display_dates: January 2023 - August 2023
 ---
 
 ## NASA Jet Propulsion Laboratory

@@ -7,9 +7,8 @@ tags:
   - Research
   - Robotics
   - Terrestrial
-order: 3
-start: 2021-08
-end: Present
+order: 5
+display_dates: August 2023 - January 2024
 ---
 
 ## Terrestrial Robotic Limbed and Limbless Locomotion

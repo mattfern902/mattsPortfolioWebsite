@@ -7,9 +7,8 @@ tags:
   - Team
   - Robotics
   - Mars Rover
-order: 6
-start: 2021-09
-end: 2024-07
+order: 7
+display_dates: September 2021 - July 2024
 ---
 
 ## URC Mars Rover Team (RoboJackets)

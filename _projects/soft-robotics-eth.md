@@ -10,14 +10,16 @@ tags:
   - Research
   - Robotics
   - Underwater
-order: 5
-start: 2025-05
-end: Present
+order: 1
+display_dates: May 2025 - Present
 ---
 
-## Soft Robotics Lab (ETH Zurich)
+## Soft Robotics Lab<br>(ETH Zurich)
 
-**Collaborators:** Matthew Fernandez, Prof. Robert Katzschmann
+display_dates: May 2025 - Present
+cover_image: /assets/soft-robotics-eth/sofiPic.jpg
+
+**Collaborators:** S. D. Gollob, A. Comoretto, Q. Yu, K. O. Adebajo, J. T. B. Overvelde, Kaitlyn Becker, Ellen Roche
 
 ### Key Contributions
 - Leading the design and testing of an autonomous untethered underwater fish platform for biological surveillance and swarm-based monitoring

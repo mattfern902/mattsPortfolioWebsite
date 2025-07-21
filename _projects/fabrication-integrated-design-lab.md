@@ -7,9 +7,8 @@ tags:
   - Research
   - Robotics
   - Propulsion
-order: 5
-start: 2024-06
-end: 2024-08
+order: 3
+display_dates: June 2024 - August 2024
 ---
 
 <div style="display:flex;gap:2em;flex-wrap:wrap;justify-content:center;margin-bottom:2em;">

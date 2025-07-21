@@ -7,9 +7,8 @@ tags:
   - Robotics
   - Aquatic
   - Research
-order: 2
-start: 2022
-end: 2023
+order: 4
+display_dates: September 2023 - May 2024
 ---
 
 ## AquaMILR Limbless Robot

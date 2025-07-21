@@ -12,8 +12,7 @@ tags:
   - Marine
   - AUV
 order: 8
-start: 2022-08
-end: 2022-12
+display_dates: August 2022 - December 2022
 ---
 
 ## Antarctic Marine Vehicle (Nekton AUV)

@@ -10,7 +10,8 @@ tags:
   - Robotics
   - Aquatic
   - ICRA 2025
-order: 1
+order: 2
+display_dates: December 2023 - Present
 ---
 
 ## AquaMILR+ Limbless Robot
@@ -34,26 +35,24 @@ A novel untethered limbless robot designed for complex aquatic terrain navigatio
   </div>
 </div>
 
-<div style="display:flex;gap:2em;justify-content:center;margin:2em 0;flex-wrap:wrap;align-items:flex-start;">
-  <!-- Full Assembly viewer removed -->
-  <div style="flex:1;min-width:220px;max-width:400px;">
-    <h3 style="text-align:center;color:var(--accent3);margin-bottom:0.5em;">Electronics Module</h3>
-    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/electronicsModuleC.glb" alt="A 3D model of AquaMILR+ Electronics Module" auto-rotate camera-controls style="width:100%;height:120px;background:#fff;border-radius:1em;"></model-viewer>
+<div style="display:flex;gap:4vw;justify-content:center;margin:2em 0;flex-wrap:nowrap;align-items:flex-start;max-width:1400px;margin-left:auto;margin-right:auto;">
+  <!-- Left column: GLBs stacked -->
+  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:300px;max-width:340px;">
+    <h3 style="text-align:center;color:var(--accent3);margin-bottom:0.3em;">Electronics Module</h3>
+    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/electronicsModuleC.glb" alt="A 3D model of AquaMILR+ Electronics Module" auto-rotate camera-controls style="width:300px;height:180px;background:#fff;border-radius:1em;display:block;margin:0 auto;"></model-viewer>
+    <h3 style="text-align:center;color:var(--accent3);margin:0.7em 0 0.3em 0;">Buoyancy Module</h3>
+    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/biggerNew_-_Copy.glb" alt="A 3D model of AquaMILR+ Buoyancy Module" auto-rotate camera-controls style="width:300px;height:180px;background:#fff;border-radius:1em;display:block;margin:0 auto;"></model-viewer>
   </div>
-  <div style="flex:1;min-width:220px;max-width:400px;">
-    <h3 style="text-align:center;color:var(--accent3);margin-bottom:0.5em;">Buoyancy Module</h3>
-    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/biggerNew_-_Copy.glb" alt="A 3D model of AquaMILR+ Buoyancy Module" auto-rotate camera-controls style="width:100%;height:120px;background:#fff;border-radius:1em;"></model-viewer>
+  <!-- Middle column: two videos stacked -->
+  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:340px;max-width:400px;">
+    <h3 style="text-align:center;color:var(--accent3);margin-bottom:0.3em;">Project Videos</h3>
+    <video src="{{ site.baseurl }}/assets/AquaMILR+/sideViewTLS.mp4" controls style="width:340px;height:150px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;"></video>
+    <video src="{{ site.baseurl }}/assets/AquaMILR+/in_assembly_animation.mp4" controls style="width:340px;height:150px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;"></video>
   </div>
-</div>
-
-<div style="display:flex;gap:2em;flex-wrap:wrap;justify-content:center;margin-bottom:2em;">
-  <div style="flex:1;min-width:220px;max-width:400px;text-align:center;">
-    <video src="{{ site.baseurl }}/assets/AquaMILR+/in_assembly_animation.mp4" controls style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;margin-bottom:0.5em;"></video>
-    <div style="color:#aaa;font-size:1em;">In-Assembly Animation (MP4)</div>
-  </div>
-  <div style="flex:1;min-width:220px;max-width:400px;text-align:center;">
-    <video src="{{ site.baseurl }}/assets/AquaMILR+/COMPRESSED-sideView.mp4" controls style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;margin-bottom:0.5em;"></video>
-    <div style="color:#aaa;font-size:1em;">Side View (MP4, Compressed)</div>
+  <!-- Right column: tall video -->
+  <div style="display:flex;flex-direction:column;align-items:center;min-width:340px;max-width:400px;">
+    <h3 style="text-align:center;color:var(--accent3);margin-bottom:0.3em;">Straight VB Video</h3>
+    <video src="{{ site.baseurl }}/assets/AquaMILR+/straightVB.mp4" controls style="width:340px;height:310px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;"></video>
   </div>
 </div>
 
