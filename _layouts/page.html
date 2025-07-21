@@ -56,6 +56,44 @@ layout: default
     from { transform: scale(0.7); opacity: 0.2; }
     to { transform: scale(1); opacity: 1; }
   }
+  .skill {
+    background: #23272a !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 1em !important;
+    padding: 0.4em 1.2em !important;
+    font-size: 1em !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+  }
+  .about-section a[href$='CV.pdf'],
+  .about-section a[href$='resume.pdf'],
+  .about-section a[href*='linkedin'] {
+    background: #23272a !important;
+    color: #fff !important;
+    border: none !important;
+    transition: transform 0.18s, background 0.2s;
+    will-change: transform;
+    display: inline-block;
+  }
+  .about-section a[href$='CV.pdf']:hover,
+  .about-section a[href$='resume.pdf']:hover,
+  .about-section a[href*='linkedin']:hover {
+    transform: scale(1.08);
+    background: #444 !important;
+  }
+  body[data-theme='light'] .about-section a[href$='CV.pdf'],
+  body[data-theme='light'] .about-section a[href$='resume.pdf'],
+  body[data-theme='light'] .about-section a[href*='linkedin'] {
+    background: #23272a !important;
+    color: #fff !important;
+    border: none !important;
+  }
+  body[data-theme='light'] .about-section a[href$='CV.pdf']:hover,
+  body[data-theme='light'] .about-section a[href$='resume.pdf']:hover,
+  body[data-theme='light'] .about-section a[href*='linkedin']:hover {
+    background: #444 !important;
+  }
 </style>
 <div id="photo-modal" class="photo-modal-overlay" onclick="this.classList.remove('active')">
   <img id="photo-modal-img" class="photo-modal-img" src="" alt="Preview">
@@ -63,36 +101,36 @@ layout: default
 <section class="section">
   <div class="about-section">
     <div style="display:flex;flex-direction:row;gap:1.2em;align-items:center;justify-content:center;margin:2em 0 1.5em 0;font-size:1.08em;">
-      <div><span class="contact-label">Personal:</span> <span class="contact-value">matt.fern902@gmail.com</span></div>
-      <div><span class="contact-label">Academic:</span> <span class="contact-value">mfernandez64@gatech.edu</span></div>
-      <div><span class="contact-label">Phone:</span> <span class="contact-value">+1 (813) 848-4069</span></div>
+      <div><span class="contact-label" style="font-weight:700;">Personal:</span> <span class="contact-value">matt.fern902@gmail.com</span></div>
+      <div><span class="contact-label" style="font-weight:700;">Academic:</span> <span class="contact-value">mfernandez64@gatech.edu</span></div>
+      <div><span class="contact-label" style="font-weight:700;">Phone:</span> <span class="contact-value">+1 (813) 848-4069</span></div>
     </div>
     <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:2em;">
       <div style="flex:2;min-width:260px;">
-        <h1 style="margin-top:0;">About Me</h1>
+        <h1 style="margin-top:0;color:#00ffd0;">About Me</h1>
         <p style="font-size:1.2em;line-height:1.6;">
           Hi, I'm Matthew Fernandez, a passionate engineer and researcher specializing in robotics, mechanical design, and creative problem solving. I thrive at the intersection of mechanical intelligence, robotics, and real-world impact. My work spans aquatic and terrestrial robots, soft robotics, and advanced actuation systems.<br><br>
           I love building things that move, think, and interact with the world in new ways.
         </p>
         <div style="margin:1.5em 0;display:flex;gap:1em;">
-          <a href="{{ site.baseurl }}/assets/CV.pdf" target="_blank" style="background:#000 !important;color:#fff !important;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;">Download CV (PDF)</a>
-          <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" style="background:#000 !important;color:#fff !important;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;">Download Resume (PDF)</a>
-          <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="background:#000 !important;color:#fff !important;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:0.5em;transition:background 0.2s;">
+          <a href="{{ site.baseurl }}/assets/CV.pdf" target="_blank" style="padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;">Download CV (PDF)</a>
+          <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" style="padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;">Download Resume (PDF)</a>
+          <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:0.5em;transition:background 0.2s;border:none;">
             <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.599v5.597z'/></svg>
             LinkedIn
           </a>
         </div>
-        <div class="section-title" style="margin-top:2em;">Skills</div>
+        <div class="section-title" style="margin-top:2em;color:#00ffd0;" id="skills-title">Skills</div>
         <div class="skills-list">
-          <span class="skill">Python</span>
-          <span class="skill">C++</span>
-          <span class="skill">MATLAB</span>
-          <span class="skill">ROS</span>
-          <span class="skill">SolidWorks</span>
-          <span class="skill">3D Printing</span>
-          <span class="skill">Arduino</span>
-          <span class="skill">AutoCAD</span>
-          <span class="skill">Fusion 360</span>
+          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">Python</span>
+          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">C++</span>
+          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">MATLAB</span>
+          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">ROS</span>
+          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">SolidWorks</span>
+          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">3D Printing</span>
+          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">Arduino</span>
+          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">AutoCAD</span>
+          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">Fusion 360</span>
         </div>
       </div>
       <div style="flex:1;min-width:220px;text-align:center;">
@@ -106,8 +144,8 @@ layout: default
         </div>
       </div>
     </div>
-    <div class="section-title" style="margin-top:2.5em;">Experience Timeline</div>
-    <ul style="font-size:1.1em;line-height:1.7;color:#e0e0e0;">
+    <div class="section-title" style="margin-top:2.5em;color:#00ffd0;">Experience Timeline</div>
+    <ul style="font-size:1.1em;line-height:1.7;color:#fff;">
       <li><b>2025 (expected):</b> B.S. Mechanical Engineering, Robotics Minor, Georgia Tech</li>
       <li><b>2024–Present:</b> Researcher, Complex Rheology and Biomechanics Lab (Robotics, Georgia Tech)</li>
       <li><b>2024:</b> Fabrication Integrated Design Lab, MIT (Propellant-powered robots)</li>
@@ -116,29 +154,32 @@ layout: default
       <li><b>2022:</b> Procter & Gamble, Manufacturing Process Engineering Intern</li>
       <li><b>2021–2024:</b> URC Mars Rover Team, Mechanical Lead</li>
     </ul>
-    <div class="section-title" style="margin-top:2.5em;">Awards & Honors</div>
-    <ul style="font-size:1.1em;line-height:1.7;color:#e0e0e0;">
-      <li>ThinkSwiss Scholar</li>
-      <li>Astronaut Scholar</li>
-      <li>Presidents Undergraduate Research Award</li>
-      <li>Goldbold Scholar</li>
-      <li>Valedictorian</li>
+    <div class="section-title" style="margin-top:2.5em;color:#00ffd0;">Awards & Honors</div>
+    <ul style="font-size:1.1em;line-height:1.7;color:#fff;">
+      <li><b>ThinkSwiss Scholar:</b> 1 of 25 students selected internationally as a student researcher at a Swiss Institute</li>
+      <li><b>Astronaut Scholar (ASF):</b> 1 of 71 students nationwide for a merit-based research scholarship<br>Selected as 1 of 2 Georgia Tech seats for the award</li>
+      <li><b>Presidents Undergraduate Research Award (Georgia Tech):</b> 1 of 114 students chosen for project funding</li>
+      <li><b>Godbold Scholar (Georgia Tech – Merit):</b> 1 of 8 students in the Southeast selected for a full scholarship</li>
+      <li><b>Provost Scholar (Georgia Tech – Merit):</b> Top 1% of students selected for a waived tuition cost</li>
+      <li><b>Intelligent Ground Vehicle Competition 2022:</b> Ranked 3rd globally in autonomous navigation competition</li>
+      <li><b>MATE Marine Robotics Competition 2021:</b> Ranked 3rd globally in underwater ranger class<br>1st place technical documentation and presentation; published in the Journal of Ocean Technology</li>
+      <li><b>Valedictorian (High School):</b> Highest GPA in class of 150 students (Unweighted 4.00/4.00)</li>
     </ul>
-    <div class="section-title" style="margin-top:2.5em;">Publications & Presentations</div>
-    <div style="background:var(--bg-secondary);padding:2em 1.5em;border-radius:1em;box-shadow:0 2px 16px var(--accent3);margin-bottom:2em;">
-      <h3 style="color:var(--accent3);margin-top:0;">Patents</h3>
-      <ul style="color:var(--text-primary);">
+    <div class="section-title" style="margin-top:2.5em;color:#00ffd0;">Publications & Presentations</div>
+    <div style="padding:2em 1.5em 0 1.5em;margin-bottom:2em;">
+      <h3 style="color:#00ffd0;margin-top:0;">Patents</h3>
+      <ul style="color:#e0e0e0;">
         <li><b>M. Fernandez</b>, T. Wang, D. I. Goldman. Compact buoyancy control assembly for underwater robotic systems or equipment (<i>filed patent application 2024</i>)</li>
       </ul>
-      <h3 style="color:var(--accent3);">Peer-Reviewed Publications</h3>
-      <ul style="color:var(--text-primary);">
+      <h3 style="color:#00ffd0;">Peer-Reviewed Publications</h3>
+      <ul style="color:#e0e0e0;">
         <li><b>M. Fernandez</b>, T. Wang, G. Tunnicliffe, D. Dortilus, P. Gunnarson, J.O. Dabiri, D. I. Goldman. AquaMILR+: Design of an untethered limbless robot for complex aquatic terrain navigation. (<i>accepted ICRA 2025</i>)</li>
         <li>S. D. Gollob, A. Comoretto, Q. Yu, <b>M. Fernandez</b>, K. O. Adebajo, J. T. B. Overvelde, K. Becker, E. Roche. An Actuator-Scale, Pressure-Amplifying, Monopropellant Engine for Untethered Pneumatic Systems (<i>accepted RoboSoft 2025</i>)</li>
         <li>T. Wang, N. Mankame, <b>M. Fernandez</b>, V. H. Kojuoharov, D. I. Goldman. AquaMILR: Mechanical intelligence simplifies control of undulatory robots in cluttered fluid environments (<i>accepted ICRA 2025</i>)</li>
         <li>V. H. Kojuoharov, T. Wang, <b>M. Fernandez</b>, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. <i>IEEE International Conference on Robotics and Automation (ICRA), 2024</i>.</li>
       </ul>
-      <h3 style="color:var(--accent3);">Conference Abstracts</h3>
-      <ul style="color:var(--text-primary);">
+      <h3 style="color:#00ffd0;">Conference Abstracts</h3>
+      <ul style="color:#e0e0e0;">
         <li><b>M. Fernandez</b>, T. Wang, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Design of an untethered limbless robot for aquatic locomotion in complex environments. <i>American Physical Society Meeting, March 2025</i>.</li>
         <li>T. Wang, <b>M. Fernandez</b>, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Mechanical and computational intelligence enable agile and robust limbless robotic locomotion in complex aquatic environments. <i>American Physical Society Meeting, March 2025</i>.</li>
         <li><b>M. Fernandez</b>, T. Wang, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Design of an untethered underwater limbless robot for complex aquatic terrain navigation. <i>SICB Annual Meeting, January 2025</i>.</li>
@@ -146,8 +187,8 @@ layout: default
         <li>N. Mankame, T. Wang, <b>M. Fernandez</b>, C. Pierce, D. I. Goldman. Mechanical intelligence aids limbless locomotion in cluttered aquatic environments. <i>American Physical Society Meeting, March 2024</i>.</li>
         <li>V. H. Kojuoharov, T. Wang, <b>M. Fernandez</b>, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. <i>American Physical Society Meeting, March 2024</i>.</li>
       </ul>
-      <h3 style="color:var(--accent3);">Presentations</h3>
-      <ul style="color:var(--text-primary);">
+      <h3 style="color:#00ffd0;">Presentations</h3>
+      <ul style="color:#e0e0e0;">
         <li>Design of an untethered limbless robot for complex aquatic terrain navigation. <i>IEEE International Conference on Robotics and Automation (ICRA), 2025</i>.</li>
         <li>Design of an untethered limbless robot for aquatic locomotion in complex environments. <i>American Physical Society Meeting, March 2025</i>.</li>
         <li>Mechanically intelligent undulatory robotic locomotion in complex aquatic environments. <i>College of Science Undergraduate Research Showcase, February 2025</i>.</li>
@@ -178,6 +219,62 @@ layout: default
   modal.addEventListener('click', function() {
     modal.classList.remove('active');
   });
+
+  // Change stimulus text (Low, Medium, Party) to white if present
+  var stimulusLabel = document.getElementById('stimulus-label');
+  if(stimulusLabel) {
+    if(document.body.getAttribute('data-theme') === 'light') {
+      stimulusLabel.style.color = '#1e3a5c';
+    } else {
+      stimulusLabel.style.color = '#fff';
+    }
+  }
+
+  // Light mode: make all teal text black, but keep Awards & Honors title black in light mode and teal in dark mode
+  if(document.body.getAttribute('data-theme') === 'light') {
+    var tealEls = document.querySelectorAll('[style*="#00ffd0"]');
+    tealEls.forEach(function(el) {
+      // Only change to black if not the Awards & Honors title
+      if (!el.textContent.includes('Awards & Honors')) {
+        el.style.color = '#23272a';
+      }
+    });
+    var awardsTitle = Array.from(document.querySelectorAll('.section-title')).find(el => el.textContent.includes('Awards & Honors'));
+    if (awardsTitle) awardsTitle.style.color = '#23272a';
+  } else {
+    var awardsTitle = Array.from(document.querySelectorAll('.section-title')).find(el => el.textContent.includes('Awards & Honors'));
+    if (awardsTitle) awardsTitle.style.color = '#00ffd0';
+  }
+
+  // Light mode: make all skill text black
+  if(document.body.getAttribute('data-theme') === 'light') {
+    var skillEls = document.querySelectorAll('.skill');
+    skillEls.forEach(function(el) {
+      el.style.background = '#23272a';
+      el.style.color = '#fff';
+      el.style.border = 'none';
+    });
+    var sectionTitles = document.querySelectorAll('.section-title');
+    sectionTitles.forEach(function(el) {
+      el.style.color = '#23272a';
+    });
+    var downloadBtns = document.querySelectorAll('a[href$="CV.pdf"],a[href$="resume.pdf"],a[href*="linkedin"]');
+    downloadBtns.forEach(function(el) {
+      el.style.background = '#23272a';
+      el.style.color = '#fff';
+      el.style.border = 'none';
+    });
+    // Remove publications block color/glow
+    var pubsBlock = document.querySelector('div[style*="background:var(--bg-secondary)"]');
+    if (pubsBlock) {
+      pubsBlock.style.background = '#fff';
+      pubsBlock.style.boxShadow = 'none';
+    }
+    var pubsHeadings = pubsBlock ? pubsBlock.querySelectorAll('h3') : [];
+    pubsHeadings.forEach(function(h) { h.style.color = '#23272a'; });
+    var pubsLists = pubsBlock ? pubsBlock.querySelectorAll('ul') : [];
+    pubsLists.forEach(function(ul) { ul.style.color = '#23272a'; });
+  }
 })();
 </script>
 {% endif %}
@@ -206,5 +303,31 @@ layout: default
 }
 body[data-theme='light'] .about-photo-grid img {
   box-shadow: none !important;
+}
+body[data-theme='light'] .about-section a[href$='CV.pdf'],
+body[data-theme='light'] .about-section a[href$='resume.pdf'],
+body[data-theme='light'] .about-section a[href*='linkedin'] {
+  background: #23272a !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+body[data-theme='light'] .about-section a[href$='CV.pdf']:hover,
+body[data-theme='light'] .about-section a[href$='resume.pdf']:hover,
+body[data-theme='light'] .about-section a[href*='linkedin']:hover {
+  background: #444 !important;
+}
+body:not([data-theme='light']) .about-section a[href$='CV.pdf'],
+body:not([data-theme='light']) .about-section a[href$='resume.pdf'],
+body:not([data-theme='light']) .about-section a[href*='linkedin'] {
+  background: #fff !important;
+  color: #23272a !important;
+  border: none !important;
+  box-shadow: 0 2px 8px #e0e0e0 !important;
+}
+body:not([data-theme='light']) .about-section a[href$='CV.pdf']:hover,
+body:not([data-theme='light']) .about-section a[href$='resume.pdf']:hover,
+body:not([data-theme='light']) .about-section a[href*='linkedin']:hover {
+  background: #e0e0e0 !important;
 }
 </style> 

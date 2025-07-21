@@ -20,39 +20,39 @@ display_dates: December 2023 - Present
 
 A novel untethered limbless robot designed for complex aquatic terrain navigation. This project was accepted to ICRA 2025 and features advanced mechanical intelligence for robust movement in challenging environments.
 
-<div style="display:flex;gap:3em;justify-content:space-between;margin:2em 0;flex-wrap:nowrap;align-items:flex-end;">
+<div style="display:flex;gap:1.5em;justify-content:center;margin:2em 2vw;flex-wrap:nowrap;align-items:flex-end;">
   <div style="text-align:center;">
-    <img src="{{ site.baseurl }}/assets/aquamilr/ogblackSnakeOpenWater.jpg" alt="AquaMILR+ in open water" style="height:260px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
+    <img src="{{ site.baseurl }}/assets/aquamilr/ogblackSnakeOpenWater.jpg" alt="AquaMILR+ in open water" style="height:300px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
     <div style="color:#aaa;font-size:1em;">Rendering of AquaMILR+ in the open ocean</div>
   </div>
   <div style="text-align:center;">
-    <img src="{{ site.baseurl }}/assets/aquamilr/aquaMILR_CAD_pic.jpg" alt="AquaMILR+ CAD design" style="height:260px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
+    <img src="{{ site.baseurl }}/assets/aquamilr/aquaMILR_CAD_pic.jpg" alt="AquaMILR+ CAD design" style="height:300px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
     <div style="color:#aaa;font-size:1em;">CAD Design</div>
   </div>
   <div style="text-align:center;">
-    <img src="{{ site.baseurl }}/assets/AquaMILR+/AquaMILR+Pic.jpg" alt="AquaMILR+ assembly" style="height:260px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
+    <img src="{{ site.baseurl }}/assets/AquaMILR+/AquaMILR+Pic.jpg" alt="AquaMILR+ assembly" style="height:300px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
     <div style="color:#aaa;font-size:1em;">Full Assembly</div>
   </div>
 </div>
 
-<div style="display:flex;gap:4vw;justify-content:center;margin:2em 0;flex-wrap:nowrap;align-items:flex-start;max-width:1400px;margin-left:auto;margin-right:auto;">
+<div style="display:flex;gap:2vw;justify-content:center;margin:2em 0;flex-wrap:nowrap;align-items:flex-start;max-width:1400px;margin-left:auto;margin-right:auto;min-height:60vh;">
   <!-- Left column: GLBs stacked -->
-  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:300px;max-width:340px;">
-    <h3 style="text-align:center;color:var(--accent3);margin-bottom:0.3em;">Electronics Module</h3>
-    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/electronicsModuleC.glb" alt="A 3D model of AquaMILR+ Electronics Module" auto-rotate camera-controls style="width:300px;height:180px;background:#fff;border-radius:1em;display:block;margin:0 auto;"></model-viewer>
-    <h3 style="text-align:center;color:var(--accent3);margin:0.7em 0 0.3em 0;">Buoyancy Module</h3>
-    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/biggerNew_-_Copy.glb" alt="A 3D model of AquaMILR+ Buoyancy Module" auto-rotate camera-controls style="width:300px;height:180px;background:#fff;border-radius:1em;display:block;margin:0 auto;"></model-viewer>
+  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:380px;max-width:480px;width:28vw;">
+    <h3 style="text-align:center;color:#00ffd0;margin:0.7em 0 0.3em 0;">Electronics Module</h3>
+    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/electronicsModuleC.glb" alt="A 3D model of AquaMILR+ Electronics Module" auto-rotate camera-controls style="width:100%;max-width:420px;height:340px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;"></model-viewer>
+    <h3 style="text-align:center;color:#00ffd0;margin:0.7em 0 0.3em 0;">Buoyancy Module</h3>
+    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/biggerNew_-_Copy.glb" alt="A 3D model of AquaMILR+ Buoyancy Module" auto-rotate camera-controls style="width:100%;max-width:420px;height:340px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;"></model-viewer>
   </div>
   <!-- Middle column: two videos stacked -->
-  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:340px;max-width:400px;">
-    <h3 style="text-align:center;color:var(--accent3);margin-bottom:0.3em;">Project Videos</h3>
-    <video src="{{ site.baseurl }}/assets/AquaMILR+/sideViewTLS.mp4" controls style="width:340px;height:150px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;"></video>
-    <video src="{{ site.baseurl }}/assets/AquaMILR+/in_assembly_animation.mp4" controls style="width:340px;height:150px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;"></video>
+  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:380px;max-width:480px;width:28vw;">
+    <h3 style="text-align:center;color:#00ffd0;margin:0.7em 0 0.3em 0;">Depth Control Animations</h3>
+    <video src="{{ site.baseurl }}/assets/AquaMILR+/sideViewTLS.mp4" controls style="width:100%;max-width:420px;height:220px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;object-fit:cover;"></video>
+    <video src="{{ site.baseurl }}/assets/AquaMILR+/in_assembly_animation.mp4" controls style="width:100%;max-width:420px;height:340px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;object-fit:cover;"></video>
   </div>
   <!-- Right column: tall video -->
-  <div style="display:flex;flex-direction:column;align-items:center;min-width:340px;max-width:400px;">
-    <h3 style="text-align:center;color:var(--accent3);margin-bottom:0.3em;">Straight VB Video</h3>
-    <video src="{{ site.baseurl }}/assets/AquaMILR+/straightVB.mp4" controls style="width:340px;height:310px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;"></video>
+  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:380px;max-width:480px;width:28vw;">
+    <h3 style="text-align:center;color:#00ffd0;margin:0.7em 0 0.3em 0;">Demo Video</h3>
+    <video src="{{ site.baseurl }}/assets/AquaMILR+/straightVB.mp4" controls style="width:100%;max-width:420px;height:860px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;object-fit:cover;"></video>
   </div>
 </div>
 

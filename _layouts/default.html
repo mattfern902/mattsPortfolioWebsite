@@ -252,22 +252,24 @@
         <a href="{{ site.baseurl }}/projects.html">Projects</a>
         <a href="{{ site.baseurl }}/about">About Me</a>
       </nav>
-      <div id="stimulus-dots-container" style="display:flex;flex-direction:column;align-items:center;gap:0.3em;font-size:1em;">
-        <div style="display:flex;align-items:center;gap:1.2em;position:relative;">
-          <div id="stimulus-dot-1" style="width:18px;height:18px;border-radius:50%;background:var(--card-border);box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:background 0.2s;"></div>
-          <div id="stimulus-dot-2" style="width:18px;height:18px;border-radius:50%;background:var(--card-border);box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:background 0.2s;"></div>
-          <div id="stimulus-dot-3" style="width:18px;height:18px;border-radius:50%;background:var(--card-border);box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:background 0.2s;"></div>
-          <input type="range" id="stimulus-level" min="1" max="3" step="1" value="1" style="opacity:0;width:100%;height:24px;position:absolute;left:0;top:0;cursor:pointer;z-index:2;">
+      <div style="display:flex;align-items:center;gap:2.2em;">
+        <div id="stimulus-dots-container" style="display:flex;flex-direction:column;align-items:center;gap:0.3em;font-size:1em;">
+          <div style="display:flex;align-items:center;gap:1.2em;position:relative;">
+            <div id="stimulus-dot-1" style="width:18px;height:18px;border-radius:50%;background:var(--card-border);box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:background 0.2s;"></div>
+            <div id="stimulus-dot-2" style="width:18px;height:18px;border-radius:50%;background:var(--card-border);box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:background 0.2s;"></div>
+            <div id="stimulus-dot-3" style="width:18px;height:18px;border-radius:50%;background:var(--card-border);box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:background 0.2s;"></div>
+            <input type="range" id="stimulus-level" min="1" max="3" step="1" value="1" style="opacity:0;width:100%;height:24px;position:absolute;left:0;top:0;cursor:pointer;z-index:2;">
+          </div>
+          <label for="stimulus-level" style="color:#00ffd0;font-weight:700;margin-top:0.35em;text-align:center;white-space:nowrap;">Stimulus Level</label>
+          <span id="stimulus-label" style="color:#00ffd0;font-weight:700;display:inline-block;width:70px;text-align:center;margin-top:0.2em;">Low</span>
         </div>
-        <label for="stimulus-level" style="color:var(--accent3);font-weight:700;margin-top:0.5em;text-align:center;">Stimulus Level</label>
-        <span id="stimulus-label" style="color:var(--accent2);font-weight:700;display:inline-block;width:70px;text-align:center;margin-top:0.2em;">Low</span>
-      </div>
-      <div id="theme-toggle-slider" style="display:flex;align-items:center;gap:0.7em;font-size:1em;">
-        <label for="theme-toggle" style="color:var(--accent3);font-weight:700;">Theme</label>
-        <div style="position:relative;display:inline-block;width:54px;height:28px;">
-          <input type="checkbox" id="theme-toggle" style="opacity:0;width:54px;height:28px;position:absolute;left:0;top:0;cursor:pointer;z-index:2;">
-          <span id="theme-toggle-slider-track" style="background:#222;border-radius:16px;position:absolute;top:0;left:0;width:54px;height:28px;transition:background 0.3s;"></span>
-          <span id="theme-toggle-slider-handle" style="position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;font-size:1.1em;transition:left 0.3s,background 0.3s;"></span>
+        <div id="theme-toggle-slider" style="display:flex;align-items:center;gap:0.7em;font-size:1em;">
+          <label for="theme-toggle" style="color:#00ffd0;font-weight:700;">Theme</label>
+          <div style="position:relative;display:inline-block;width:54px;height:28px;">
+            <input type="checkbox" id="theme-toggle" style="opacity:0;width:54px;height:28px;position:absolute;left:0;top:0;cursor:pointer;z-index:2;">
+            <span id="theme-toggle-slider-track" style="background:#222;border-radius:16px;position:absolute;top:0;left:0;width:54px;height:28px;transition:background 0.3s;"></span>
+            <span id="theme-toggle-slider-handle" style="position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;font-size:1.1em;transition:left 0.3s,background 0.3s;"></span>
+          </div>
         </div>
       </div>
     </div>
@@ -422,13 +424,13 @@
       
       // Update labels
       const stimulusLabel = document.getElementById('stimulus-label');
-      if (stimulusLabel) stimulusLabel.style.color = 'var(--accent2)';
+      if (stimulusLabel) stimulusLabel.style.color = '#00ffd0';
       
       const themeLabel = document.querySelector('label[for="theme-toggle"]');
-      if (themeLabel) themeLabel.style.color = 'var(--accent3)';
+      if (themeLabel) themeLabel.style.color = '#00ffd0';
       
       const stimulusTitleLabel = document.querySelector('label[for="stimulus-level"]');
-      if (stimulusTitleLabel) stimulusTitleLabel.style.color = 'var(--accent3)';
+      if (stimulusTitleLabel) stimulusTitleLabel.style.color = '#00ffd0';
       
     } else {
       // Dark theme colors (restore original dark gray theme)
@@ -472,13 +474,13 @@
       
       // Update labels
       const stimulusLabel = document.getElementById('stimulus-label');
-      if (stimulusLabel) stimulusLabel.style.color = 'var(--accent2)';
+      if (stimulusLabel) stimulusLabel.style.color = '#00ffd0';
       
       const themeLabel = document.querySelector('label[for="theme-toggle"]');
-      if (themeLabel) themeLabel.style.color = 'var(--accent3)';
+      if (themeLabel) themeLabel.style.color = '#00ffd0';
       
       const stimulusTitleLabel = document.querySelector('label[for="stimulus-level"]');
-      if (stimulusTitleLabel) stimulusTitleLabel.style.color = 'var(--accent3)';
+      if (stimulusTitleLabel) stimulusTitleLabel.style.color = '#00ffd0';
     }
   }
   
@@ -551,6 +553,49 @@
   observer.observe(document.body, { attributes: true, attributeFilter: ['data-moving-parts'] });
   // Initial state
   showBouncingRobots(document.body.getAttribute('data-moving-parts') === '3');
+})();
+</script>
+<script>
+(function() {
+  // Ensure stimulus label is white in dark mode and black in light mode
+  function updateStimulusLabelColor() {
+    var stimulusLabel = document.getElementById('stimulus-label');
+    if (stimulusLabel) {
+      if (document.body.getAttribute('data-theme') === 'light') {
+        stimulusLabel.style.color = '#23272a';
+      } else {
+        stimulusLabel.style.color = '#fff';
+      }
+    }
+    var themeLabel = document.querySelector('label[for="theme-toggle"]');
+    if (themeLabel) {
+      if (document.body.getAttribute('data-theme') === 'light') {
+        themeLabel.style.color = '#23272a';
+      } else {
+        themeLabel.style.color = '#00ffd0';
+      }
+    }
+    var stimulusTitleLabel = document.querySelector('label[for="stimulus-level"]');
+    if (stimulusTitleLabel) {
+      if (document.body.getAttribute('data-theme') === 'light') {
+        stimulusTitleLabel.style.color = '#23272a';
+      } else {
+        stimulusTitleLabel.style.color = '#00ffd0';
+      }
+    }
+  }
+  // Initial set
+  updateStimulusLabelColor();
+  // Update on theme change
+  var themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('change', updateStimulusLabelColor);
+  }
+  // Also update when the label text changes (e.g., on slider input)
+  var range = document.getElementById('stimulus-level');
+  if (range) {
+    range.addEventListener('input', updateStimulusLabelColor);
+  }
 })();
 </script>
 </body>

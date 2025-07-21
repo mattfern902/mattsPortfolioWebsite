@@ -33,7 +33,7 @@ body[data-moving-parts="3"] #bouncing-robot { display: block !important; }
 body[data-moving-parts="3"] #bouncing-robot.party-mode { display: none !important; }
 :root {
   --accent: #00ffd0;
-  --accent2: #ff4c60;
+  --accent2: #23272a;
   --accent3: #1e90ff;
   --card-bg: #23272a;
   --card-border: #2c2f33;
@@ -242,7 +242,7 @@ body[data-theme="light"][data-moving-parts="3"]::before {
 }
 body[data-theme="light"]:root {
   --accent: #2bbbad;
-  --accent2: #ffb86b;
+  --accent2: #23272a;
   --accent3: #3a8dde;
   --card-bg: #fdfaf6;
   --card-border: #e3e6ed;
