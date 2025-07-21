@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/theme.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/{{ site.data.theme.portfolio_theme }}/theme.css">
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700,800&display=swap" rel="stylesheet">
   <style>
     /* Smooth theme transitions - only colors, not spacing or fonts */
@@ -235,7 +235,6 @@
     }
   </style>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  {% if site.feed %}<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.feed.path | default: '/feed.xml' }}">{% endif %}
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYQ5QY80Y8"></script>
   <script>
@@ -252,7 +251,6 @@
         <a href="{{ site.baseurl }}/">Home</a>
         <a href="{{ site.baseurl }}/projects.html">Projects</a>
         <a href="{{ site.baseurl }}/about">About Me</a>
-        <a href="{{ site.baseurl }}/contact">Contact</a>
       </nav>
       <div id="stimulus-dots-container" style="display:flex;flex-direction:column;align-items:center;gap:0.3em;font-size:1em;">
         <div style="display:flex;align-items:center;gap:1.2em;position:relative;">

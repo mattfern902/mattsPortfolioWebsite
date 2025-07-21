@@ -7,22 +7,37 @@ title: Projects
   <div class="projects-grid">
     {% assign sorted_projects = site.projects | sort: "order" %}
     {% for project in sorted_projects %}
-    <a href="{{ project.url }}" class="project-card" style="text-decoration:none;">
-      {% if project.cover_image %}
-        <div class="project-card-img-wrap">
-          <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" class="project-card-img-full">
+      {% if project.title == "Soft Robotics Lab (ETH Zurich)" %}
+        <div class="project-card" style="text-decoration:none;cursor:not-allowed;opacity:0.7;pointer-events:none;">
+          {% if project.cover_image %}
+            <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" class="project-card-img-full">
+          {% endif %}
+          <div class="project-title">{{ project.title }}</div>
+          <div class="project-desc">{{ project.description }}</div>
+          {% if project.start or project.end %}
+          <div style="margin-top:0.7em;font-size:0.95em;color:#aaa;">
+            <b>Dates:</b>
+            {% if project.start %}{{ project.start }}{% endif %}
+            {% if project.end %}–{{ project.end }}{% endif %}
+          </div>
+          {% endif %}
         </div>
+      {% else %}
+        <a href="{{ site.baseurl }}{{ project.url }}" class="project-card" style="text-decoration:none;">
+          {% if project.cover_image %}
+            <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" class="project-card-img-full">
+          {% endif %}
+          <div class="project-title">{{ project.title }}</div>
+          <div class="project-desc">{{ project.description }}</div>
+          {% if project.start or project.end %}
+          <div style="margin-top:0.7em;font-size:0.95em;color:#aaa;">
+            <b>Dates:</b>
+            {% if project.start %}{{ project.start }}{% endif %}
+            {% if project.end %}–{{ project.end }}{% endif %}
+          </div>
+          {% endif %}
+        </a>
       {% endif %}
-      <div class="project-title">{{ project.title }}</div>
-      <div class="project-desc">{{ project.description }}</div>
-      {% if project.start or project.end %}
-      <div style="margin-top:0.7em;font-size:0.95em;color:#aaa;">
-        <b>Dates:</b>
-        {% if project.start %}{{ project.start }}{% endif %}
-        {% if project.end %}–{{ project.end }}{% endif %}
-      </div>
-      {% endif %}
-    </a>
     {% endfor %}
   </div>
 </section> 
