@@ -36,7 +36,7 @@ Focused on the design, integration, and experimental testing of sidewinding snak
 </div>
 
 <div style="margin-bottom:2em;text-align:center;">
-  <a href="https://ieeexplore.ieee.org/document/10611625" target="_blank" style="display:inline-block;background:var(--accent2);color:#fff;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);font-size:1.15em;transition:background 0.2s;">View Published Paper on IEEE Xplore</a>
+  <a href="https://ieeexplore.ieee.org/document/10611625" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px #fff;font-size:1.15em;transition:background 0.2s;">View Published Paper on IEEE Xplore</a>
   <div style="color:#aaa;font-size:1.1em;margin-top:0.7em;">Anisotropic body compliance facilitates robotic sidewinding in complex environments</div>
 </div>
 

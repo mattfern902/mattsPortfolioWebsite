@@ -3,39 +3,84 @@ layout: default
 title: Projects
 ---
 <section class="section">
-  <div class="section-title" style="color:#00ffd0;">All Projects</div>
-  <div class="projects-grid">
-    {% assign sorted_projects = site.projects | sort: "order" %}
-    {% for project in sorted_projects %}
-      {% if project.title == "Soft Fish (ETHZ SRL)" %}
-        <div class="project-card" style="text-decoration:none;cursor:not-allowed;opacity:0.7;pointer-events:none;padding:0;min-height:480px;">
+  <div style="display:flex;gap:0;justify-content:center;align-items:stretch;flex-wrap:wrap;min-height:100vh;position:relative;">
+    <!-- Vertical line absolutely positioned -->
+    <div style="position:absolute;left:50%;top:0;bottom:0;transform:translateX(-50%);width:4px;background:linear-gradient(to bottom,#00ffd0 0%,#00bfae 20%,#111 50%,#00bfae 80%,#00ffd0 100%);border-radius:2px;z-index:1;"></div>
+    <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-right:2em;">
+      <div class="section-title" style="color:#00ffd0;text-align:center;">Research Projects</div>
+      <div class="projects-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
+        {% assign research = site.projects | sort: "order" | slice: 0, 4 %}
+        {% for project in research %}
+        <a href="{{ site.baseurl }}{{ project.url }}" class="project-card" style="text-decoration:none;padding:0;height:370px;min-height:370px;max-height:370px;width:100%;display:flex;flex-direction:column;overflow:hidden;align-items:center;">
           {% if project.cover_image %}
-            <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" style="width:100%;height:260px;object-fit:cover;display:block;border-radius:1em 1em 0 0;margin:0;">
+            <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
           {% endif %}
-          <div style="height:0.5em;"></div>
-          <div class="project-title" style="margin-top:0.3em;">{{ project.title }}</div>
-          <div class="project-desc">{{ project.description }}</div>
+          <div style="flex:1 1 auto;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;">
+            <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">{{ project.title }}</div>
+            <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">{{ project.description }}</div>
+            {% if project.display_dates %}
+              <div style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> {{ project.display_dates }}</div>
+            {% endif %}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-left:2em;">
+      <div class="section-title" style="color:#00ffd0;text-align:center;">Professional & Project Teams</div>
+      <div class="projects-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
+        {% assign teams = site.projects | sort: "order" | slice: 4, 4 %}
+        {% for project in teams %}
+        {% assign title = project.title %}
+        {% if title == "NASA JPL Martian Manipulation" %}
+          {% assign title = "NASA JPL Martian Gripper" %}
+        {% endif %}
+        <a href="{{ site.baseurl }}{{ project.url }}" class="project-card" style="text-decoration:none;padding:0;height:370px;min-height:370px;max-height:370px;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;">
+          {% if project.cover_image %}
+            <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
+          {% endif %}
+          <div style="flex:1;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;">
+            <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">{{ title }}</div>
+            <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">{{ project.description }}</div>
+            {% if project.display_dates %}
+              <div style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> {{ project.display_dates }}</div>
+            {% endif %}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="section-title" style="color:#00ffd0;margin-top:1.2em;margin-bottom:0.5em;text-align:center;">Unreleased Projects</div>
+  <div class="projects-grid" style="display:flex;gap:2em;justify-content:center;">
+    <div style="max-width:400px;width:100%;">
+      <div class="project-card" style="text-decoration:none;padding:0;height:370px;min-height:370px;max-height:370px;width:100%;display:flex;flex-direction:column;overflow:hidden;align-items:center;opacity:0.7;pointer-events:none;">
+        <img src="{{ site.baseurl }}/assets/AquaMILR_Pro/proPic.jpg" alt="AquaMILR Pro" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
+        <div style="flex:1 1 auto;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;">
+          <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">AquaMILR Pro</div>
+          <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">Next-generation untethered limbless robot for advanced aquatic navigation.</div>
+          <div style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> October 2024-Present</div>
+        </div>
+      </div>
+    </div>
+    {% assign unreleased = site.projects | where: "restricted", true %}
+    {% for project in unreleased %}
+    <div style="max-width:400px;width:100%;">
+      <div class="project-card" style="text-decoration:none;padding:0;height:370px;min-height:370px;max-height:370px;width:100%;display:flex;flex-direction:column;overflow:hidden;align-items:center;opacity:0.7;pointer-events:none;">
+        {% if project.title == "Soft Fish (ETHZ SRL)" %}
+          <img src="{{ site.baseurl }}/assets/soft-robotics-eth/sofiPic.jpg" alt="Soft Fish" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
+        {% elsif project.cover_image %}
+          <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
+        {% endif %}
+        <div style="flex:1 1 auto;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;">
+          <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">{{ project.title }}</div>
+          <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">{{ project.description }}</div>
           {% if project.display_dates %}
-            <div style="margin-top:0.7em;font-size:0.95em;color:#aaa;">
-              <b>Dates:</b> {{ project.display_dates }}
-            </div>
+            <div style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> {{ project.display_dates }}</div>
           {% endif %}
         </div>
-      {% else %}
-        <a href="{{ site.baseurl }}{{ project.url }}" class="project-card" style="text-decoration:none;padding:0;min-height:480px;">
-          {% if project.cover_image %}
-            <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" style="width:100%;height:260px;object-fit:cover;display:block;border-radius:1em 1em 0 0;margin:0;">
-          {% endif %}
-          <div style="height:0.5em;"></div>
-          <div class="project-title" style="margin-top:0.3em;">{{ project.title }}</div>
-          <div class="project-desc">{{ project.description }}</div>
-          {% if project.display_dates %}
-            <div style="margin-top:0.7em;font-size:0.95em;color:#aaa;">
-              <b>Dates:</b> {{ project.display_dates }}
-            </div>
-          {% endif %}
-        </a>
-      {% endif %}
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section> 

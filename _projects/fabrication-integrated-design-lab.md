@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Monopropellant Soft Actuation
+title: Monopropellant Actuation
 cover_image: /assets/fabrication-integrated-design-lab/singleLegSetup.jpg
 description: Wireless control system for a propellant-powered oscillatory robot and hydrogen peroxide reaction chamber.
 tags:

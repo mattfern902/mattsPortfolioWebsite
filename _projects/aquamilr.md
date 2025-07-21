@@ -42,7 +42,7 @@ AquaMILR is an untethered limbless robot designed for agile navigation in comple
     <li>T. Wang, N. Mankame, <b>M. Fernandez</b>, V. H. Kojuoharov, D. I. Goldman. AquaMILR: Mechanical intelligence simplifies control of undulatory robots in cluttered fluid environments (<i>arXiv preprint</i>)</li>
   </ul>
   <div style="margin:1.5em 0 0.5em 0;text-align:center;">
-    <a href="https://arxiv.org/abs/2407.01733" target="_blank" style="display:inline-block;background:var(--accent2);color:#fff;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);font-size:1.15em;transition:background 0.2s;">View Paper on arXiv</a>
+    <a href="https://arxiv.org/abs/2407.01733" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px #fff;font-size:1.15em;transition:background 0.2s;">View Paper on arXiv</a>
   </div>
   <h3 style="color:var(--accent3);">Conference Abstracts</h3>
   <ul style="color:#e0e0e0;">

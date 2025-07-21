@@ -1,6 +1,6 @@
 ---
 layout: project
-title: NASA JPL Martian Manipulation
+title: NASA JPL Martian Gripper
 cover_image: /assets/nasa-jpl/SRH_coverImg.jpg
 description: Robotic Manipulation Intern for the Mars Sample Return mission.
 tags:
