@@ -35,24 +35,24 @@ A novel untethered limbless robot designed for complex aquatic terrain navigatio
   </div>
 </div>
 
-<div style="display:flex;gap:2vw;justify-content:center;margin:2em 0;flex-wrap:nowrap;align-items:flex-start;max-width:1400px;margin-left:auto;margin-right:auto;min-height:60vh;">
+<div style="display:flex;gap:1.2em;justify-content:flex-start;margin:2em 0 2em 2vw;flex-wrap:nowrap;align-items:flex-start;max-width:1400px;min-height:60vh;">
   <!-- Left column: GLBs stacked -->
-  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:380px;max-width:480px;width:28vw;">
+  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;width:420px;">
     <h3 style="text-align:center;color:#00ffd0;margin:0.7em 0 0.3em 0;">Electronics Module</h3>
-    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/electronicsModuleC.glb" alt="A 3D model of AquaMILR+ Electronics Module" auto-rotate camera-controls style="width:100%;max-width:420px;height:340px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;"></model-viewer>
+    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/electronicsModuleC.glb" alt="A 3D model of AquaMILR+ Electronics Module" auto-rotate camera-controls style="width:100%;max-width:420px;height:300px;margin:0 0 1em 0;display:block;background:#23272a;border-radius:1em;"></model-viewer>
     <h3 style="text-align:center;color:#00ffd0;margin:0.7em 0 0.3em 0;">Buoyancy Module</h3>
-    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/biggerNew_-_Copy.glb" alt="A 3D model of AquaMILR+ Buoyancy Module" auto-rotate camera-controls style="width:100%;max-width:420px;height:340px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;"></model-viewer>
+    <model-viewer src="{{ site.baseurl }}/assets/AquaMILR+/biggerNew_-_Copy.glb" alt="A 3D model of AquaMILR+ Buoyancy Module" auto-rotate camera-controls style="width:100%;max-width:420px;height:300px;margin:0 0 1em 0;display:block;background:#23272a;border-radius:1em;"></model-viewer>
   </div>
   <!-- Middle column: two videos stacked -->
-  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:380px;max-width:480px;width:28vw;">
+  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;width:420px;">
     <h3 style="text-align:center;color:#00ffd0;margin:0.7em 0 0.3em 0;">Depth Control Animations</h3>
-    <video src="{{ site.baseurl }}/assets/AquaMILR+/sideViewTLS.mp4" controls style="width:100%;max-width:420px;height:220px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;object-fit:cover;"></video>
-    <video src="{{ site.baseurl }}/assets/AquaMILR+/in_assembly_animation.mp4" controls style="width:100%;max-width:420px;height:340px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;object-fit:cover;"></video>
+    <video src="{{ site.baseurl }}/assets/AquaMILR+/sideViewTLS.mp4" controls style="width:100%;max-width:420px;height:180px;margin:0 0 1em 0;display:block;background:#23272a;border-radius:1em;object-fit:cover;"></video>
+    <video src="{{ site.baseurl }}/assets/AquaMILR+/in_assembly_animation.mp4" controls style="width:100%;max-width:420px;height:320px;margin:0 0 1em 0;display:block;background:#23272a;border-radius:1em;object-fit:cover;"></video>
   </div>
   <!-- Right column: tall video -->
-  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;min-width:380px;max-width:480px;width:28vw;">
+  <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;width:420px;">
     <h3 style="text-align:center;color:#00ffd0;margin:0.7em 0 0.3em 0;">Demo Video</h3>
-    <video src="{{ site.baseurl }}/assets/AquaMILR+/straightVB.mp4" controls style="width:100%;max-width:420px;height:860px;margin:0 auto 1em auto;display:block;background:#23272a;border-radius:1em;object-fit:cover;"></video>
+    <video src="{{ site.baseurl }}/assets/AquaMILR+/straightVB.mp4" controls style="width:100%;max-width:420px;height:680px;margin:0 0 1em 0;display:block;background:#23272a;border-radius:1em;object-fit:cover;"></video>
   </div>
 </div>
 
