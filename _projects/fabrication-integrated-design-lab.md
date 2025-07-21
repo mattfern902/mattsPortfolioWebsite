@@ -8,6 +8,8 @@ tags:
   - Robotics
   - Propulsion
 order: 5
+start: 2024-06
+end: 2024-08
 ---
 
 <div style="display:flex;gap:2em;flex-wrap:wrap;justify-content:center;margin-bottom:2em;">
@@ -27,9 +29,11 @@ order: 5
 
 ## Monopropellant Powered Soft Robot
 
-**Collaborators:** Matthew Fernandez, Prof. Kaitlyn Becker, Prof. Ellen Roche
+**Collaborators:** S. D. Gollob, A. Comoretto, Q. Yu, K. O. Adebajo, J. T. B. Overvelde, Kaitlyn Becker, Ellen Roche
 
-Characterized and developed a wireless control system for a propellant-powered oscillatory robot. Designed and tested a hydrogen peroxide reaction chamber to prove the energetic benefits of relative pressure systems in robotic actuation. 
+### Key Contributions
+- Characterized and developed a wireless control system for a propellant-powered oscillatory robot
+- Designed and tested a hydrogen peroxide reaction chamber to prove the energetic benefits of relative pressure systems in feeding this fuel for robotic actuation
 
 <div style="margin-bottom:2em;text-align:center;">
   <a href="https://ieeexplore.ieee.org/document/11020950" target="_blank" style="display:inline-block;background:var(--accent2);color:#fff;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);font-size:1.15em;transition:background 0.2s;">View Published Paper on IEEE Xplore</a>

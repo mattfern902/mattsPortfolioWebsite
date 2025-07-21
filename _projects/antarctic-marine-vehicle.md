@@ -12,15 +12,19 @@ tags:
   - Marine
   - AUV
 order: 8
-start: 2023
-end: 2024
+start: 2022-08
+end: 2022-12
 ---
 
 ## Antarctic Marine Vehicle (Nekton AUV)
 
 **Collaborators:** Matthew Fernandez, Nekton AUV Team
 
-Co-led the design, prototyping, and manufacture of the next iteration Autonomous Underwater Vehicle (AUV) for observation of polar-cap degradation at the Antarctic grounding line. Redesigned the syntactical foam rear cone and thruster shroud in SOLIDWORKS to improve hydrodynamics. Designed and onboarded electronics module with efficient heat dissipation via passive cooling with the surrounding ocean waters. Designed and manufactured mechanical ground support equipment for rapid field assembly and testing.
+### Key Contributions
+- Co-led the designing, prototyping, and manufacture of the next iteration Autonomous Underwater Vehicle (AUV) for observation of polar-cap degradation at the Antarctic grounding line
+- Redesigned the syntactic foam rear cone and thruster shroud in SOLIDWORKS to improve hydrodynamics
+- Designed an onboard electronics module with efficient heat dissipation via passive cooling with the surrounding ocean waters
+- Designed and manufactured mechanical ground support equipment for rapid field assembly and testing
 
 <img src="{{ site.baseurl }}/assets/antarctic-marine-vehicle/nektonFlick.jpg" alt="Nekton Flick" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
 

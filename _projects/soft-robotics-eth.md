@@ -11,15 +11,17 @@ tags:
   - Robotics
   - Underwater
 order: 5
-start: 2022
-end: 2024
+start: 2025-05
+end: Present
 ---
 
 ## Soft Robotics Lab (ETH Zurich)
 
 **Collaborators:** Matthew Fernandez, Prof. Robert Katzschmann
 
-Led the design and testing of an autonomous untethered underwater fish platform for biological surveillance and swarm-based monitoring. Optimized hydrodynamic properties and cable-driven actuation methods to maximize thrust and create a robust untethered platform.
+### Key Contributions
+- Leading the design and testing of an autonomous untethered underwater fish platform for biological surveillance and swarm-based monitoring
+- Optimizing the hydrodynamic properties and cable-driven actuation methods to maximize thrust and create a replicable and robust untethered platform.
 
 <img src="{{ site.baseurl }}/assets/soft-robotics-eth/sofiPic.jpg" alt="SOFI Untethered" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
 

@@ -8,8 +8,8 @@ tags:
   - Robotics
   - Terrestrial
 order: 3
-start: 2021
-end: 2022
+start: 2021-08
+end: Present
 ---
 
 ## Terrestrial Robotic Limbed and Limbless Locomotion

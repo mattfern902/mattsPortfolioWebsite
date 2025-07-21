@@ -8,15 +8,20 @@ tags:
   - Robotics
   - NASA
 order: 4
-start: 2023
-end: 2023
+start: 2023-01
+end: 2023-08
 ---
 
 ## NASA Jet Propulsion Laboratory
 
 **Collaborators:** Matthew Fernandez, NASA JPL Robotic Manipulation Team
 
-Developed architecture and prototypes of an ultra-lightweight manipulation system for the Sample Recovery Helicopter (SRH) as part of the Mars Sample Return mission. Prototyped and presented robotic arms and end-effectors, and developed kinematics and control in Python and MATLAB.
+### Key Contributions
+- Developed architecture and prototypes of an ultra-lightweight manipulation system for the Sample Recovery Helicopter (SRH) as part of the Mars Sample Return mission
+- Prototyped and presented primary architectures to senior board selected for SRH mission implementation
+- Conceptualized and prototyped more than 8 unique end-effectors for mission concept proposals and testing
+- Prototyped and presented a 3-DOF robotic arm for helicopter integration using Python for inverse kinematics and control, SOLIDWORKS for design, and MATLAB for force analyses
+- Created automated robotic arm sequences for iterative gripper testing, writing a Python class library for motor control and using ROS for communication and sequencing
 
 <img src="{{ site.baseurl }}/assets/nasa-jpl/SRHpic1.jpg" alt="SRH Project" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
 <div style="text-align:center;color:#aaa;font-size:1em;margin-bottom:1.5em;">Sample Recovery Helicopter (SRH) - Mars Sample Return</div>

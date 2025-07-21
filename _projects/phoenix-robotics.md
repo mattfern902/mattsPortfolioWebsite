@@ -8,8 +8,8 @@ tags:
   - Robotics
   - ROV
 order: 9
-start: August 2017
-end: August 2021
+start: 2017-08
+end: 2021-08
 ---
 
 ## Phoenix Robotics (ROV)

@@ -1,0 +1,136 @@
+Matthew Fernandez
++1 (813) 848-4069 | mfernandez64@gatech.edu | linkedin.com/in/fernandez-matt
+EDUCATION				
+Georgia Institute of Technology – Atlanta (GA) 			August 2021 – May 2025
+Bachelor of Science in Mechanical Engineering; Robotics Minor		GPA: 4.00/4.00 
+RESEARCH				
+Complex Rheology and Biomechanics Lab | Georgia Tech (US)		August 2023 – Present
+Advisor: Prof. Daniel I. Goldman
+Marine Robotic Limbless Locomotion
+* Leading the design and testing of an amphibious undulatory limbless robot investigating the role of mechanical intelligence in open-water navigation and three-dimensional obstacle traversal
+* Assisting the testing of surface-swimming undulatory locomoting robotic models and the effect of body compliance on surface water obstacle navigation
+Terrestrial Robotic Limbed and Limbless Locomotion
+* Designed and integrated proprioceptive sensing joints in a 5-segment centipede-inspired robot using Python run on Raspberry Pi to interpret joint positions for closed-loop control
+* Assisted in the experimental design and testing of a cord-driven snake-inspired robotic model investigating the application of body compliance and mechanical intelligence in serpentine sidewinding
+
+Soft Robotics Lab | ETH Zurich (Switzerland)			May 2025 – Present
+Advisor: Prof. Robert Katzschmann
+* Leading the design and testing of an autonomous untethered underwater fish platform for biological surveillance and swarm-based monitoring 
+* Optimizing the hydrodynamic properties and cable-driven actuation methods to maximize thrust and create a replicable and robust untethered platform.
+Fabrication Integrated Design Lab | MIT (US)			June 2024 – August 2024
+Advisors: Prof. Kaitlyn Becker, co-advised by Prof. Ellen Roche (TTDD Lab)
+* Characterized and developed a wireless control system for a propellant-powered oscillatory robot
+* Designed and tested a hydrogen peroxide reaction chamber to prove the energetic benefits of relative pressure systems in feeding this fuel for robotic actuation
+PUBLICATIONS & PRESENTATIONS			
+Patents
+[1] M. Fernandez, T. Wang, D. I. Goldman. Compact buoyancy control assembly for underwater robotic systems or equipment (filed patent application 2024)
+Peer-Reviewed Publications
+[1] M. Fernandez, T. Wang, G. Tunnicliffe, D. Dortilus, P. Gunnarson, J.O. Dabiri, D. I. Goldman. AquaMILR+: Design of an untethered limbless robot for complex aquatic terrain navigation. (accepted ICRA 2025)
+[2] S. D. Gollob, A. Comoretto, Q. Yu, M. Fernandez, K. O. Adebajo, J. T. B. Overvelde, K. Becker, E. Roche. An Actuator-Scale, Pressure-Amplifying, Monopropellant Engine for Untethered Pneumatic Systems (accepted Robosoft 2025)
+[3] T. Wang, N. Mankame, M. Fernandez, V. H. Kojouharov, D. I. Goldman. AquaMILR: Mechanical intelligence simplifies control of undulatory robots in cluttered fluid environments (accepted ICRA 2025)
+[4] V. H. Kojouharov, T. Wang, M. Fernandez, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. IEEE International Conference on Robotics and Automation (ICRA), 2024.
+Conference Abstracts
+[1] M. Fernandez, T. Wang, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Design of an untethered limbless robot for aquatic locomotion in complex environments. American Physical Society Meeting, March 2025.
+[2] T. Wang, M. Fernandez, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Mechanical and computational intelligence enable agile and robust limbless robotic locomotion in complex aquatic environments. American Physical Society Meeting, March 2025.
+[3] M. Fernandez, T. Wang, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Design of an untethered underwater limbless robot for complex aquatic terrain navigation. SICB Annual Meeting, January 2025.
+[4] T. Wang, M. Fernandez, G. Tunnicliffe, D. Dortilus, D. I. Goldman. Mechanically intelligent undulatory robotic locomotion in complex aquatic environments. SICB Annual Meeting, January 2025.
+[5] N. Mankame, T. Wang, M. Fernandez, C. Pierce, D. I. Goldman. Mechanical intelligence aids limbless locomotion in cluttered aquatic environments. American Physical Society Meeting, March 2024.
+[6] V. H. Kojouharov, T. Wang, M. Fernandez, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. American Physical Society Meeting, March 2024.
+Presentations
+[1] Design of an untethered limbless robot for complex aquatic terrain navigation. IEEE International Conference on Robotics and Automation (ICRA), 2025.
+[2] Design of an untethered limbless robot for aquatic locomotion in complex environments. American Physical Society Meeting, March 2025.
+[3] Mechanically intelligent undulatory robotic locomotion in complex aquatic environments. College of Science Undergraduate Research Showcase, February 2025. 
+[4] Design of an untethered underwater limbless robot for complex aquatic terrain navigation. SICB Annual Meeting, January 2025. 
+[5] Monopropellant Powered Self-Oscillating Limbs for Untethered Locomotion. MIT Digital Poster Showcase, November 2024
+[6] A Controllable Propellant-Based Power Source for Untethered Soft Robots. MIT Summer Research Program Poster Showcase, July 2024
+[7] Anisotropic body compliance facilitates robotic sidewinding in complex environments. IEEE International Conference on Robotics and Automation (ICRA), 2024.
+PROFESSIONAL EXPERIENCE			
+NASA Jet Propulsion Laboratory | Robotic Manipulation Intern		January 2023 – August 2023
+Developed architecture and prototypes of an ultra-lightweight manipulation system on the Sample Recovery Helicopter (SRH) as part of the Mars Sample Return (MSR) mission
+* Prototyped and presented primary architectures to senior board selected for SRH mission implementation
+* Conceptualized and prototyped more than 8 unique end-effectors for mission concept proposals and testing
+* Prototyped and presented a 3-DOF robotic arm for helicopter integration using Python for inverse kinematics and control, SOLIDWORKS for design, and MATLAB for force analyses
+* Created automated robotic arm sequences for iterative gripper testing, writing a Python class library for motor control and using ROS for communication and sequencing
+Procter & Gamble | Manufacturing Process Engineering Intern		May 2022 – August 2022 
+* Used SOLIDWORKS to design, optimize, and manufacture universal grippers enabling transport vehicles to grip multiple bottle sizes eliminating line stoppage and resulting in over $100,000 in annual savings
+* Developed program using RSLogix in which the PLC dynamically calculates and notifies technicians when the manufacturing line needs to switch product eliminating over $50,000 in wasted product annually
+* Designed an automated pneumatic fluid transportation system saving $150,000 annually on material waste
+PROJECT TEAMS				
+URC Mars Rover Team (RoboJackets) | Mechanical Lead		September 2021 – July 2024 
+Led 25 engineers in the design and manufacture of a semi-autonomous rover for complex missions in simulated Martian terrain to compete in the University Rover Challenge
+* Utilized SOLIDWORKS for the development of full carbon fiber-based rocker-bogie drive train and chassis, high-precision arm, manipulator, and scientific sampling device
+* Designed and assembled 5 degree of freedom robotic arm capable of lifting a 5 kg payload
+* Created a soft precision gripper for intricate and sensitive manipulations of unknown geometries
+Antarctic Marine Vehicle | Mechanical Engineer			August 2022 – December 2022
+Co-led the designing, prototyping, and manufacture of the next iteration Autonomous Underwater Vehicle (AUV) for observation of polar-cap degradation at the Antarctic grounding line
+* Redesigned the syntactic foam rear cone and thruster shroud in SOLIDWORKS to improve hydrodynamics
+* Designed an onboard electronics module with efficient heat dissipation via passive cooling with the surrounding ocean waters
+* Designed and manufactured mechanical ground support equipment for rapid field assembly and testing
+Phoenix Robotics | CEO/Pilot – Competitive Marine Robotics 		August 2017 – August 2021
+Led 15 engineers to construct an underwater Remotely Operated Vehicle (ROV), placing 3rd globally in the Marine Advanced Technology Education marine robotics competition
+* ROV consisted of dual 2 DOF manipulation system, vectored thrust, variable buoyancy, and six cameras
+* Developed onboard electrical system with autonomous driving and image recognition using Python
+FIELD VOLUNTEERING              			
+Robotic Marine Environment Recovery | Pilot & Engineer		January 2020 – February 2020
+* Designed and operated an underwater ROV equipped with lights, cameras, and end effector to help collect over 22 kg of beaded necklaces in Tampa Bay in collaboration with Calypso Divers
+National Geographic | SEDNA Project 			May 2018 – July 2018
+* Created and waterproofed 12 camera systems for use by Inuit women performing research in the Arctic Ocean for the SEDNA (Safe Maritime Operations Under Extreme Conditions: The Arctic Case) project
+AWARDS					
+* ThinkSwiss Scholar: 1 of 25 students selected internationally as a student researcher at a Swiss Institute
+* Astronaut Scholar (ASF): 1 of 71 students nationwide for a merit-based research scholarship
+*   Selected as 1 of 2 Georgia Tech seats for the award
+* Presidents Undergraduate Research Award (Georgia Tech): 1 of 114 students chosen for project funding
+* Godbold Scholar (Georgia Tech – Merit): 1 of 8 students in the Southeast selected for a full scholarship
+* Provost Scholar (Georgia Tech – Merit): Top 1% of students selected for a waived tuition cost
+* Intelligent Ground Vehicle Competition 2022: Ranked 3rd globally in autonomous navigation competition
+* MATE Marine Robotics Competition 2021: Ranked 3rd globally in underwater ranger class
+* 1st place technical documentation and presentation; published in the Journal of Ocean Technology
+* Valedictorian (High School): Highest GPA in class of 150 students (Unweighted 4.00/4.00)
+SKILLS					
+Technical Software 		| SOLIDWORKS, Siemens NX, Autodesk Inventor, Finite Element Analysis, 
+				| Topological Analysis, AutoCAD, Fusion 360
+Hardware Experience	| FDM/SLA 3D-Printing, Waterjet, Laser-cutter, Soldering, Arduino, Raspberry Pi
+Programming		| MATLAB, Python, C++, ROS, Arduino, RSLogix
+Relevant Coursework	| Dynamics, SOLIDWORKS, C++, MATLAB, Signal Processing, Linear Algebra,      | Differential Equations, Fluid Mechanics, Mechanics of Materials
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
