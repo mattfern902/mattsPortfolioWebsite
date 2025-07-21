@@ -10,7 +10,7 @@ tags:
   - Research
   - Robotics
   - Underwater
-order: 1
+order: 10
 display_dates: May 2025 - Present
 ---
 
