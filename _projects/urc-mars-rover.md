@@ -12,7 +12,7 @@ display_dates: September 2021 - July 2024
 ---
 
 <h1 style="font-size:2.5em;margin-bottom:0.2em;">Mars Rover Team</h1>
-<div style="font-size:1.15em;margin-bottom:0.5em;"><b>Collaborators:</b> Matthew Fernandez, URC Mars Rover Team (RoboJackets)</div>
+<div style="font-size:1.15em;margin-bottom:0.5em;"><b>Collaborators:</b> URC Mars Rover Team (RoboJackets)</div>
 <div style="font-size:1.15em;margin-bottom:1.2em;">Mechanical Lead for semi-autonomous rover for the University Rover Challenge.</div>
 
 ### Key Contributions

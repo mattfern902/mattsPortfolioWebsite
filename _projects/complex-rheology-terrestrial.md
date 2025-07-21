@@ -13,7 +13,7 @@ display_dates: August 2023 - January 2024
 
 ## Terrestrial Robotic Limbed and Limbless Locomotion
 
-**Collaborators:** Matthew Fernandez, Tianyu Wang, V. H. Kojuoharov, J. Maeng, Daniel I. Goldman
+**Collaborators:** Tianyu Wang, V. H. Kojuoharov, J. Maeng, Daniel I. Goldman
 
 Focused on the design, integration, and experimental testing of sidewinding snake-inspired robots. Developed proprioceptive sensing joints in a 5-segment centipede-inspired robot using Python on Raspberry Pi for closed-loop control. Assisted in the experimental design and testing of a cord-driven snake-inspired robotic model investigating the application of body compliance and mechanical intelligence in serpentine sidewinding.
 

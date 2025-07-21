@@ -16,7 +16,7 @@ display_dates: December 2023 - Present
 
 ## AquaMILR+ Limbless Robot
 
-**Collaborators:** Matthew Fernandez, Tianyu Wang, Galen Tunnicliffe, Donoven Dortilus, Peter Gunnarson, John O. Dabiri, Daniel I. Goldman
+**Collaborators:** Tianyu Wang, Galen Tunnicliffe, Donoven Dortilus, Peter Gunnarson, John O. Dabiri, Daniel I. Goldman
 
 A novel untethered limbless robot designed for complex aquatic terrain navigation. This project was accepted to ICRA 2025 and features advanced mechanical intelligence for robust movement in challenging environments.
 

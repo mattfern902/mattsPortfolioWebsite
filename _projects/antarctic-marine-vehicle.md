@@ -17,7 +17,7 @@ display_dates: August 2022 - December 2022
 
 ## Antarctic Marine Vehicle (Nekton AUV)
 
-**Collaborators:** Matthew Fernandez, Nekton AUV Team
+**Collaborators:** Nekton AUV Team
 
 ### Key Contributions
 - Co-led the designing, prototyping, and manufacture of the next iteration Autonomous Underwater Vehicle (AUV) for observation of polar-cap degradation at the Antarctic grounding line

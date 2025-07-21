@@ -13,7 +13,7 @@ display_dates: September 2023 - May 2024
 
 ## AquaMILR Limbless Robot
 
-**Collaborators:** Matthew Fernandez, Tianyu Wang, Nikhil Mankame, V. H. Kojuoharov, Daniel I. Goldman
+**Collaborators:** Tianyu Wang, Nikhil Mankame, V. H. Kojuoharov, Daniel I. Goldman
 
 AquaMILR is an untethered limbless robot designed for agile navigation in complex aquatic environments. The robot features a bilateral actuation mechanism that models musculoskeletal actuation in anguilliform swimming organisms, propagating a moving wave from head to tail for open fluid undulatory swimming. Mechanical intelligence enhances maneuverability when interacting with obstacles. AquaMILR also includes a compact depth control system inspired by the swim bladder and lung structures of eels and sea snakes, enabling depth and pitch control. The system is tested in both open water and indoor 2D/3D heterogeneous aquatic environments.
 
