@@ -56,8 +56,14 @@ A novel untethered limbless robot designed for complex aquatic terrain navigatio
   </div>
 </div>
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:2em 0 2.5em 0;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);">
-  <iframe src="https://www.youtube.com/embed/l1MjoG7HlX8" title="AquaMILR Project Video" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:1em;"></iframe>
+<div style="display:flex;gap:2.5em;flex-wrap:wrap;justify-content:center;margin-bottom:2.5em;">
+  <div style="flex:1;min-width:320px;max-width:700px;display:flex;flex-direction:column;align-items:center;">
+    <iframe width="100%" height="480" src="https://www.youtube.com/embed/l1MjoG7HlX8" title="AquaMILR Project Video" frameborder="0" allowfullscreen style="border-radius:1em;box-shadow:0 4px 24px rgba(0,0,0,0.15);"></iframe>
+  </div>
+  <div style="flex:1;min-width:320px;max-width:700px;display:flex;flex-direction:column;align-items:center;">
+    <iframe src="{{ site.baseurl }}/assets/AquaMILR+/ICRA25Paper.pdf" width="100%" height="480" style="border-radius:1em;box-shadow:0 4px 24px rgba(0,0,0,0.15);"></iframe>
+    <div style="color:#aaa;font-size:1.05em;margin-top:0.7em;text-align:center;">Preview: ICRA 2025 Paper (PDF)</div>
+  </div>
 </div>
 
 <div style="margin-bottom:2em;text-align:center;">

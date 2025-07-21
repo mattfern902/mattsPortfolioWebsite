@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Soft Robotics Lab (ETH Zurich)
+title: Soft Fish (ETHZ SRL)
 cover_image: /assets/notPublicPic.jpg
 description: Autonomous untethered underwater fish platform for biological surveillance and swarm-based monitoring.
 glb_url: /assets/soft-robotics-eth/sofiC.glb
@@ -10,8 +10,9 @@ tags:
   - Research
   - Robotics
   - Underwater
-order: 10
+order: 99
 display_dates: May 2025 - Present
+restricted: true
 ---
 
 ## Soft Robotics Lab<br>(ETH Zurich)

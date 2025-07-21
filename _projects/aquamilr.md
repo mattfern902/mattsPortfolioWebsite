@@ -17,10 +17,16 @@ display_dates: September 2023 - May 2024
 
 AquaMILR is an untethered limbless robot designed for agile navigation in complex aquatic environments. The robot features a bilateral actuation mechanism that models musculoskeletal actuation in anguilliform swimming organisms, propagating a moving wave from head to tail for open fluid undulatory swimming. Mechanical intelligence enhances maneuverability when interacting with obstacles. AquaMILR also includes a compact depth control system inspired by the swim bladder and lung structures of eels and sea snakes, enabling depth and pitch control. The system is tested in both open water and indoor 2D/3D heterogeneous aquatic environments.
 
-<img src="{{ site.baseurl }}/assets/aquamilr/aquaMILR_og.jpg" alt="AquaMILR in water" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
+<img src="{{ site.baseurl }}/assets/aquamilr/aquaMILR_og.jpg" alt="AquaMILR in water" style="display:block;margin:2em auto 2em auto;width:100%;max-width:700px;border-radius:1.5em;box-shadow:0 4px 24px rgba(0,0,0,0.15);">
 
-<div style="display:flex;justify-content:center;margin-bottom:2em;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/21F7IOF9BMs" title="AquaMILR Project Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);"></iframe>
+<div style="display:flex;gap:2.5em;flex-wrap:wrap;justify-content:center;margin-bottom:2.5em;">
+  <div style="flex:1;min-width:400px;max-width:900px;display:flex;flex-direction:column;align-items:center;">
+    <iframe width="100%" height="480" src="https://www.youtube.com/embed/K7s5Wt3Qs14" title="AquaMILR Project Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:1em;box-shadow:0 4px 24px rgba(0,0,0,0.15);"></iframe>
+  </div>
+  <div style="flex:1;min-width:400px;max-width:900px;display:flex;flex-direction:column;align-items:center;">
+    <iframe src="{{ site.baseurl }}/assets/aquamilr/2407.01733v2.pdf" width="100%" height="480" style="border-radius:1em;box-shadow:0 4px 24px rgba(0,0,0,0.15);"></iframe>
+    <div style="color:#aaa;font-size:1.05em;margin-top:0.7em;text-align:center;">Preview: AquaMILR Paper (PDF)</div>
+  </div>
 </div>
 
 ### Highlights

@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Terrestrial Robotic Limbed and Limbless Locomotion
+title: Sidewinding Limbless Robot
 cover_image: /assets/complex-rheology-terrestrial/sidewinderCAD.jpg
 description: Sidewinding snake-inspired robotic locomotion and proprioceptive sensing joints.
 tags:
@@ -17,13 +17,22 @@ display_dates: August 2023 - January 2024
 
 Focused on the design, integration, and experimental testing of sidewinding snake-inspired robots. Developed proprioceptive sensing joints in a 5-segment centipede-inspired robot using Python on Raspberry Pi for closed-loop control. Assisted in the experimental design and testing of a cord-driven snake-inspired robotic model investigating the application of body compliance and mechanical intelligence in serpentine sidewinding.
 
-<img src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/sidewinderCAD.jpg" alt="Sidewinder CAD" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
+<div style="display:flex;gap:2em;justify-content:center;align-items:center;flex-wrap:wrap;margin:2em 0 2em 0;">
+  <div style="flex:1;min-width:320px;max-width:700px;text-align:center;display:flex;flex-direction:column;align-items:center;">
+    <img src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/sidewinderCAD.jpg" alt="Sidewinder CAD" style="width:100%;height:420px;max-width:700px;object-fit:contain;display:block;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);margin-bottom:0.5em;">
+  </div>
+  <div style="flex:1;min-width:320px;max-width:700px;text-align:center;display:flex;flex-direction:column;align-items:center;">
+    <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/3718_VI.mp4" controls style="width:100%;height:420px;max-width:700px;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);"></video>
+  </div>
+</div>
 
-<!-- Videos stacked -->
-<div style="max-width:600px;margin:0 auto 2em auto;">
-  <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/strawVideoSidewinder.mp4" controls style="width:100%;border-radius:1em;margin-bottom:1em;"></video>
-  <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/rockVideoSidewinder.mp4" controls style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);background:#23272a;margin-bottom:0.5em;"></video>
-  <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/3718_VI.mp4" controls style="width:100%;border-radius:1em;"></video>
+<div style="display:flex;gap:2em;justify-content:center;align-items:center;flex-wrap:wrap;margin:2em 0 2em 0;">
+  <div style="flex:1;min-width:320px;max-width:700px;display:flex;flex-direction:column;align-items:center;">
+    <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/strawVideoSidewinder.mp4" controls style="width:100%;height:320px;max-width:700px;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);"></video>
+  </div>
+  <div style="flex:1;min-width:320px;max-width:700px;display:flex;flex-direction:column;align-items:center;">
+    <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/rockVideoSidewinder.mp4" controls style="width:100%;height:320px;max-width:700px;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);"></video>
+  </div>
 </div>
 
 <div style="margin-bottom:2em;text-align:center;">

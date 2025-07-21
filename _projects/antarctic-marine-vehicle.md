@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Antarctic Marine Vehicle
+title: Antarctic AUV
 cover_image: /assets/antarctic-marine-vehicle/nektonFlick.jpg
 description: Mechanical Engineer for next-generation AUV for polar research.
 glb_url: /assets/antarctic-marine-vehicle/NEKTON.glb
@@ -25,7 +25,16 @@ display_dates: August 2022 - December 2022
 - Designed an onboard electronics module with efficient heat dissipation via passive cooling with the surrounding ocean waters
 - Designed and manufactured mechanical ground support equipment for rapid field assembly and testing
 
-<img src="{{ site.baseurl }}/assets/antarctic-marine-vehicle/nektonFlick.jpg" alt="Nekton Flick" style="width:100%;max-width:340px;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;">
+<div style="display:flex;gap:2em;justify-content:center;align-items:stretch;flex-wrap:wrap;margin:2em 0 2.5em 0;">
+  <div style="flex:1;min-width:220px;max-width:500px;text-align:center;display:flex;flex-direction:column;align-items:center;">
+    <img src="{{ site.baseurl }}/assets/antarctic-marine-vehicle/nektonFlick.jpg" alt="Nekton Flick" style="width:100%;height:400px;max-width:500px;object-fit:cover;display:block;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);margin-bottom:0.5em;">
+    <div style="color:#aaa;font-size:1em;margin-bottom:2em;">Antarctic Marine Vehicle - Field Deployment</div>
+  </div>
+  <div style="flex:2;min-width:320px;max-width:900px;text-align:center;display:flex;flex-direction:column;align-items:center;">
+    <img src="{{ site.baseurl }}/assets/antarctic-marine-vehicle/AUV_CAD.jpg" alt="AUV CAD" style="width:100%;height:400px;max-width:900px;object-fit:cover;display:block;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);margin-bottom:0.5em;">
+    <div style="color:#aaa;font-size:1em;margin-bottom:2em;">Antarctic Marine Vehicle - CAD Model</div>
+  </div>
+</div>
 
 ### Highlights
 - Redesigned syntactical foam rear cone and thruster shroud for improved hydrodynamics
