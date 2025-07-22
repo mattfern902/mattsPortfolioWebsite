@@ -468,6 +468,95 @@ body:not([data-theme='light']) .skills-list .skill:hover {
   letter-spacing: 1px !important;
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
 }
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 1.2em 0.5em !important;
+    min-height: unset !important;
+  }
+  #home-main-title {
+    font-size: 2.1rem !important;
+    text-align: center !important;
+    margin-bottom: 0.5em !important;
+  }
+  .hero img[alt="Matt's profile photo"] {
+    width: 120px !important;
+    height: 120px !important;
+    margin-bottom: 1em !important;
+  }
+  .hero p {
+    font-size: 1.1rem !important;
+    text-align: center !important;
+  }
+  .hero .cta {
+    flex-direction: column !important;
+    gap: 0.7em !important;
+    align-items: center !important;
+  }
+  .section {
+    padding: 0.7em 0.2em !important;
+    max-width: 100vw !important;
+  }
+  .section-title, .project-main-title {
+    font-size: 1.3rem !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    text-align: center !important;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1em !important;
+  }
+  .project-card {
+    min-height: unset !important;
+    padding: 1em 0.5em 1em 0.5em !important;
+    font-size: 0.98em !important;
+  }
+  .project-card img, .project-card model-viewer, .project-card .project-card-img-full {
+    height: 160px !important;
+    max-width: 100% !important;
+    margin-bottom: 0.5em !important;
+  }
+  .project-title {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.2em !important;
+    margin-top: 0.2em !important;
+  }
+  .project-desc {
+    font-size: 0.98em !important;
+    margin-bottom: 0.5em !important;
+  }
+  .about-section {
+    padding: 0.7em 0.2em !important;
+    border-radius: 0.7em !important;
+    font-size: 0.98em !important;
+  }
+  .about-section img, .about-section .about-photo-grid img {
+    width: 90px !important;
+    height: 90px !important;
+    margin-bottom: 0.5em !important;
+  }
+  .about-section .section-title {
+    font-size: 1.3rem !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+  }
+  .about-section h3 {
+    font-size: 1.05rem !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.3em !important;
+  }
+  .about-section ul, .about-section ol {
+    font-size: 0.98em !important;
+    margin-left: 1.2em !important;
+  }
+  .cta a, .project-link-bubble, a.project-link-bubble {
+    font-size: 1em !important;
+    padding: 0.7em 1.2em !important;
+  }
+}
 /* Only apply teal Montserrat h3 style to project pages, not About Me */
 .post-content h3 {
   color: #00ffd0 !important;
