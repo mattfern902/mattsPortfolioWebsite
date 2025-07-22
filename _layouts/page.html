@@ -98,8 +98,8 @@ layout: default
 <div id="photo-modal" class="photo-modal-overlay" onclick="this.classList.remove('active')">
   <img id="photo-modal-img" class="photo-modal-img" src="" alt="Preview">
 </div>
-<section class="section">
-  <div class="about-section">
+<section class="section" style="overflow-x:hidden;width:100vw;box-sizing:border-box;">
+  <div class="about-section" style="box-sizing:border-box;width:100%;overflow-x:hidden;">
     <div style="display:flex;flex-direction:row;gap:1.2em;align-items:center;justify-content:center;margin:2em 0 1.5em 0;font-size:1.08em;">
       <div><span class="contact-label" style="font-weight:700;">Personal:</span> <span class="contact-value">matt.fern902@gmail.com</span></div>
       <div><span class="contact-label" style="font-weight:700;">Academic:</span> <span class="contact-value">mfernandez64@gatech.edu</span></div>
@@ -107,30 +107,51 @@ layout: default
     </div>
     <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:2em;">
       <div style="flex:2;min-width:260px;">
-        <h1 style="margin-top:0;color:#00ffd0;">About Me</h1>
-        <p style="font-size:1.2em;line-height:1.6;">
+        <div class="section-title" style="margin-top:0.3em;color:#00ffd0;margin-bottom:0.2em;font-size:2.2rem;font-weight:600;letter-spacing:1px;text-align:center;">About Me</div>
+        <p style="font-size:1.2em;line-height:1.6;text-align:center;">
           Hi, I'm Matthew Fernandez, a passionate engineer and researcher specializing in robotics, mechanical design, and creative problem solving. I thrive at the intersection of mechanical intelligence, robotics, and real-world impact. My work spans aquatic and terrestrial robots, soft robotics, and advanced actuation systems.<br><br>
           I love building things that move, think, and interact with the world in new ways.
         </p>
-        <div style="margin:1.5em 0;display:flex;gap:1em;">
-          <a href="{{ site.baseurl }}/assets/CV.pdf" target="_blank" style="padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;">Download CV (PDF)</a>
-          <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" style="padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;">Download Resume (PDF)</a>
-          <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:0.5em;transition:background 0.2s;border:none;">
+        <div style="margin:1.5em 0;display:flex;gap:1em;justify-content:center;">
+          <a href="{{ site.baseurl }}/assets/CV.pdf" target="_blank" style="background:#fff;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;display:flex;align-items:center;gap:0.5em;box-shadow:none!important;">
+            <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><rect x='5' y='5' width='14' height='16' rx='2' fill='#e0e0e0' stroke='#b0b0b0' stroke-width='1.2'/><rect x='3' y='3' width='14' height='16' rx='2' fill='#f4f4f4' stroke='#b0b0b0' stroke-width='1.2'/><rect x='7' y='7' width='14' height='16' rx='2' fill='#fff' stroke='#b0b0b0' stroke-width='1.2'/></svg>
+            Curriculum Vitae
+          </a>
+          <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" style="background:#fff;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;display:flex;align-items:center;gap:0.5em;box-shadow:none!important;">
+            <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><path d='M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6zm0 2h12v16H6V4zm3 4h6v2H9V8zm0 4h6v2H9v-2zm0 4h6v2H9v-2z'/></svg>
+            Resume
+          </a>
+          <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="background:#fff;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:0.5em;transition:background 0.2s;border:none;box-shadow:none!important;">
             <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.599v5.597z'/></svg>
             LinkedIn
           </a>
         </div>
-        <div class="section-title" style="margin-top:2em;color:#00ffd0;" id="skills-title">Skills</div>
-        <div class="skills-list">
-          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">Python</span>
-          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">C++</span>
-          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">MATLAB</span>
-          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">ROS</span>
-          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">SolidWorks</span>
-          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">3D Printing</span>
-          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">Arduino</span>
-          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">AutoCAD</span>
-          <span class="skill" style="background:#23272a;color:#fff;border:2px solid #fff;">Fusion 360</span>
+        <div class="section-title" style="margin-top:2em;color:#00ffd0;margin-bottom:0.2em;font-size:2.2rem;font-weight:600;letter-spacing:1px;text-align:center;" id="skills-title">Skills</div>
+        <div class="skills-list" style="justify-content:center;">
+          <span class="skill">Python</span>
+          <span class="skill">C++</span>
+          <span class="skill">MATLAB</span>
+          <span class="skill">ROS</span>
+          <span class="skill">SolidWorks</span>
+          <span class="skill">FDM 3D Printing</span>
+          <span class="skill">SLA 3D Printing</span>
+          <span class="skill">Arduino</span>
+          <span class="skill">AutoCAD</span>
+          <span class="skill">Fusion 360</span>
+          <span class="skill">Siemens NX</span>
+          <span class="skill">Autodesk Inventor</span>
+          <span class="skill">Finite Element Analysis</span>
+          <span class="skill">Topological Analysis</span>
+          <span class="skill">Waterjet</span>
+          <span class="skill">Laser-cutter</span>
+          <span class="skill">Soldering</span>
+          <span class="skill">Raspberry Pi</span>
+          <span class="skill">RSLogix</span>
+          <span class="skill">Signal Processing</span>
+          <span class="skill">Linear Algebra</span>
+          <span class="skill">Differential Equations</span>
+          <span class="skill">Fluid Mechanics</span>
+          <span class="skill">Mechanics of Materials</span>
         </div>
       </div>
       <div style="flex:1;min-width:220px;text-align:center;">
@@ -144,9 +165,11 @@ layout: default
         </div>
       </div>
     </div>
+    <!-- Horizontal teal gradient line -->
+    <div style="width:100%;max-width:calc(100vw - 1in);height:5px;margin:4em auto 2.5em auto;background:linear-gradient(to right, #00ffd0 0%, transparent 50%, #00ffd0 100%);border-radius:2px;box-sizing:border-box;"></div>
     <div style="display:flex;gap:2.5em;flex-wrap:wrap;justify-content:center;margin:0.5em 0 0.5em 0;align-items:flex-start;">
       <div style="flex:1;min-width:260px;max-width:750px;">
-        <div class="section-title" style="margin-top:0;color:#00ffd0;margin-bottom:0.3em;">Experience Timeline</div>
+        <div class="section-title" style="margin-top:0.3em;color:#00ffd0;margin-bottom:0.2em;font-size:2.2rem;font-weight:600;letter-spacing:1px;text-align:center;">Experience Timeline</div>
         <ul style="font-size:1.1em;line-height:1.7;color:#fff;margin-top:0;">
           <li><b>2025 (expected):</b> B.S. Mechanical Engineering, Robotics Minor, Georgia Tech</li>
           <li><b>2023–Present:</b> Researcher, Complex Rheology and Biomechanics Lab, Georgia Tech</li>
@@ -160,7 +183,7 @@ layout: default
         </ul>
       </div>
       <div style="flex:1;min-width:260px;max-width:600px;">
-        <div class="section-title" style="margin-top:0;color:#00ffd0;margin-bottom:0.3em;">Awards & Honors</div>
+        <div class="section-title" style="margin-top:0.3em;color:#00ffd0;margin-bottom:0.2em;font-size:2.2rem;font-weight:600;letter-spacing:1px;text-align:center;">Awards & Honors</div>
         <ul style="font-size:1.1em;line-height:1.7;color:#fff;margin-top:0;">
           <li>ThinkSwiss Scholar</li>
           <li>Astronaut Scholar (ASF)</li>
@@ -173,9 +196,9 @@ layout: default
         </ul>
       </div>
     </div>
-    <div class="section-title" style="margin-top:0.3em;color:#00ffd0;margin-bottom:0.2em;">Publications & Presentations</div>
-    <div style="padding:0.5em 1.5em 0 1.5em;margin-bottom:2em;">
-      <h3 style="color:#00ffd0;margin-top:0;margin-bottom:0.2em;">Patents</h3>
+    <div class="section-title" style="margin-top:0.7em;color:#00ffd0;margin-bottom:0;font-size:2.2rem;font-weight:600;letter-spacing:1px;text-align:center;">Publications & Presentations</div>
+    <div style="padding:0;margin-bottom:1.2em;">
+      <h3 style="color:#00ffd0;margin-top:0;margin-bottom:0;">Patents</h3>
       <ul style="color:#e0e0e0;">
         <li><b>M. Fernandez</b>, T. Wang, D. I. Goldman. Compact buoyancy control assembly for underwater robotic systems or equipment (<i>filed patent application 2024</i>)</li>
       </ul>

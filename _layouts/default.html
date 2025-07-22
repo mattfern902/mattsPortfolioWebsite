@@ -6,7 +6,8 @@
   <title>{{ site.title }}{% if page.title and page.title != site.title %} - {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/{{ site.data.theme.portfolio_theme }}/theme.css">
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,700,800&display=swap" rel="stylesheet">
+  <!-- Use Roboto font for headings and project titles -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
   <style>
     /* Smooth theme transitions - only colors, not spacing or fonts */
     body, header, nav a, .project-card, .hero, .section, .site-title, 

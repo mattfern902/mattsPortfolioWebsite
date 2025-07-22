@@ -15,12 +15,6 @@ display_dates: August 2017 - August 2021
 
 **Collaborators:** Phoenix Robotics Team
 
-<div style="margin-bottom:2em;text-align:center;">
-  <a href="https://www.thejot.net/article-preview/?show_article_preview=1308" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px #fff;font-size:1.15em;transition:background 0.2s;">View Publication in Journal of Ocean Technology</a>
-  <a href="https://www.wfla.com/news/hillsborough-county/brooks-debartolo-hs-robotics-team-goes-global-underwater-with-remotely-operated-vehicle/" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px #fff;font-size:1.15em;transition:background 0.2s;margin-left:1em;">Read News Article on WFLA</a>
-  <a href="https://www.abcactionnews.com/news/region-hillsborough/underwater-robot-made-from-scrap-by-tampa-high-school-students-will-compete-for-worlds-top-bot" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px #fff;font-size:1.15em;transition:background 0.2s;margin-left:1em;">Read Article on ABC Action News</a>
-</div>
-
 Led 15 engineers to construct an underwater Remotely Operated Vehicle (ROV), placing 3rd globally in the Marine Advanced Technology Education competition. Developed onboard electrical system with autonomous driving and image recognition using Python.
 
 <div style="display:flex;gap:2em;justify-content:center;align-items:flex-end;flex-wrap:wrap;margin:2em 0 2.5em 0;">

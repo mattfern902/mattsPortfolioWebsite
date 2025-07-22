@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 /* Cyberpunk Teal Aurora Theme */
 body {
   background: #181a1b;
@@ -330,4 +331,46 @@ body[data-theme="light"] footer {
   background: #f8f7f3;
   color: #888;
   border-top: 1.5px solid #e3e6ed;
+} 
+/* Force lighter gray skills bubbles for all themes */
+.skills-list .skill {
+  background: #fafbfc !important;
+  color: #23272a !important;
+  border: 2px solid #fff !important;
+  box-shadow: none !important;
+}
+
+body[data-theme='light'] .skills-list .skill {
+  background: #fafbfc !important;
+  color: #23272a !important;
+  border: 2px solid #fff !important;
+  box-shadow: none !important;
+} 
+/* Lighter gray skills bubbles only for dark theme */
+body:not([data-theme='light']) .skills-list .skill {
+  background: #fafbfc !important;
+  color: #23272a !important;
+  border: 2px solid #fff !important;
+  box-shadow: none !important;
+} 
+/* Force Inter font for all major headings and project titles */
+/* Use Montserrat for all major headings and project titles for a tall, modern look */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+.section-title, .hero h1, .project-title {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 500 !important;
+} 
+/* Restore About Me section and h3 titles to original color and Inter font */
+.about-section .section-title, .about-section h3 {
+  color: #1e90ff !important;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 600 !important;
+} 
+.home-main-title {
+  font-size: 3.2rem !important;
+  font-weight: 800 !important;
+  color: #00ffd0 !important;
+  margin-bottom: 0.3em !important;
+  letter-spacing: 1px !important;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
 } 

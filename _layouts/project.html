@@ -2,8 +2,10 @@
 layout: default
 ---
 <section class="section">
+  <!-- Centered, Montserrat, teal project title at the top -->
+  <a href="{{ site.baseurl }}/projects.html" class="back-to-projects">&larr; Back to Projects</a>
+  <h1 class="project-main-title">{{ page.title }}</h1>
   <article class="about-section">
-    <a href="{{ site.baseurl }}/projects.html" style="color:var(--accent3);font-weight:700;font-size:1.1em;">&larr; Back to Projects</a>
     {% if page.glb_url %}
     <div style="margin:2em auto;width:100%;max-width:100vw;display:flex;justify-content:center;">
       <model-viewer src="{{ site.baseurl }}{{ page.glb_url }}" alt="3D model for {{ page.title }}" auto-rotate camera-controls style="width:100%;height:400px;max-width:100vw;background:transparent;border-radius:1em;display:block;margin:0 auto;"

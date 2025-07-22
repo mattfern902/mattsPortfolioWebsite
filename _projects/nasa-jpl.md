@@ -32,8 +32,6 @@ display_dates: January 2023 - August 2023
     <div style="color:#aaa;font-size:1em;margin-bottom:2em;">JPL Robotic Manipulation System - Lab Prototype</div>
   </div>
 </div>
-
 <div style="margin-bottom:2em;text-align:center;">
-  <a href="https://ieeexplore.ieee.org/document/10802158" target="_blank" style="display:inline-block;background:var(--accent2);color:#fff;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px var(--accent2);font-size:1.15em;transition:background 0.2s;">View Published Paper on IEEE Xplore</a>
-  <div style="color:#aaa;font-size:1.1em;margin-top:0.7em;">Ultra-Lightweight Manipulation System for Mars Sample Return Helicopter</div>
+  <a href="https://ieeexplore.ieee.org/document/10802158" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;font-size:1.15em;transition:background 0.2s;box-shadow:none;">View Published Paper on IEEE Xplore (IROS 2023)</a>
 </div> 

@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Sidewinding Limbless Robot
-cover_image: /assets/complex-rheology-terrestrial/sidewinderCAD.jpg
-description: Sidewinding snake-inspired robotic locomotion and proprioceptive sensing joints.
+title: Limbless Sidewinder
+cover_image: /assets/complex-rheology-terrestrial/sidewinderCoverPhoto.jpg
+description: Untethered limbless robot for complex terrain and hydrodynamics.
 tags:
   - Research
   - Robotics
@@ -15,14 +15,16 @@ display_dates: August 2023 - January 2024
 
 **Collaborators:** Tianyu Wang, V. H. Kojuoharov, J. Maeng, Daniel I. Goldman
 
-Focused on the design, integration, and experimental testing of sidewinding snake-inspired robots. Developed proprioceptive sensing joints in a 5-segment centipede-inspired robot using Python on Raspberry Pi for closed-loop control. Assisted in the experimental design and testing of a cord-driven snake-inspired robotic model investigating the application of body compliance and mechanical intelligence in serpentine sidewinding.
+This untethered limbless robot was developed to investigate mechanical intelligence in cluttered aquatic environments. Drawing inspiration from organismal muscle actuation, it employs a bilateral cable-driven mechanism to achieve programmable anisotropic body compliance, enabling emergent undulatory swimming through complex hydrodynamic regimes. Robophysical experiments reveal that, as in terrestrial locomotion, the right combination of body compliance and undulation frequency is essential for effective open-loop swimming in heterogeneous environments. Additionally, a real-time controller using cable tension feedback allows adaptive body compliance, enhancing the robot’s robustness and speed in unpredictable aquatic conditions.
 
 <div style="display:flex;gap:2em;justify-content:center;align-items:center;flex-wrap:wrap;margin:2em 0 2em 0;">
-  <div style="flex:1;min-width:320px;max-width:700px;text-align:center;display:flex;flex-direction:column;align-items:center;">
-    <img src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/sidewinderCAD.jpg" alt="Sidewinder CAD" style="width:100%;height:420px;max-width:700px;object-fit:contain;display:block;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);margin-bottom:0.5em;">
+  <div style="flex:1;min-width:320px;max-width:700px;display:flex;flex-direction:column;align-items:center;">
+    <img src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/sidewinderCAD.jpg" alt="Sidewinder CAD" style="height:340px;width:auto;max-width:700px;object-fit:cover;display:block;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);margin-bottom:0.5em;">
+    <div style="color:#aaa;font-size:1em;margin-top:0.5em;text-align:center;">Sidewinder Design</div>
   </div>
-  <div style="flex:1;min-width:320px;max-width:700px;text-align:center;display:flex;flex-direction:column;align-items:center;">
-    <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/3718_VI.mp4" controls style="width:100%;height:420px;max-width:700px;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);"></video>
+  <div style="flex:1;min-width:320px;max-width:700px;display:flex;flex-direction:column;align-items:center;">
+    <img src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/sidewinderWithSkin.jpg" alt="Sidewinder with Skin" style="height:340px;width:auto;max-width:700px;object-fit:cover;display:block;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);margin-bottom:0.5em;">
+    <div style="color:#aaa;font-size:1em;margin-top:0.5em;text-align:center;">Sidewinder with Skin</div>
   </div>
 </div>
 
@@ -35,22 +37,29 @@ Focused on the design, integration, and experimental testing of sidewinding snak
   </div>
 </div>
 
-<div style="margin-bottom:2em;text-align:center;">
-  <a href="https://ieeexplore.ieee.org/document/10611625" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px #fff;font-size:1.15em;transition:background 0.2s;">View Published Paper on IEEE Xplore</a>
-  <div style="color:#aaa;font-size:1.1em;margin-top:0.7em;">Anisotropic body compliance facilitates robotic sidewinding in complex environments</div>
+<!-- 3718_VI video and PDF preview side by side -->
+<div style="display:flex;gap:2em;justify-content:center;align-items:flex-start;flex-wrap:wrap;margin:2em 0 2em 0;">
+  <div style="flex:1;min-width:320px;max-width:48%;">
+    <video src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/3718_VI.mp4" controls style="width:100%;height:394px;border-radius:1em;box-shadow:0 2px 16px rgba(0,0,0,0.12);"></video>
+  </div>
+  <div style="flex:1;min-width:320px;max-width:48%;">
+    <iframe src="{{ site.baseurl }}/assets/complex-rheology-terrestrial/Anisotropic_body_compliance_facilitates_robotic_sidewinding_in_complex_environments.pdf" width="100%" height="394" style="border-radius:1em;border:1px solid #ccc;box-shadow:0 2px 16px rgba(0,0,0,0.10);"></iframe>
+    <div style="color:#aaa;font-size:0.95em;text-align:center;margin-top:0.5em;">Preview of published paper (PDF)</div>
+  </div>
+</div>
+
+<div style="margin-bottom:2em;text-align:center;display:flex;gap:1.2em;justify-content:center;align-items:center;flex-wrap:wrap;">
+  <a href="https://ieeexplore.ieee.org/document/10611625" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;font-size:1.15em;transition:background 0.2s;box-shadow:none;">View Published Paper on IEEE Xplore</a>
+  <a href="https://www.youtube.com/watch?v=_48hn0hlZwo" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;font-size:1.15em;transition:background 0.2s;box-shadow:none;">View Presentation Video</a>
 </div>
 
 ### Related Publications & Abstracts
-<div style="background:#23272a;padding:1.5em 1em;border-radius:1em;box-shadow:0 2px 12px var(--accent3);margin-bottom:2em;">
-  <h3 style="color:var(--accent3);margin-top:0;">Peer-Reviewed Publications</h3>
-  <ul style="color:#e0e0e0;">
-    <li>V. H. Kojuoharov, T. Wang, <b>M. Fernandez</b>, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. <i>IEEE International Conference on Robotics and Automation (ICRA), 2024</i>.</li>
-  </ul>
-  <h3 style="color:var(--accent3);">Conference Abstracts</h3>
-  <ul style="color:#e0e0e0;">
-    <li>V. H. Kojuoharov, T. Wang, <b>M. Fernandez</b>, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. <i>American Physical Society Meeting, March 2024</i>.</li>
-  </ul>
-</div>
+
+#### Peer-Reviewed Publications
+- V. H. Kojuoharov, T. Wang, **M. Fernandez**, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. *IEEE International Conference on Robotics and Automation (ICRA), 2024*.
+
+#### Conference Abstracts
+- V. H. Kojuoharov, T. Wang, **M. Fernandez**, J. Maeng, D. I. Goldman. Anisotropic body compliance facilitates robotic sidewinding in complex environments. *American Physical Society Meeting, March 2024*.
 
 ### Highlights
 - Developed proprioceptive sensing joints for centipede-inspired robot

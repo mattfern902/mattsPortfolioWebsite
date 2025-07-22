@@ -11,9 +11,9 @@ order: 7
 display_dates: September 2021 - July 2024
 ---
 
-<h1 style="font-size:2.5em;margin-bottom:0.2em;">Mars Rover Team</h1>
-<div style="font-size:1.15em;margin-bottom:0.5em;"><b>Collaborators:</b> URC Mars Rover Team (RoboJackets)</div>
-<div style="font-size:1.15em;margin-bottom:1.2em;">Mechanical Lead for semi-autonomous rover for the University Rover Challenge.</div>
+**Collaborators:** URC Mars Rover Team (RoboJackets)
+
+<div style="font-size:1.1em;margin-bottom:1.2em;color:#aaa;text-align:center;max-width:700px;margin-left:auto;margin-right:auto;">Mechanical Lead for semi-autonomous rover for the University Rover Challenge.</div>
 
 ### Key Contributions
 - Led 25 engineers in the design and manufacture of a semi-autonomous rover for complex missions in simulated Martian terrain to compete in the University Rover Challenge

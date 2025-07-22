@@ -331,3 +331,173 @@ body[data-theme="light"] footer {
   color: #888;
   border-top: 1.5px solid #e3e6ed;
 } 
+body:not([data-theme='light']) .skills-list .skill {
+  background: #8a919e !important;
+  color: #23272a !important;
+  border: none !important;
+  box-shadow: none !important;
+} 
+body:not([data-theme='light']) .skills-list .skill:hover {
+  box-shadow: 0 0 16px #ff4c60 !important;
+  transform: scale(1.06);
+} 
+/* Project title large, centered, teal */
+.project-title {
+  font-size: 2.8em !important;
+  text-align: center !important;
+  color: #00ffd0 !important;
+  font-weight: 800 !important;
+  margin-top: 0.2em !important;
+  margin-bottom: 0.6em !important;
+  letter-spacing: 1px !important;
+}
+/* Section subtitles teal, bold, larger */
+.section-title {
+  color: #00ffd0 !important;
+  font-size: 1.5em !important;
+  font-weight: 700 !important;
+  margin-top: 0.2em !important;
+  margin-bottom: 0.5em !important;
+  text-align: left !important;
+}
+/* Publications section: no background, no box-shadow */
+.publications-list {
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 2em !important;
+}
+.publications-list h2, .publications-list .publications-title {
+  color: #00ffd0 !important;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  margin-top: 2em !important;
+  margin-bottom: 0.5em !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.publications-list h3 {
+  color: #fff !important;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 1.1em !important;
+  font-weight: 600 !important;
+  margin-top: 1.2em !important;
+  margin-bottom: 0.3em !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+/* Project link bubbles: white, no glow, dark text */
+.project-link-bubble, a.project-link-bubble, .about-section a.project-link-bubble {
+  background: #fff !important;
+  color: #181a1b !important;
+  box-shadow: none !important;
+  border-radius: 2em !important;
+  font-weight: 700 !important;
+  font-size: 1.15em !important;
+  padding: 0.9em 2em !important;
+  text-decoration: none !important;
+  transition: background 0.2s !important;
+} 
+/* Revert project card preview styles */
+.project-title {
+  font-size: 1.4rem !important;
+  color: var(--accent) !important;
+  margin-bottom: 0.5em !important;
+  text-align: center !important;
+  letter-spacing: normal !important;
+  font-weight: 600 !important;
+}
+.section-title {
+  font-size: 1.3rem !important;
+  color: var(--accent3) !important;
+  margin-bottom: 1.2em !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+}
+/* Keep new styles for in-content headings using a more specific selector if needed */ 
+/* Restore original style for projects.html section titles */
+.projects-overview .section-title,
+#projects-overview .section-title {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+  color: #00ffd0 !important;
+  text-align: center !important;
+  margin-top: 0.2em !important;
+  margin-bottom: 0.5em !important;
+} 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+.section-title, .hero h1, .project-title {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+.section-title {
+  margin-top: 0.2em !important;
+} 
+.section-title, .hero h1 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 2.2rem !important;
+} 
+.project-title {
+  margin-bottom: 0.1em !important;
+  margin-top: 0.1em !important;
+  margin-bottom: 0.1em !important;
+} 
+.project-main-title {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 2.6rem !important;
+  color: #00ffd0 !important;
+  text-align: center !important;
+  margin-top: 0.2em !important;
+  margin-bottom: 0.7em !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+}
+.home-main-title {
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+  color: #00ffd0 !important;
+  margin-bottom: 0.3em !important;
+  letter-spacing: 1px !important;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+}
+/* Only apply teal Montserrat h3 style to project pages, not About Me */
+.post-content h3 {
+  color: #00ffd0 !important;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 1.5em !important;
+  font-weight: 500 !important;
+  margin-top: 2em !important;
+  margin-bottom: 0.5em !important;
+  text-align: left !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+} 
+/* Place this at the very end to ensure it overrides all previous rules */
+.about-section h3 {
+  color: #fff !important;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 1.5em !important;
+  font-weight: 600 !important;
+  margin-top: 2em !important;
+  margin-bottom: 0.5em !important;
+  text-align: left !important;
+  background: none !important;
+  box-shadow: none !important;
+} 
+.about-section .section-title {
+  color: #00ffd0 !important;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  letter-spacing: 1px !important;
+} 

@@ -1,21 +1,33 @@
 ---
 layout: default
 ---
+<!-- Add Inter font for consistent project title appearance -->
+<link href="https://fonts.googleapis.com/css?family=Inter:400,700,800&display=swap" rel="stylesheet">
 <div class="hero" style="flex-direction:row;gap:2em;align-items:center;justify-content:center;padding:0 4em;max-width:1400px;margin:0 auto;background:linear-gradient(120deg, #181a1b 60%, #00ffd0 100%);">
-  <img src="{{ site.baseurl }}/assets/profile-photo.jpg" alt="Matt's profile photo" style="width:140px;height:140px;border-radius:50%;object-fit:cover;z-index:1;box-shadow:none;">
+  <img src="{{ site.baseurl }}/assets/profile-photo.jpg" alt="Matt's profile photo" style="width:200px;height:200px;border-radius:50%;object-fit:cover;z-index:1;box-shadow:none;">
   <div style="display:flex;flex-direction:column;align-items:flex-start;z-index:1;">
-    <h1>Hi, I'm Matt</h1>
+    <h1 id="home-main-title" class="home-main-title">Hi, I'm Matt</h1>
     <p>Robotics Engineer passionate about enabling the exploration of our world and others.<br>Welcome to my portfolio.</p>
-    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1.5em;margin-top:1.5em;">
-      <div class="cta" style="display:flex;flex-wrap:wrap;gap:1em;margin:0;">
-        <a href="{{ site.baseurl }}/assets/CV.pdf" target="_blank" style="background:#f4f4f4;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px #e0e0e0;transition:background 0.2s;border:none;">Download CV (PDF)</a>
-        <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" style="background:#f4f4f4;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px #e0e0e0;transition:background 0.2s;border:none;">Download Resume (PDF)</a>
-        <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="background:#f4f4f4;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;box-shadow:0 2px 8px #e0e0e0;display:flex;align-items:center;gap:0.5em;transition:background 0.2s;border:none;">
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2em;margin-top:1.5em;width:100%;">
+      <div class="cta" style="display:flex;flex-wrap:wrap;gap:1em;justify-content:center;align-items:center;margin-left:-8em;"> <!-- Adjust margin-left here to shift buttons left/right -->
+        <a href="{{ site.baseurl }}/assets/CV.pdf" target="_blank" style="background:#f4f4f4;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;display:flex;align-items:center;gap:0.5em;">
+          <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'>
+            <rect x='5' y='5' width='14' height='16' rx='2' fill='#e0e0e0' stroke='#b0b0b0' stroke-width='1.2'/>
+            <rect x='3' y='3' width='14' height='16' rx='2' fill='#f4f4f4' stroke='#b0b0b0' stroke-width='1.2'/>
+            <rect x='7' y='7' width='14' height='16' rx='2' fill='#fff' stroke='#b0b0b0' stroke-width='1.2'/>
+          </svg>
+          Curriculum Vitae
+        </a>
+        <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" style="background:#f4f4f4;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;display:flex;align-items:center;gap:0.5em;">
+          <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><path d='M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6zm0 2h12v16H6V4zm3 4h6v2H9V8zm0 4h6v2H9v-2zm0 4h6v2H9v-2z'/></svg>
+          Resume
+        </a>
+        <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="background:#f4f4f4;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:0.5em;transition:background 0.2s;border:none;">
           <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.599v5.597z'/></svg>
           LinkedIn
         </a>
       </div>
-      <div class="contact-info" style="display:flex;flex-direction:row;gap:1.2em;align-items:center;margin:0 0 0 0.5em;font-size:1.08em;">
+      <div class="contact-info" style="display:flex;flex-direction:row;gap:1.2em;align-items:center;justify-content:center;font-size:1.08em;margin-top:0.7em;margin-left:-8em;">
         <div style="color:#fff;font-weight:700;">Personal: <span style="color:#fff;font-weight:400;">matt.fern902@gmail.com</span></div>
         <div style="color:#fff;font-weight:700;">Academic: <span style="color:#fff;font-weight:400;">mfernandez64@gatech.edu</span></div>
         <div style="color:#fff;font-weight:700;">Phone: <span style="color:#fff;font-weight:400;">+1 (813) 848-4069</span></div>
@@ -110,6 +122,14 @@ body[data-theme='light'] .landing-tile-title {
 }
 @media (max-width: 600px) {
   .hero { padding: 0 1em !important; }
+}
+#home-main-title {
+  font-size: 4rem !important;
+  font-weight: 500 !important;
+  color: #00ffd0 !important;
+  margin-bottom: 0.3em !important;
+  letter-spacing: 1px !important;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
 }
 </style>
 <div class="landing-split">

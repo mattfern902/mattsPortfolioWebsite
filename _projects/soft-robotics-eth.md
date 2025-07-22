@@ -33,3 +33,11 @@ cover_image: /assets/soft-robotics-eth/sofiPic.jpg
 - Optimized hydrodynamics and actuation for thrust
 - Enabled biological surveillance and swarm-based monitoring
 - Collaborated with ETH Zurich Soft Robotics Lab 
+
+### Related Publications & Abstracts
+
+#### Peer-Reviewed Publications
+- [Replace with your publication entries]
+
+#### Conference Abstracts
+- [Replace with your abstract entries] 
