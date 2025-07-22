@@ -469,6 +469,28 @@ body:not([data-theme='light']) .skills-list .skill:hover {
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
 }
 @media (max-width: 600px) {
+  html, body {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  .section, .about-section, .hero, .projects-grid {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  .hero, .about-section, .section, .projects-grid, .projects-overview, .post-content {
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+  }
+  .projects-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .project-card, .about-section, .section {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
   .hero {
     flex-direction: column !important;
     align-items: center !important;
