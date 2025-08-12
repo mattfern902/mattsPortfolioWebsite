@@ -1,0 +1,28 @@
+PLACEHOLDER IMAGES NEEDED FOR WEBSITE PREVIEW
+================================================
+
+You need to create and add these images to your assets folder:
+
+1. FAVICON (Browser Tab Icon):
+   - assets/favicon.ico (16x16, 32x32, 48x48 - ICO format)
+   - assets/favicon-16x16.png (16x16 PNG)
+   - assets/favicon-32x32.png (32x32 PNG)
+   - assets/apple-touch-icon.png (180x180 PNG for iOS devices)
+
+2. SOCIAL MEDIA PREVIEW (Open Graph Image):
+   - assets/og-preview.jpg (1200x630 pixels - JPG format)
+   
+   This image will appear when your website is shared on:
+   - Facebook, LinkedIn, Twitter, Discord, etc.
+   - WhatsApp, Telegram, etc.
+   - Any platform that supports Open Graph
+
+RECOMMENDED SPECIFICATIONS:
+- Favicon: Simple, recognizable icon (your initials, a robot icon, etc.)
+- og-preview.jpg: 1200x630 pixels, shows your name/title clearly
+- All images should be high quality and represent your portfolio well
+
+Once you add these images, your website will show:
+- A custom icon in browser tabs
+- A preview image when shared on social media
+- Better professional appearance across all platforms 

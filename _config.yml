@@ -22,6 +22,7 @@ title: Matt's Portfolio
 email: matt.fern902@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my portfolio! I'm a robotics engineer passionate about enabling the exploration of our world and others.
+site_description: Robotics engineer passionate about enabling the exploration of our world and others through innovative mechanical design and robotics solutions.
 baseurl: "" # the subpath of your site, e.g. /blog (set to "" for both local and GitHub Pages root)
 url: "https://mattfern902.github.io/mattsPortfolioWebsite" # the full URL to your site
 # For local development, you can use _config_local.yml to override baseurl if needed

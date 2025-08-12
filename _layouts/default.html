@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}{% if page.title and page.title != site.title %} - {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/apple-touch-icon.png">
+  
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="{{ site.title }}{% if page.title and page.title != site.title %} - {{ page.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.description | default: site.site_description }}">
+  <meta property="og:image" content="{{ site.baseurl }}/assets/og-preview.jpg">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.title }}{% if page.title and page.title != site.title %} - {{ page.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ page.description | default: site.site_description }}">
+  <meta name="twitter:image" content="{{ site.baseurl }}/assets/og-preview.jpg">
+  
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/themes/{{ site.data.theme.portfolio_theme }}/theme.css">
   <!-- Use Roboto font for headings and project titles -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
