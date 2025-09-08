@@ -20,7 +20,7 @@ display_dates: December 2023 - Present
 
 A novel untethered limbless robot designed for complex aquatic terrain navigation. This project was accepted to ICRA 2025 and features advanced mechanical intelligence for robust movement in challenging environments.
 
-<div style="display:flex;gap:1.5em;justify-content:center;margin:2em 2vw;flex-wrap:nowrap;align-items:flex-end;">
+<div style="display:flex;gap:1.5em;justify-content:center;margin:2em 2em;flex-wrap:nowrap;align-items:flex-end;">
   <div style="text-align:center;">
     <img src="{{ site.baseurl }}/assets/aquamilr/ogblackSnakeOpenWater.jpg" alt="AquaMILR+ in open water" style="height:300px;width:auto;object-fit:contain;display:block;margin-left:auto;margin-right:auto;border-radius:1em;box-shadow:0 2px 12px rgba(0,0,0,0.10);margin-bottom:0.5em;background:#222;">
     <div style="color:#aaa;font-size:1em;">Rendering of AquaMILR+ in the open ocean</div>
@@ -35,7 +35,7 @@ A novel untethered limbless robot designed for complex aquatic terrain navigatio
   </div>
 </div>
 
-<div style="display:flex;gap:1.2em;justify-content:flex-start;margin:2em 0 2em 2vw;flex-wrap:nowrap;align-items:flex-start;max-width:1400px;min-height:60vh;">
+<div style="display:flex;gap:1.2em;justify-content:flex-start;margin:2em 2em;flex-wrap:nowrap;align-items:flex-start;max-width:1400px;min-height:60vh;">
   <!-- Left column: GLBs stacked -->
   <div style="display:flex;flex-direction:column;gap:0.7em;align-items:center;width:420px;">
     <h3 style="text-align:center;margin:0.7em 0 0.3em 0;">Electronics Module</h3>
@@ -56,7 +56,7 @@ A novel untethered limbless robot designed for complex aquatic terrain navigatio
   </div>
 </div>
 
-<div style="display:flex;gap:2.5em;flex-wrap:wrap;justify-content:center;margin-bottom:2.5em;">
+<div style="display:flex;gap:2.5em;flex-wrap:wrap;justify-content:center;margin:0 2em 2.5em 2em;">
   <div style="flex:1;min-width:320px;max-width:700px;display:flex;flex-direction:column;align-items:center;">
     <iframe width="100%" height="480" src="https://www.youtube.com/embed/l1MjoG7HlX8" title="AquaMILR Project Video" frameborder="0" allowfullscreen style="border-radius:1em;box-shadow:0 4px 24px rgba(0,0,0,0.15);"></iframe>
   </div>
@@ -67,7 +67,7 @@ A novel untethered limbless robot designed for complex aquatic terrain navigatio
 </div>
 
 <div style="margin-bottom:2em;text-align:center;">
-  <a href="https://arxiv.org/abs/2409.18383" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;font-size:1.15em;transition:background 0.2s;">View Published Paper on arXiv</a>
+  <a href="https://ieeexplore.ieee.org/abstract/document/11128548?casa_token=HmHHId3nYAUAAAAA:otJZJ6N9MMHJSMqCXUEPP260ZkvEP3oGDsuX44WG38ZIbuyJ4snbGAw1bjkuzzF8VACd_g9oUUc" target="_blank" style="display:inline-block;background:#fff;color:#181a1b;padding:0.9em 2em;border-radius:2em;font-weight:700;text-decoration:none;font-size:1.15em;transition:background 0.2s;">View Published Paper on IEEE</a>
   <div style="color:#aaa;font-size:1.1em;margin-top:0.7em;">AquaMILR+: Design of an untethered limbless robot for complex aquatic terrain navigation</div>
 </div>
 
@@ -77,7 +77,7 @@ A novel untethered limbless robot designed for complex aquatic terrain navigatio
 - **M. Fernandez**, T. Wang, D. I. Goldman. Compact buoyancy control assembly for underwater robotic systems or equipment (*filed patent application 2024*)
 
 #### Peer-Reviewed Publications
-- **M. Fernandez**, T. Wang, G. Tunnicliffe, D. Dortilus, P. Gunnarson, J.O. Dabiri, D. I. Goldman. **AquaMILR+: Design of an untethered limbless robot for complex aquatic terrain navigation**. [arXiv:2409.18383](https://arxiv.org/abs/2409.18383) (*accepted ICRA 2025*)
+- **M. Fernandez**, T. Wang, G. Tunnicliffe, D. Dortilus, P. Gunnarson, J.O. Dabiri, D. I. Goldman. **AquaMILR+: Design of an untethered limbless robot for complex aquatic terrain navigation**. [arXiv:2409.18383](https://ieeexplore.ieee.org/abstract/document/11128548?casa_token=HmHHId3nYAUAAAAA:otJZJ6N9MMHJSMqCXUEPP260ZkvEP3oGDsuX44WG38ZIbuyJ4snbGAw1bjkuzzF8VACd_g9oUUc) (*accepted ICRA 2025*)
 - T. Wang, N. Mankame, **M. Fernandez**, V. H. Kojuoharov, D. I. Goldman. AquaMILR: Mechanical intelligence simplifies control of undulatory robots in cluttered fluid environments (*accepted ICRA 2025*)
 
 #### Conference Abstracts
