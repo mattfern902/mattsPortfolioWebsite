@@ -122,10 +122,12 @@ layout: default
   }
   .about-photo-grid {
     max-width: 100% !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.8em !important;
   }
   .about-photo-grid img {
-    width: 140px !important;
-    height: 140px !important;
+    width: 120px !important;
+    height: 120px !important;
   }
   .about-buttons-container {
     padding: 0 0.5em !important;
@@ -383,13 +385,13 @@ layout: default
 }
 @media (max-width: 500px) {
   .about-photo-grid {
-    grid-template-columns: 1fr !important;
-    gap: 0.5em !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.6em !important;
   }
   .about-photo-grid img {
-    width: 100% !important;
-    height: 60vw !important;
-    max-width: 220px !important;
+    width: 100px !important;
+    height: 100px !important;
+    max-width: none !important;
     object-fit: cover !important;
   }
 }
