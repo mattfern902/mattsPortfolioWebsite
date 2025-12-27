@@ -122,13 +122,13 @@ title: Projects
   }
   .project-card {
     height: auto !important;
-    min-height: 380px !important;
+    min-height: 420px !important;
     max-height: none !important;
   }
   .project-card img {
-    height: 180px !important;
-    min-height: 180px !important;
-    max-height: 180px !important;
+    height: 200px !important;
+    min-height: 200px !important;
+    max-height: 200px !important;
     object-fit: cover !important;
     flex-shrink: 0 !important;
   }
@@ -137,27 +137,33 @@ title: Projects
     min-height: 0 !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: flex-start !important;
-    padding: 0.5em 0.8em !important;
+    justify-content: space-between !important;
+    padding: 0.8em 1em !important;
+    box-sizing: border-box !important;
   }
   .project-card .project-title {
-    margin-top: 0.3em !important;
-    margin-bottom: 0.4em !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5em !important;
+    flex-shrink: 0 !important;
   }
   .project-card .project-desc {
-    max-height: 4.5em !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
-    -webkit-line-clamp: unset !important;
+    max-height: 5em !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    -webkit-line-clamp: 4 !important;
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
     line-height: 1.4 !important;
-    margin-bottom: 0.8em !important;
-    flex-shrink: 0 !important;
+    margin-bottom: auto !important;
+    flex-shrink: 1 !important;
+    flex-grow: 0 !important;
   }
   .project-card .project-dates {
-    margin-top: 0.6em !important;
+    margin-top: 1em !important;
+    margin-bottom: 0 !important;
     flex-shrink: 0 !important;
+    padding-top: 0.5em !important;
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
   }
 }
 </style> 
