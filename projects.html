@@ -4,99 +4,243 @@ title: Projects
 ---
 <section class="section">
   <div class="projects-overview">
-    <div class="projects-main-container" style="display:flex;gap:4em;justify-content:center;align-items:flex-start;position:relative;min-height:100vh;">
-      <!-- Vertical line absolutely positioned -->
-      <div class="vertical-line" style="position:absolute;left:50%;top:0;bottom:0;transform:translateX(-50%);width:4px;background:linear-gradient(to bottom,#00ffd0 0%,#00bfae 20%,#111 50%,#00bfae 80%,#00ffd0 100%);border-radius:2px;z-index:1;"></div>
-      <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-right:2em;">
-        <div class="section-title">Research Projects</div>
-        <div class="projects-grid projects-grid-research" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
-          {% assign research = site.projects | sort: "order" | slice: 0, 4 %}
-          {% for project in research %}
-          <a href="{{ site.baseurl }}{{ project.url }}" class="project-card" style="text-decoration:none;padding:0;height:370px;min-height:370px;max-height:370px;width:100%;display:flex;flex-direction:column;overflow:hidden;align-items:center;">
-            {% if project.cover_image %}
-              <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
-            {% endif %}
-            <div style="flex:1 1 auto;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;">
-              <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">{{ project.title }}</div>
-              <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">{{ project.description }}</div>
-              {% if project.display_dates %}
-                <div class="project-dates" style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> {{ project.display_dates }}</div>
+
+    <!-- Wrapper so the vertical line can span ONLY the tile content -->
+    <div class="projects-timeline-wrapper" style="position:relative;">
+
+      <!-- Vertical line (height is set by JS to end at the last tile) -->
+      <div class="vertical-line" style="
+        position:absolute;
+        left:50%;
+        top:0;
+        transform:translateX(-50%);
+        width:4px;
+        height:100%;
+        background:linear-gradient(to bottom,#00ffd0 0%,#00bfae 20%,#111 50%,#00bfae 80%,#00ffd0 100%);
+        border-radius:2px;
+        z-index:1;
+      "></div>
+
+      <!-- =========================
+           TOP ROW: Research | Professional
+           ========================= -->
+      <div class="projects-main-container" style="
+        display:flex;
+        gap:4em;
+        justify-content:center;
+        align-items:flex-start;
+        position:relative;
+        z-index:2;
+      ">
+
+        <!-- LEFT: Research -->
+        <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-right:2em;">
+          <div class="section-title">Research Projects</div>
+          <div class="projects-grid projects-grid-research" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
+
+            {% assign research = site.projects | sort: "order" | slice: 0, 4 %}
+            {% for project in research %}
+            <a href="{{ site.baseurl }}{{ project.url }}" class="project-card" style="
+              text-decoration:none;
+              padding:0;
+              height:370px;
+              min-height:370px;
+              max-height:370px;
+              width:100%;
+              display:flex;
+              flex-direction:column;
+              overflow:hidden;
+              align-items:center;
+            ">
+              {% if project.cover_image %}
+                <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
               {% endif %}
-            </div>
-          </a>
-          {% endfor %}
+              <div style="flex:1 1 auto;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;">
+                <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">{{ project.title }}</div>
+                <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">{{ project.description }}</div>
+                {% if project.display_dates %}
+                  <div class="project-dates" style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> {{ project.display_dates }}</div>
+                {% endif %}
+              </div>
+            </a>
+            {% endfor %}
+
+          </div>
         </div>
-      </div>
-      <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-left:2em;">
-        <div class="section-title">Professional & Project Teams</div>
-        <div class="projects-grid projects-grid-teams" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
-          {% assign teams = site.projects | sort: "order" | slice: 4, 4 %}
-          {% for project in teams %}
-          {% assign title = project.title %}
-          {% if title == "NASA JPL Martian Manipulation" %}
-            {% assign title = "NASA JPL Martian Gripper" %}
-          {% endif %}
-          <a href="{{ site.baseurl }}{{ project.url }}" class="project-card" style="text-decoration:none;padding:0;height:370px;min-height:370px;max-height:370px;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;">
-            {% if project.cover_image %}
-              <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
+
+        <!-- RIGHT: Professional & Teams (TOP 4 unchanged) -->
+        <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-left:2em;">
+          <div class="section-title">Professional &amp; Project Teams</div>
+          <div class="projects-grid projects-grid-teams" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
+
+            {% assign teams = site.projects | sort: "order" | slice: 4, 4 %}
+            {% for project in teams %}
+            {% assign title = project.title %}
+            {% if title == "NASA JPL Martian Manipulation" %}
+              {% assign title = "NASA JPL Martian Gripper" %}
             {% endif %}
-            <div style="flex:1;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;">
-              <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">{{ title }}</div>
-              <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">{{ project.description }}</div>
-              {% if project.display_dates %}
-                <div class="project-dates" style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> {{ project.display_dates }}</div>
+            <a href="{{ site.baseurl }}{{ project.url }}" class="project-card" style="
+              text-decoration:none;
+              padding:0;
+              height:370px;
+              min-height:370px;
+              max-height:370px;
+              width:100%;
+              display:flex;
+              flex-direction:column;
+              justify-content:flex-start;
+              align-items:center;
+              overflow:hidden;
+            ">
+              {% if project.cover_image %}
+                <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
               {% endif %}
-            </div>
-          </a>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-    <div class="section-title">Unreleased Projects</div>
-    <div class="projects-grid" style="display:flex;gap:2em;justify-content:center;">
-      <div style="max-width:320px;width:100%;">
-        <div class="project-card" style="text-decoration:none;padding:0;height:auto;min-height:480px;max-height:none;width:100%;display:flex;flex-direction:column;overflow:hidden;align-items:center;opacity:0.7;pointer-events:none;">
-          <img src="{{ site.baseurl }}/assets/AquaMILR_Pro/proPic.jpg" alt="AquaMILR Pro" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
-          <div style="flex:1 1 auto;width:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:center;overflow:hidden;padding:0.8em 1em;box-sizing:border-box;">
-            <div>
-              <div class="project-title" style="margin-top:0;margin-bottom:0.5em;">AquaMILR Pro</div>
-              <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:none;margin-bottom:auto;line-height:1.4;">Next-generation untethered limbless robot for advanced aquatic navigation.</div>
-            </div>
-            <div class="project-dates" style="margin-top:1em;margin-bottom:0;padding-top:0.5em;border-top:1px solid rgba(255,255,255,0.1);font-size:0.95em;color:#aaa;flex-shrink:0;"><b>Dates:</b> October 2024-Present</div>
+              <div style="flex:1;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;">
+                <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">{{ title }}</div>
+                <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">{{ project.description }}</div>
+                {% if project.display_dates %}
+                  <div class="project-dates" style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> {{ project.display_dates }}</div>
+                {% endif %}
+              </div>
+            </a>
+            {% endfor %}
+
           </div>
         </div>
       </div>
-      {% assign unreleased = site.projects | where: "restricted", true %}
-      {% for project in unreleased %}
-      <div style="max-width:320px;width:100%;">
-        <div class="project-card" style="text-decoration:none;padding:0;height:auto;min-height:480px;max-height:none;width:100%;display:flex;flex-direction:column;overflow:hidden;align-items:center;opacity:0.7;pointer-events:none;">
-          {% if project.title == "Soft Fish (ETHZ SRL)" %}
-            <img src="{{ site.baseurl }}/assets/soft-robotics-eth/sofiPic.jpg" alt="Soft Fish" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
-          {% elsif project.cover_image %}
-            <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
-          {% endif %}
-          <div style="flex:1 1 auto;width:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:center;overflow:hidden;padding:0.8em 1em;box-sizing:border-box;">
-            <div>
-              <div class="project-title" style="margin-top:0;margin-bottom:0.5em;">{{ project.title }}</div>
-              <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:none;margin-bottom:auto;line-height:1.4;">{{ project.description }}</div>
+
+      <!-- =========================
+           BOTTOM ROW: Unreleased | ROV (centered single tile)
+           ========================= -->
+      <div class="projects-bottom-row" style="
+        display:flex;
+        gap:4em;
+        justify-content:center;
+        align-items:flex-start;
+        position:relative;
+        margin-top:3.25em;
+        z-index:2;
+      ">
+
+        <!-- LEFT: Unreleased aligned under Research (HEIGHT MATCHES 370px) -->
+        <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-right:2em;">
+          <div class="section-title">Unreleased Projects</div>
+
+          <!-- Keep a 2-up grid like the top sections -->
+          <div class="projects-grid projects-grid-unreleased" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
+
+            <!-- AquaMILR Pro (now fixed-height like all other tiles) -->
+            <div class="project-card" style="
+              text-decoration:none;
+              padding:0;
+              height:370px;
+              min-height:370px;
+              max-height:370px;
+              width:100%;
+              display:flex;
+              flex-direction:column;
+              overflow:hidden;
+              align-items:center;
+              opacity:0.7;
+              pointer-events:none;
+            ">
+              <img src="{{ site.baseurl }}/assets/AquaMILR_Pro/proPic.jpg" alt="AquaMILR Pro" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
+              <div style="flex:1 1 auto;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;">
+                <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">AquaMILR Pro</div>
+                <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">Next-generation untethered limbless robot for advanced aquatic navigation.</div>
+                <div class="project-dates" style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> October 2024 - Present</div>
+              </div>
             </div>
-            {% if project.display_dates %}
-              <div class="project-dates" style="margin-top:1em;margin-bottom:0;padding-top:0.5em;border-top:1px solid rgba(255,255,255,0.1);font-size:0.95em;color:#aaa;flex-shrink:0;"><b>Dates:</b> {{ project.display_dates }}</div>
-            {% endif %}
+
+            <!-- Other restricted unreleased projects (also fixed-height) -->
+            {% assign unreleased = site.projects | where: "restricted", true %}
+            {% for project in unreleased %}
+            <div class="project-card" style="
+              text-decoration:none;
+              padding:0;
+              height:370px;
+              min-height:370px;
+              max-height:370px;
+              width:100%;
+              display:flex;
+              flex-direction:column;
+              overflow:hidden;
+              align-items:center;
+              opacity:0.7;
+              pointer-events:none;
+            ">
+              {% if project.title == "Soft Fish (ETHZ SRL)" %}
+                <img src="{{ site.baseurl }}/assets/soft-robotics-eth/sofiPic.jpg" alt="Soft Fish" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
+              {% elsif project.cover_image %}
+                <img src="{{ site.baseurl }}{{ project.cover_image }}" alt="Cover for {{ project.title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
+              {% endif %}
+              <div style="flex:1 1 auto;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;">
+                <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">{{ project.title }}</div>
+                <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">{{ project.description }}</div>
+                {% if project.display_dates %}
+                  <div class="project-dates" style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> {{ project.display_dates }}</div>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+
           </div>
         </div>
+
+        <!-- RIGHT: ROV centered (single-width tile) -->
+        <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-left:2em;">
+          <!-- invisible title to keep alignment consistent -->
+          <div class="section-title" style="opacity:0;user-select:none;">Spacer</div>
+
+          <!-- Center within right column without stretching to full width -->
+          <div style="display:flex;justify-content:center;">
+            <div style="width:calc((100% - 2em) / 2);min-width:280px;max-width:320px;">
+              {% assign rov_list = site.projects | where_exp: "p", "p.order == 9" %}
+              {% assign rov = rov_list | first %}
+              {% if rov %}
+                <a href="{{ site.baseurl }}{{ rov.url }}" class="project-card" style="
+                  text-decoration:none;
+                  padding:0;
+                  height:370px;
+                  min-height:370px;
+                  max-height:370px;
+                  width:100%;
+                  display:flex;
+                  flex-direction:column;
+                  justify-content:flex-start;
+                  align-items:center;
+                  overflow:hidden;
+                ">
+                  {% if rov.cover_image %}
+                    <img src="{{ site.baseurl }}{{ rov.cover_image }}" alt="Cover for {{ rov.title }}" style="width:100%;height:220px;object-fit:cover;display:block;border-radius:1em 1em 0 0;">
+                  {% endif %}
+                  <div style="flex:1;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;overflow:hidden;">
+                    <div class="project-title" style="margin-top:0.1em;margin-bottom:0.2em;">{{ rov.title }}</div>
+                    <div class="project-desc" style="overflow:hidden;text-overflow:ellipsis;max-height:3.5em;margin-bottom:0.3em;">{{ rov.description }}</div>
+                    {% if rov.display_dates %}
+                      <div class="project-dates" style="margin-top:0.2em;font-size:0.95em;color:#aaa;"><b>Dates:</b> {{ rov.display_dates }}</div>
+                    {% endif %}
+                  </div>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
       </div>
-      {% endfor %}
-    </div>
+    </div><!-- /projects-timeline-wrapper -->
   </div>
 </section>
+
 <style>
 @media (max-width: 1200px) {
-  .projects-main-container {
+  .projects-main-container,
+  .projects-bottom-row {
     flex-direction: column !important;
     gap: 3em !important;
   }
-  .projects-main-container > div {
+  .projects-main-container > div,
+  .projects-bottom-row > div {
     margin-left: 0 !important;
     margin-right: 0 !important;
     max-width: 100% !important;
@@ -105,44 +249,45 @@ title: Projects
     display: none !important;
   }
   .projects-grid-research,
-  .projects-grid-teams {
+  .projects-grid-teams,
+  .projects-grid-unreleased {
     grid-template-columns: 1fr 1fr !important;
   }
 }
+
 @media (max-width: 768px) {
   .projects-overview {
     padding: 0 1em !important;
   }
+
   .projects-grid-research,
-  .projects-grid-teams {
+  .projects-grid-teams,
+  .projects-grid-unreleased {
     grid-template-columns: 1fr !important;
     gap: 1.5em !important;
     padding: 0 0.5em !important;
   }
-  .projects-main-container {
+
+  .projects-main-container,
+  .projects-bottom-row {
     gap: 2em !important;
-    min-height: auto !important;
     padding: 0 0.5em !important;
   }
-  .projects-grid-research,
-  .projects-grid-teams {
-    grid-template-columns: 1fr !important;
-    gap: 1.5em !important;
-    padding: 0 0.5em !important;
-    max-width: 100% !important;
-  }
-  .projects-grid-research .project-card,
-  .projects-grid-teams .project-card {
-    max-width: 100% !important;
+
+  /* Centered ROV container should go full width on mobile */
+  .projects-bottom-row > div:last-child > div[style*="display:flex;justify-content:center"] > div {
     width: 100% !important;
-    margin: 0 auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
+
   .project-card {
     height: auto !important;
     min-height: auto !important;
     max-height: none !important;
     width: 100% !important;
   }
+
   .project-card img {
     height: 180px !important;
     min-height: 180px !important;
@@ -150,6 +295,7 @@ title: Projects
     object-fit: cover !important;
     flex-shrink: 0 !important;
   }
+
   .project-card > div {
     flex: 1 1 auto !important;
     min-height: 0 !important;
@@ -159,11 +305,13 @@ title: Projects
     padding: 0.8em 1em !important;
     box-sizing: border-box !important;
   }
+
   .project-card .project-title {
     margin-top: 0 !important;
     margin-bottom: 0.5em !important;
     flex-shrink: 0 !important;
   }
+
   .project-card .project-desc {
     max-height: none !important;
     overflow: visible !important;
@@ -174,6 +322,7 @@ title: Projects
     flex-shrink: 1 !important;
     flex-grow: 0 !important;
   }
+
   .project-card .project-dates {
     margin-top: 1em !important;
     margin-bottom: 0 !important;
@@ -181,23 +330,33 @@ title: Projects
     padding-top: 0.5em !important;
     border-top: 1px solid rgba(255,255,255,0.1) !important;
   }
-  .projects-grid[style*="display:flex"] .project-card {
-    max-width: 320px !important;
-    min-height: auto !important;
-    height: auto !important;
-  }
-  .projects-grid[style*="display:flex"] .project-card > div {
-    justify-content: space-between !important;
-    padding: 0.8em 1em !important;
-  }
-  .projects-grid[style*="display:flex"] .project-card .project-desc {
-    max-height: none !important;
-    overflow: visible !important;
-  }
-  .projects-grid[style*="display:flex"] .project-card .project-dates {
-    margin-top: 1em !important;
-    padding-top: 0.5em !important;
-    border-top: 1px solid rgba(255,255,255,0.1) !important;
-  }
 }
-</style> 
+</style>
+
+<script>
+(function() {
+  // Make the vertical line end exactly at the bottom of the last tile
+  function updateVerticalLineHeight() {
+    const wrapper = document.querySelector('.projects-timeline-wrapper');
+    const line = document.querySelector('.projects-timeline-wrapper .vertical-line');
+    if (!wrapper || !line) return;
+
+    // Measure wrapper content height precisely
+    const rect = wrapper.getBoundingClientRect();
+    const height = Math.max(0, wrapper.scrollHeight);
+
+    // Explicitly set height so it ends at bottom of last tile
+    line.style.height = height + 'px';
+  }
+
+  window.addEventListener('load', updateVerticalLineHeight);
+  window.addEventListener('resize', updateVerticalLineHeight);
+
+  // If images load after layout, recalc again
+  document.addEventListener('DOMContentLoaded', function() {
+    updateVerticalLineHeight();
+    setTimeout(updateVerticalLineHeight, 250);
+    setTimeout(updateVerticalLineHeight, 750);
+  });
+})();
+</script>
