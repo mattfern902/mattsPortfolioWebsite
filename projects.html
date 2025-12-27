@@ -4,12 +4,12 @@ title: Projects
 ---
 <section class="section">
   <div class="projects-overview">
-    <div style="display:flex;gap:4em;justify-content:center;align-items:flex-start;position:relative;min-height:100vh;">
+    <div class="projects-main-container" style="display:flex;gap:4em;justify-content:center;align-items:flex-start;position:relative;min-height:100vh;">
       <!-- Vertical line absolutely positioned -->
       <div class="vertical-line" style="position:absolute;left:50%;top:0;bottom:0;transform:translateX(-50%);width:4px;background:linear-gradient(to bottom,#00ffd0 0%,#00bfae 20%,#111 50%,#00bfae 80%,#00ffd0 100%);border-radius:2px;z-index:1;"></div>
       <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-right:2em;">
         <div class="section-title">Research Projects</div>
-        <div class="projects-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
+        <div class="projects-grid projects-grid-research" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
           {% assign research = site.projects | sort: "order" | slice: 0, 4 %}
           {% for project in research %}
           <a href="{{ site.baseurl }}{{ project.url }}" class="project-card" style="text-decoration:none;padding:0;height:370px;min-height:370px;max-height:370px;width:100%;display:flex;flex-direction:column;overflow:hidden;align-items:center;">
@@ -29,7 +29,7 @@ title: Projects
       </div>
       <div style="flex:1;min-width:340px;max-width:640px;width:100%;margin-left:2em;">
         <div class="section-title">Professional & Project Teams</div>
-        <div class="projects-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
+        <div class="projects-grid projects-grid-teams" style="display:grid;grid-template-columns:1fr 1fr;gap:2em;">
           {% assign teams = site.projects | sort: "order" | slice: 4, 4 %}
           {% for project in teams %}
           {% assign title = project.title %}
@@ -85,4 +85,34 @@ title: Projects
       {% endfor %}
     </div>
   </div>
-</section> 
+</section>
+<style>
+@media (max-width: 1200px) {
+  .projects-main-container {
+    flex-direction: column !important;
+    gap: 3em !important;
+  }
+  .projects-main-container > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+  }
+  .vertical-line {
+    display: none !important;
+  }
+  .projects-grid-research,
+  .projects-grid-teams {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 768px) {
+  .projects-grid-research,
+  .projects-grid-teams {
+    grid-template-columns: 1fr !important;
+  }
+  .projects-main-container {
+    gap: 2em !important;
+    min-height: auto !important;
+  }
+}
+</style> 

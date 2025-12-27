@@ -255,6 +255,52 @@
       background: #444 !important;
       color: #fff !important;
     }
+    
+    /* Mobile responsive header */
+    @media (max-width: 768px) {
+      header > div {
+        flex-direction: column !important;
+        gap: 1em !important;
+        padding: 0 1em !important;
+      }
+      nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 0.8em !important;
+      }
+      nav a {
+        font-size: 0.95em !important;
+        padding: 0.4em 0.8em !important;
+      }
+      header > div > div:last-child {
+        flex-direction: row !important;
+        gap: 1.5em !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+      }
+      #stimulus-dots-container {
+        font-size: 0.85em !important;
+      }
+      #stimulus-dots-container label {
+        font-size: 0.9em !important;
+      }
+      #theme-toggle-slider {
+        font-size: 0.9em !important;
+      }
+    }
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.85em !important;
+        padding: 0.3em 0.6em !important;
+      }
+      #stimulus-dots-container label {
+        display: none !important;
+      }
+      #stimulus-label {
+        font-size: 0.8em !important;
+      }
+    }
   </style>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <!-- Google tag (gtag.js) -->

@@ -115,12 +115,88 @@ body[data-theme='light'] .landing-tile-title {
   box-shadow: 0 8px 40px var(--accent3), 0 0 0 100vw #23272a;
 }
 @media (max-width: 900px) {
-  .landing-split { flex-direction: column; height: auto; gap: 4vh; }
-  .landing-tile { min-height: 240px; }
+  .landing-split { 
+    flex-direction: column; 
+    height: auto; 
+    gap: 4vh; 
+    margin: 4vh 1em 0 1em !important;
+  }
+  .landing-tile { 
+    min-height: 280px; 
+    width: 100%;
+  }
+  .landing-tile-title {
+    font-size: 1.8rem !important;
+    margin-top: 1em !important;
+  }
+  .landing-tile > div[style*="position:relative;z-index:2;color:#e0e0e0"] {
+    font-size: 1em !important;
+    margin: 1.5em 0.8em !important;
+    padding: 0.8em !important;
+  }
   .hero { padding: 0 2em !important; }
 }
 @media (max-width: 600px) {
-  .hero { padding: 0 1em !important; }
+  .landing-tile-title {
+    font-size: 1.5rem !important;
+    padding: 0.4em 0.8em !important;
+  }
+  .landing-tile > div[style*="position:relative;z-index:2;color:#e0e0e0"] {
+    font-size: 0.9em !important;
+    margin: 1em 0.6em !important;
+    padding: 0.6em !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero { 
+    flex-direction: column !important; 
+    padding: 2em 1.5em !important; 
+    gap: 1.5em !important; 
+    align-items: center !important;
+  }
+  .hero img {
+    width: 150px !important;
+    height: 150px !important;
+    margin-bottom: 0 !important;
+  }
+  .hero > div {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  #home-main-title {
+    font-size: 2.5rem !important;
+    text-align: center !important;
+  }
+  .hero p {
+    text-align: center !important;
+    font-size: 1em !important;
+  }
+  .cta {
+    margin-left: 0 !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 300px !important;
+  }
+  .cta a {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .contact-info {
+    margin-left: 0 !important;
+    flex-direction: column !important;
+    gap: 0.8em !important;
+    font-size: 0.95em !important;
+  }
+}
+@media (max-width: 600px) {
+  .hero { padding: 1.5em 1em !important; }
+  #home-main-title {
+    font-size: 2rem !important;
+  }
+  .hero img {
+    width: 120px !important;
+    height: 120px !important;
+  }
 }
 #home-main-title {
   font-size: 4rem !important;
