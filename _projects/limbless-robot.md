@@ -12,6 +12,7 @@ tags:
   - ICRA 2025
 order: 2
 display_dates: December 2023 - Present
+category: research
 ---
 
 ## AquaMILR+ Limbless Robot

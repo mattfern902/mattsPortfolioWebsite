@@ -9,6 +9,7 @@ tags:
   - Propulsion
 order: 3
 display_dates: June 2024 - August 2024
+category: research
 ---
 
 ## Monopropellant Powered Soft Robot

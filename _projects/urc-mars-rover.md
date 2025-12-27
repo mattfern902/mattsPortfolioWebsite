@@ -9,6 +9,7 @@ tags:
   - Mars Rover
 order: 7
 display_dates: September 2021 - July 2024
+category: professional
 ---
 
 **Collaborators:** URC Mars Rover Team (RoboJackets)

@@ -9,6 +9,7 @@ tags:
   - Research
 order: 5
 display_dates: August 2025 - December 2025
+category: professional
 ---
 
 ## MORPH Robot

@@ -9,6 +9,7 @@ tags:
   - Research
 order: 4
 display_dates: September 2023 - May 2024
+category: research
 ---
 
 ## AquaMILR Limbless Robot

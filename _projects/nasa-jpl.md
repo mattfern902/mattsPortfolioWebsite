@@ -9,6 +9,7 @@ tags:
   - NASA
 order: 6
 display_dates: January 2023 - August 2023
+category: professional
 ---
 
 ## NASA Jet Propulsion Laboratory

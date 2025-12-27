@@ -9,6 +9,7 @@ tags:
   - Terrestrial
 order: 5
 display_dates: August 2023 - January 2024
+category: research
 ---
 
 ## Terrestrial Robotic Limbed and Limbless Locomotion

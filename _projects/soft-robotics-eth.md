@@ -13,6 +13,7 @@ tags:
 order: 99
 display_dates: May 2025 - Present
 restricted: true
+category: research
 ---
 
 ## Soft Robotics Lab<br>(ETH Zurich)

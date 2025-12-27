@@ -9,6 +9,7 @@ tags:
   - ROV
 order: 9
 display_dates: August 2017 - August 2021
+category: professional
 ---
 
 ## Phoenix Robotics (ROV)

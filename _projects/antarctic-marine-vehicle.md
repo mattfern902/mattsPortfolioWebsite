@@ -6,6 +6,7 @@ description: Mechanical Engineer for next-generation AUV for polar research.
 glb_url: /assets/antarctic-marine-vehicle/NEKTON.glb
 camera_orbit: 90deg 80deg 2m
 field_of_view: 20deg
+category: professional
 tags:
   - Team
   - Robotics
