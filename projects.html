@@ -117,13 +117,17 @@ title: Projects
   }
   .project-card {
     height: auto !important;
-    min-height: 450px !important;
+    min-height: 380px !important;
     max-height: none !important;
   }
   .project-card .project-desc {
-    max-height: none !important;
+    max-height: 4.5em !important;
     overflow: visible !important;
     text-overflow: clip !important;
+    -webkit-line-clamp: unset !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    line-height: 1.4 !important;
   }
 }
 </style> 
