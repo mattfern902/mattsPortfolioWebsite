@@ -108,11 +108,22 @@ title: Projects
 @media (max-width: 768px) {
   .projects-grid-research,
   .projects-grid-teams {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1em !important;
   }
   .projects-main-container {
     gap: 2em !important;
     min-height: auto !important;
+  }
+  .project-card {
+    height: auto !important;
+    min-height: 450px !important;
+    max-height: none !important;
+  }
+  .project-card .project-desc {
+    max-height: none !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
   }
 }
 </style> 

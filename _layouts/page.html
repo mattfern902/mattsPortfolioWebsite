@@ -127,6 +127,20 @@ layout: default
     width: 140px !important;
     height: 140px !important;
   }
+  .about-buttons-container {
+    padding: 0 0.5em !important;
+    gap: 0.8em !important;
+  }
+  .about-buttons-container a {
+    padding: 0.6em 1.2em !important;
+    font-size: 0.9em !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+  }
+  .about-buttons-container a svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
 }
 </style>
 <div id="photo-modal" class="photo-modal-overlay" onclick="this.classList.remove('active')">
@@ -145,17 +159,17 @@ layout: default
           Hi, I'm Matthew Fernandez, a passionate engineer and researcher specializing in robotics, mechanical design, and creative problem solving. I thrive at the intersection of mechanical intelligence, robotics, and real-world impact. My work spans aquatic and terrestrial robots, soft robotics, and advanced actuation systems.<br><br>
           I love building things that move, think, and interact with the world in new ways.
         </p>
-        <div style="margin:1.5em 0;display:flex;gap:1em;justify-content:center;">
+        <div class="about-buttons-container" style="margin:1.5em 0;display:flex;gap:1em;justify-content:center;flex-wrap:wrap;">
           <a href="{{ site.baseurl }}/assets/CV.pdf" target="_blank" style="background:#fff;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;display:flex;align-items:center;gap:0.5em;box-shadow:none!important;">
-            <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><rect x='5' y='5' width='14' height='16' rx='2' fill='#e0e0e0' stroke='#b0b0b0' stroke-width='1.2'/><rect x='3' y='3' width='14' height='16' rx='2' fill='#f4f4f4' stroke='#b0b0b0' stroke-width='1.2'/><rect x='7' y='7' width='14' height='16' rx='2' fill='#fff' stroke='#b0b0b0' stroke-width='1.2'/></svg>
+            <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;flex-shrink:0;'><rect x='5' y='5' width='14' height='16' rx='2' fill='#e0e0e0' stroke='#b0b0b0' stroke-width='1.2'/><rect x='3' y='3' width='14' height='16' rx='2' fill='#f4f4f4' stroke='#b0b0b0' stroke-width='1.2'/><rect x='7' y='7' width='14' height='16' rx='2' fill='#fff' stroke='#b0b0b0' stroke-width='1.2'/></svg>
             Curriculum Vitae
           </a>
           <a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" style="background:#fff;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;transition:background 0.2s;border:none;display:flex;align-items:center;gap:0.5em;box-shadow:none!important;">
-            <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><path d='M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6zm0 2h12v16H6V4zm3 4h6v2H9V8zm0 4h6v2H9v-2zm0 4h6v2H9v-2z'/></svg>
+            <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;flex-shrink:0;'><path d='M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6zm0 2h12v16H6V4zm3 4h6v2H9V8zm0 4h6v2H9v-2zm0 4h6v2H9v-2z'/></svg>
             Resume
           </a>
           <a href="https://www.linkedin.com/in/fernandez-matt/" target="_blank" style="background:#fff;color:#23272a;padding:0.7em 1.5em;border-radius:2em;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:0.5em;transition:background 0.2s;border:none;box-shadow:none!important;">
-            <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.599v5.597z'/></svg>
+            <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24' style='vertical-align:middle;flex-shrink:0;'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.599v5.597z'/></svg>
             LinkedIn
           </a>
         </div>
