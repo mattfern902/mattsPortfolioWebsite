@@ -7,7 +7,7 @@ tags:
   - Robotics
   - Terrestrial
   - Research
-order: 3
+order: 5
 display_dates: August 2025 - December 2025
 ---
 
