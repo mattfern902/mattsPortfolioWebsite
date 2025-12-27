@@ -106,19 +106,43 @@ title: Projects
   }
 }
 @media (max-width: 768px) {
+  .projects-overview {
+    padding: 0 1em !important;
+  }
   .projects-grid-research,
   .projects-grid-teams {
     grid-template-columns: 1fr 1fr !important;
     gap: 1em !important;
+    padding: 0 0.5em !important;
   }
   .projects-main-container {
     gap: 2em !important;
     min-height: auto !important;
+    padding: 0 0.5em !important;
   }
   .project-card {
     height: auto !important;
     min-height: 380px !important;
     max-height: none !important;
+  }
+  .project-card img {
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+  }
+  .project-card > div {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    padding: 0.5em 0.8em !important;
+  }
+  .project-card .project-title {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.4em !important;
   }
   .project-card .project-desc {
     max-height: 4.5em !important;
@@ -129,9 +153,11 @@ title: Projects
     -webkit-box-orient: vertical !important;
     line-height: 1.4 !important;
     margin-bottom: 0.8em !important;
+    flex-shrink: 0 !important;
   }
   .project-card .project-dates {
     margin-top: 0.6em !important;
+    flex-shrink: 0 !important;
   }
 }
 </style> 
